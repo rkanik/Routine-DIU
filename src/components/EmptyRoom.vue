@@ -61,9 +61,9 @@ export default {
     },
     methods:{
         FindEmptyRooms(Routines){
-            Object.keys(Routines).forEach( day =>{
+            for( const day in Routines ){
                 if( day !== 'Labs' ){
-                    Object.keys(Routines[day]).forEach( slot => {
+                    for( const slot in Routines[day]){
                         Routines[day][slot].forEach( ro => {
                             if( ro.Room && !ro.Course ){
                                 if( this.emptyRooms[day] ){
@@ -78,9 +78,9 @@ export default {
                                 }
                             }
                         })
-                    })
+                    }
                 }
-            })
+            }
         },
         SearchByDaySlot(day, slot){
             this.emptyByDay=[];this.emptyBySlot=[];
@@ -105,11 +105,11 @@ export default {
             this.emptyByDay=[];this.emptyDaySlot=[];
             if( slot !== 'none' ){
                 this.emptyBySlot={};
-                Object.keys(this.emptyRooms).forEach( day => {
+                for( let day in this.emptyRooms ){
                     if( this.emptyRooms[day] ){
                         this.emptyBySlot[day] = this.emptyRooms[day][slot];
                     }
-                })
+                }
             }else{
                 this.emptyBySlot = [];
             }

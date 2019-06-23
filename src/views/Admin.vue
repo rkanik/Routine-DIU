@@ -93,15 +93,15 @@ export default {
         },
         GetUniqueInitials(){
             let teachers = [];
-            Object.keys(Summer19_V3).forEach( day => {
+            for( let day in Summer19_V3){
                 if( day !== 'Labs' ){
-                    Object.keys(Summer19_V3[day]).forEach( slot => {
+                    for( let slot in Summer19_V3[day]){
                         Summer19_V3[day][slot].forEach( rout => {
                             if( rout.Teacher ){
                                 teachers.push(rout.Teacher);
                             }
                         })
-                    })
+                    }
                 }else{
                     Summer19_V3.Labs.forEach( rout => {
                         if( rout.Teacher ){
@@ -109,7 +109,7 @@ export default {
                         }
                     })
                 }
-            })
+            }
             
             let disTeachers = teachers.filter((val, index, self) => {
                 return self.indexOf(val) === index;

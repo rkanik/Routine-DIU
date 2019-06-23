@@ -195,18 +195,16 @@ export default {
             let oSlots = ["08:30","10:00","11:30","01:00","02:30","04:00"];
             this.ResetRoutine();
             this.GetTeacherInfo(key);
-            Object.keys(this.Routines).forEach( day => {
-                if( day !== 'Labs' ){
-                    Object.keys(this.Routines[day]).forEach( slot => {
-                        this.Routines[day][slot].forEach( routine => {
-                            if( routine.Teacher === key.toUpperCase() ){
-                                let ind = oSlots.indexOf(slot);
-                                this.Routine[day].splice(ind,1,routine);
-                            }
-                        })
+            for( let day in this.Routines ){if( day !== 'Labs' ){
+                for( let slot in this.Routines[day]){
+                    this.Routines[day][slot].forEach( routine => {
+                        if( routine.Teacher === key.toUpperCase() ){
+                            let ind = oSlots.indexOf(slot);
+                            this.Routine[day].splice(ind,1,routine);
+                        }
                     })
                 }
-                else{
+            }else{
                     this.Routines.Labs.forEach( rout => {
                         if( rout.Teacher === key.toUpperCase() ){
                             rout.Title = this.GetCourseTitle(rout.Course.split('(')[0]);
@@ -215,17 +213,17 @@ export default {
                     })
                 }
                 this.RemoveOffDayFromRoutine(day);
-            })
+            }
         },
         GetCourseTitle( code ){
             let title = '';
-            Object.keys(this.courses).forEach( levelTerm => {
+            for( let levelTerm in this.courses ){
                 this.courses[levelTerm].forEach( course => {
                     if( course.Code === code ){
                         title = course.Title;
                     }
                 })
-            });
+            }
             return title;
         }
     },

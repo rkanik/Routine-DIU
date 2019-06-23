@@ -79,6 +79,9 @@ export default {
         async FetchVisited(){
             let res = await db.collection('UsageHistory').orderBy('last_visited','desc').get()
             let visitors = [];res.forEach( doc => {visitors.push(doc.data())})
+
+            visitors.forEach( visitor => console.log('ip:'+visitor.ip+'<->'+'last: '+new Date(visitor.last_visited.seconds*1000)))
+
             this.visitedOverview.totalVisitor = visitors.length
             visitors.forEach( visitor => {
                 let lvFromNowInMin = this.GetDifferenceFromNowInMin(visitor.last_visited)
