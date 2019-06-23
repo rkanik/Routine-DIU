@@ -124,14 +124,9 @@ export default {
               resolve(n);
             }
           }),
-          rtc.createOffer(
-            function(e) {
-              rtc.setLocalDescription(e);
-            },
-            function(e) {
-              console.warn("offer failed", e);
-            }
-          );
+          rtc.createOffer(function(e) {
+            rtc.setLocalDescription(e);
+          });
       });
     },
     SaveClientInfo(data, ref) {

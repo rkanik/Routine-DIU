@@ -2,7 +2,7 @@
     <!-- header start -->
     <div id="header" class="text-left" v-bind:class="{'light-colors':lightTheme}">
         <div class="container">
-            <h4 class="pt-3 app-name">Routine Manager CSE <span class="beta lgrn-5">BETA{{version}}</span></h4>
+            <h4 class="pt-3 app-name">Routine Manager CSE <span class="beta blu-5">BETA{{version}}</span></h4>
             <div class="input-group" v-if="!isSignedIn">
                 <input type="text" v-model="inputId" class="form-control" placeholder="Student ID" aria-describedby="button-addon2">
                 <div class="input-group-append">
