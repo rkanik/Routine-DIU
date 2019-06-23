@@ -1,0 +1,341 @@
+{
+    "L1T1": [
+        {
+            "Code": "CSE112",
+            "Title": "Computer Fundamentals",
+            "Credit": 3
+        },
+        {
+            "Code": "MAT111",
+            "Title": "Basic Mathematics",
+            "Credit": 3
+        },
+        {
+            "Code": "ENG113",
+            "Title": "Basic Functional English and English Spoken",
+            "Credit": 3
+        },
+        {
+            "Code": "PHY113",
+            "Title": "Basic Physics",
+            "Credit": 3
+        },
+        {
+            "Code": "PHY114",
+            "Title": "Basic Physics Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "GED111",
+            "Title": "History of Bangladesh and Bangla Language",
+            "Credit": 3
+        }
+    ],
+    "L1T2": [
+        {
+            "Code": "MAT121",
+            "Title": "Mathematics II : Calculus, Complex Variables and Linear Algebra",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE122",
+            "Title": "Programming and Problem Solving",
+            "Credit": 2
+        },
+        {
+            "Code": "CSE123",
+            "Title": "Problem Solving Lab",
+            "Credit": 2
+        },
+        {
+            "Code": "ENG123",
+            "Title": "Writing and Comprehension",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE124",
+            "Title": "Business Application Design",
+            "Credit": 3
+        },
+        {
+            "Code": "GED121",
+            "Title": "Bangladesh Studies",
+            "Credit": 3
+        }
+    ],
+    "L1T3": [
+        {
+            "Code": "CSE131",
+            "Title": "Discrete Mathematics",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE132",
+            "Title": "Electrical Circuits",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE133",
+            "Title": "Electrical Circuits Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE134",
+            "Title": "Data Structures",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE135",
+            "Title": "Data Structures Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "MAT131",
+            "Title": "Mathematics – III: Ordinary and Partial Differential Equations",
+            "Credit": 3
+        }
+    ],
+    "L2T1": [
+        {
+            "Code": "MAT211",
+            "Title": "Mathematics-IV: Engineering Mathematics",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE212",
+            "Title": "Digital Electronics",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE213",
+            "Title": "Digital Electronics Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE214",
+            "Title": "Object-Oriented Programming",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE215",
+            "Title": "Object-Oriented Programming Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "GED201",
+            "Title": "Bangladesh Studies",
+            "Credit": 3
+        }
+    ],
+    "L2T2": [
+        {
+            "Code": "CSE221",
+            "Title": "Algorithm",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE222",
+            "Title": "Algorithm Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "STA133",
+            "Title": "Statistics and Probability",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE224",
+            "Title": "Electronic Devices and Circuits",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE225",
+            "Title": "Electronic Devices and Circuits Lab",
+            "Credit": 1
+        }
+    ],
+    "L2T3": [
+        {
+            "Code": "CSE231",
+            "Title": "Microprocessor and Assembly Language",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE232",
+            "Title": "Microprocessor and Assembly Language Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE233",
+            "Title": "Data Communication",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE234",
+            "Title": "Numerical Methods",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE235",
+            "Title": "Introduction to Bio-Informatics",
+            "Credit": 3
+        }
+    ],
+    "L3T1": [
+        {
+            "Code": "CSE311",
+            "Title": "Database Management System",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE312",
+            "Title": "Database Management System Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE313",
+            "Title": "Computer Network",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE314",
+            "Title": "Computer Network Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "GED321",
+            "Title": "Art of Living",
+            "Credit": 3
+        }
+    ],
+    "L3T2": [
+        {
+            "Code": "CSE321",
+            "Title": "System Analysis and Design",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE322",
+            "Title": "Computer Architecture and Organization",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE323",
+            "Title": "Operating System",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE324",
+            "Title": "Operating System Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "ECO314",
+            "Title": "Economics",
+            "Credit": 3
+        }
+    ],
+    "L3T3": [
+        {
+            "Code": "CSE331",
+            "Title": "Compiler Design",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE332",
+            "Title": "Compiler Design lab",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE333",
+            "Title": "Software Engineering",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE334",
+            "Title": "Wireless Programming",
+            "Credit": 3
+        },
+        {
+            "Code": "ACT301",
+            "Title": "Financial and Managerial Accounting",
+            "Credit": 2
+        }
+    ],
+    "L4T1": [
+        {
+            "Code": "CSE412",
+            "Title": "Artificial Intelligence",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE413",
+            "Title": "Artificial Intelligence Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE414",
+            "Title": "Simulation and Modeling",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE415",
+            "Title": "Simulation and Modeling Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE417",
+            "Title": "Web Engineering",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE418",
+            "Title": "Web Engineering Lab",
+            "Credit": 1
+        }
+    ],
+    "L4T2": [
+        {
+            "Code": "CSE421",
+            "Title": "Computer Graphics",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE422",
+            "Title": "Computer Graphics Lab",
+            "Credit": 1
+        },
+        {
+            "Code": "CSE423",
+            "Title": "Embedded System",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE450",
+            "Title": "Data Mining",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE499",
+            "Title": "Project / Internship (Phase I)",
+            "Credit": 3
+        }
+    ],
+    "L4T3": [
+        {
+            "Code": "CSE444",
+            "Title": "Introduction to Robotics",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE498",
+            "Title": "Social and Professional Issues in Computing",
+            "Credit": 3
+        },
+        {
+            "Code": "CSE499",
+            "Title": "Project / Internship (Phase II)",
+            "Credit": 3
+        }
+    ]
+}

@@ -1,0 +1,2186 @@
+[
+    {
+        "Courses": [
+            "MAT121(J)",
+            "CSE122(J)",
+            "CSE123(J)",
+            "ENG123(J)",
+            "CSE124(J)",
+            "GED121(J)"
+        ],
+        "Email": "sayed15-12576@diu.edu.bd",
+        "ID": "12576",
+        "LastVisited": "Tue, 21 May 2019 19:07:36 GMT",
+        "Level": "L1",
+        "Name": "Sayed sumon",
+        "Section": "J",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE444(B)",
+            "CSE498(B)",
+            "CSE499(B)"
+        ],
+        "Email": "kiron4251@diu.edu.bd",
+        "ID": "143-15-4251",
+        "LastVisited": "Thu, 23 May 2019 10:39:16 GMT",
+        "Level": "L4",
+        "Name": "Kiron Yamin",
+        "Section": "B",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE412(I)",
+            "CSE413(I)",
+            "CSE414(I)",
+            "CSE415(I)",
+            "CSE417(I)",
+            "CSE418(I)"
+        ],
+        "Email": "osikur15-5212@diu.edu.bd",
+        "ID": "151-15-5212",
+        "LastVisited": "Sat, 15 Jun 2019 02:31:32 GMT",
+        "Level": "L4",
+        "Name": "Shibly",
+        "Section": "I",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE421(A)",
+            "CSE422(A)",
+            "CSE423(A)",
+            "CSE450(A)",
+            "CSE499(A)"
+        ],
+        "Email": "",
+        "ID": "151-15-7748",
+        "LastVisited": "Thu, 13 Jun 2019 17:21:45 GMT",
+        "Level": "L4",
+        "Name": "Blablabla",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE412(A)",
+            "CSE413(A)",
+            "CSE414(A)",
+            "CSE415(A)",
+            "CSE417(A)",
+            "CSE418(A)"
+        ],
+        "Email": "arafatul15-5690@diu.edu.bd ",
+        "ID": "152-15-5690",
+        "LastVisited": "Sun, 26 May 2019 19:45:50 GMT",
+        "Level": "L4",
+        "Name": "Mohammad Arafatul Islam   ",
+        "Section": "A",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE444(A)",
+            "CSE498(A)",
+            "CSE499(A)"
+        ],
+        "Email": "tonmoy15-6351@diu.edu.bd",
+        "ID": "153-15-6351",
+        "LastVisited": "Mon, 17 Jun 2019 10:40:08 GMT",
+        "Level": "L4",
+        "Name": "Tonmoy ",
+        "Section": "A",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE321(A)",
+            "CSE322(A)",
+            "CSE323(A)",
+            "CSE324(A)",
+            "ECO314(A)"
+        ],
+        "Email": "",
+        "ID": "153-15-6383",
+        "LastVisited": "Thu, 23 May 2019 10:26:25 GMT",
+        "Level": "L3",
+        "Name": "Rashidul Habib",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE444(A)",
+            "CSE498(A)",
+            "CSE499(A)",
+            "CSE234(B)",
+            "Cse234(B)"
+        ],
+        "Email": "Billah15-6415@diu.edu.bd",
+        "ID": "153-15-6415",
+        "LastVisited": "Sat, 25 May 2019 17:04:02 GMT",
+        "Level": "L4",
+        "Name": "M",
+        "Section": "A",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE444(B)",
+            "CSE498(B)",
+            "CSE499(B)",
+            "MAT121(R1)"
+        ],
+        "Email": "aziz15-6526@diu.edu.bd",
+        "ID": "153-15-6526",
+        "LastVisited": "Thu, 23 May 2019 02:20:19 GMT",
+        "Level": "L4",
+        "Name": "MD. Abdul Aziz",
+        "Section": "B",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE421(O)",
+            "CSE422(O)",
+            "CSE423(O)",
+            "CSE450(O)",
+            "CSE499(O)"
+        ],
+        "Email": "yeasen15-6700@diu.edu.bd",
+        "ID": "153-15-6700",
+        "LastVisited": "Wed, 22 May 2019 17:52:20 GMT",
+        "Level": "L4",
+        "Name": "Md. Yeasen Ali Rony",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(O)",
+            "CSE422(O)",
+            "CSE423(O)",
+            "CSE450(O)",
+            "CSE499(O)"
+        ],
+        "Email": "sarmin15-6734@diu.edu.bd ",
+        "ID": "161-15-6734",
+        "LastVisited": "Sun, 26 May 2019 04:12:59 GMT",
+        "Level": "L4",
+        "Name": "Sarmin Sultana ",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(F)",
+            "CSE422(F)",
+            "CSE423(F)",
+            "CSE450(F)",
+            "CSE499(F)"
+        ],
+        "Email": "mohammad15-6759@diu.edu.bd",
+        "ID": "161-15-6759",
+        "LastVisited": "Wed, 22 May 2019 16:49:38 GMT",
+        "Level": "L4",
+        "Name": "Abu Kaisar",
+        "Section": "F",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(L)",
+            "CSE422(L)",
+            "CSE423(L)",
+            "CSE450(L)",
+            "CSE499(L)"
+        ],
+        "Email": "rezwana15-6830",
+        "ID": "161-15-6830",
+        "LastVisited": "Wed, 22 May 2019 16:48:31 GMT",
+        "Level": "L4",
+        "Name": "Rezwana Islam ",
+        "Section": "L",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE131(A)",
+            "CSE132(A)",
+            "CSE133(A)",
+            "CSE134(A)",
+            "CSE135(A)",
+            "MAT131(A)"
+        ],
+        "Email": "",
+        "ID": "161-15-6973",
+        "LastVisited": "Sun, 16 Jun 2019 18:26:43 GMT",
+        "Level": "L1",
+        "Name": "Imon",
+        "Section": "A",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "MAT211(H)",
+            "CSE212(H)",
+            "CSE213(H)",
+            "CSE214(H)",
+            "CSE215(H)",
+            "GED201(H)"
+        ],
+        "Email": "",
+        "ID": "161-15-6994",
+        "LastVisited": "Tue, 21 May 2019 19:07:36 GMT",
+        "Level": "L2",
+        "Name": "Ashiqual alam",
+        "Section": "H",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE421(F)",
+            "CSE422(F)",
+            "CSE423(F)",
+            "CSE450(F)",
+            "CSE499(F)"
+        ],
+        "Email": "mahbubur15-7012@diu.edu.bd",
+        "ID": "161-15-7012",
+        "LastVisited": "Wed, 22 May 2019 16:55:43 GMT",
+        "Level": "L4",
+        "Name": "Mahbubur Rahman",
+        "Section": "F",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE444(C)",
+            "CSE498(C)",
+            "CSE499(C)"
+        ],
+        "Email": "Paran17-7020@diu.edu.bd",
+        "ID": "161-15-7020",
+        "LastVisited": "Wed, 22 May 2019 16:53:37 GMT",
+        "Level": "L4",
+        "Name": "Poran",
+        "Section": "C",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE421(I)",
+            "CSE422(I)",
+            "CSE423(I)",
+            "CSE450(I)",
+            "CSE499(I)",
+            "ACT301(C)"
+        ],
+        "Email": "Rasel15-7040@diu.edu.bd",
+        "ID": "161-15-7040",
+        "LastVisited": "Mon, 17 Jun 2019 11:59:10 GMT",
+        "Level": "L4",
+        "Name": "Md Rasel Khandkar",
+        "Section": "I",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE444(F)",
+            "CSE498(F)",
+            "CSE499(F)"
+        ],
+        "Email": "",
+        "ID": "161-15-7063",
+        "LastVisited": "Wed, 22 May 2019 18:54:24 GMT",
+        "Level": "L4",
+        "Name": "Bayazid ",
+        "Section": "F",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE421(I)",
+            "CSE422(I)",
+            "CSE423(I)",
+            "CSE450(I)",
+            "CSE499(I)"
+        ],
+        "CreatedAt": "Mon, 17 Jun 2019 06:05:05 GMT",
+        "Email": "masum15-7090@diu.edu,bd",
+        "ID": "161-15-7090",
+        "LastVisited": "Mon, 17 Jun 2019 06:53:34 GMT",
+        "Level": "L4",
+        "Name": "Mehedi Hasan Masum",
+        "Section": "I",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(F)",
+            "CSE422(F)",
+            "CSE423(F)",
+            "CSE450(F)",
+            "CSE499(F)"
+        ],
+        "Email": "islam15-7100@diu.edu.bd ",
+        "ID": "161-15-7100",
+        "LastVisited": "Wed, 22 May 2019 22:06:28 GMT",
+        "Level": "L4",
+        "Name": "Md. Ashraful IslamTalukder   ",
+        "Section": "F",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(O)",
+            "CSE422(O)",
+            "CSE423(O)",
+            "CSE450(O)",
+            "CSE499(O)",
+            "MAT131(RETAKE)"
+        ],
+        "Email": "pritom15-7112@diu.edu.bd",
+        "ID": "161-15-7112",
+        "LastVisited": "Wed, 22 May 2019 17:10:46 GMT",
+        "Level": "L4",
+        "Name": "Pritom Chakraborty",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(B)",
+            "CSE422(B)",
+            "CSE423(B)",
+            "CSE450(B)",
+            "CSE499(B)"
+        ],
+        "Email": "kundu.amit517@gmail.com",
+        "ID": "161-15-7149",
+        "LastVisited": "Thu, 23 May 2019 02:52:21 GMT",
+        "Level": "L4",
+        "Name": "Amit Kundu",
+        "Section": "B",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(H)",
+            "CSE422(H)",
+            "CSE423(H)",
+            "CSE450(H)",
+            "CSE499(H)"
+        ],
+        "Email": "abc@def.com",
+        "ID": "161-15-7203",
+        "LastVisited": "Fri, 24 May 2019 06:34:57 GMT",
+        "Level": "L4",
+        "Name": "sany",
+        "Section": "H",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(P)",
+            "CSE422(P)",
+            "CSE423(P)",
+            "CSE450(P)",
+            "CSE499(P)"
+        ],
+        "Email": "khasrur15-7214@diu.edu.bd",
+        "ID": "161-15-7214",
+        "LastVisited": "Thu, 23 May 2019 11:50:15 GMT",
+        "Level": "L4",
+        "Name": "Md .khasrur Rahman",
+        "Section": "P",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE311(C)",
+            "CSE312(C)",
+            "CSE313(C)",
+            "CSE314(C)",
+            "GED321(C)"
+        ],
+        "Email": "sonjoy15-7285@diu.edu.bd",
+        "ID": "161-15-7285",
+        "LastVisited": "Thu, 23 May 2019 09:16:35 GMT",
+        "Level": "L3",
+        "Name": "Sonjoy Das",
+        "Section": "C",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE412(F)",
+            "CSE413(F)",
+            "CSE414(F)",
+            "CSE415(F)",
+            "CSE417(F)",
+            "CSE418(F)"
+        ],
+        "Email": "alam15-7311@diu.edu.bd",
+        "ID": "161-15-7311",
+        "LastVisited": "Wed, 22 May 2019 16:55:36 GMT",
+        "Level": "L4",
+        "Name": "Sakib",
+        "Section": "F",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE421(I)",
+            "CSE422(I)",
+            "CSE423(I)",
+            "CSE450(I)",
+            "CSE499(I)"
+        ],
+        "Email": "",
+        "ID": "161-15-7348",
+        "LastVisited": "Sat, 15 Jun 2019 06:37:55 GMT",
+        "Level": "L4",
+        "Name": "Shaibal",
+        "Section": "I",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(H)",
+            "CSE422(H)",
+            "CSE423(H)",
+            "CSE450(H)",
+            "CSE499(H)"
+        ],
+        "Email": "",
+        "ID": "161-15-7349",
+        "LastVisited": "Thu, 23 May 2019 22:20:39 GMT",
+        "Level": "L4",
+        "Name": "Shami",
+        "Section": "H",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(I)",
+            "CSE422(I)",
+            "CSE423(I)",
+            "CSE450(I)",
+            "CSE499(I)"
+        ],
+        "Email": "Tareqahsan61@gmail.com ",
+        "ID": "161-15-7356",
+        "LastVisited": "Wed, 22 May 2019 18:13:21 GMT",
+        "Level": "L4",
+        "Name": "Tareq",
+        "Section": "I",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(M)",
+            "CSE422(M)",
+            "CSE423(M)",
+            "CSE450(M)",
+            "CSE499(M)"
+        ],
+        "Email": "",
+        "ID": "161-15-7414",
+        "LastVisited": "Wed, 22 May 2019 21:49:04 GMT",
+        "Level": "L4",
+        "Name": "Jaman",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(O)",
+            "CSE422(O)",
+            "CSE423(O)",
+            "CSE450(O)",
+            "CSE499(O)"
+        ],
+        "Email": "fatima15-7446@diu.edu.bd",
+        "ID": "161-15-7446",
+        "LastVisited": "Wed, 22 May 2019 17:28:29 GMT",
+        "Level": "L4",
+        "Name": "Fatima Moon",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(P)",
+            "CSE422(P)",
+            "CSE423(P)",
+            "CSE450(P)",
+            "CSE499(P)"
+        ],
+        "Email": "",
+        "ID": "161-15-7483",
+        "LastVisited": "Wed, 22 May 2019 18:37:03 GMT",
+        "Level": "L4",
+        "Name": "Md. Alamin Hossain",
+        "Section": "P",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(L)",
+            "CSE422(L)",
+            "CSE423(L)",
+            "CSE450(L)",
+            "CSE499(L)"
+        ],
+        "Email": "alamin15-7490@diu.edu.bd",
+        "ID": "161-15-7490",
+        "LastVisited": "Wed, 22 May 2019 21:30:41 GMT",
+        "Level": "L4",
+        "Name": "Rahul",
+        "Section": "L",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(L)",
+            "CSE422(L)",
+            "CSE423(L)",
+            "CSE450(L)",
+            "CSE499(L)"
+        ],
+        "Email": "Ahmed",
+        "ID": "161-15-7492",
+        "LastVisited": "Wed, 22 May 2019 17:13:29 GMT",
+        "Level": "L4",
+        "Name": "Foysal ",
+        "Section": "L",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(R1)",
+            "CSE122(R1)",
+            "CSE123(R1)",
+            "ENG123(R1)",
+            "CSE124(R1)",
+            "GED121(R1)"
+        ],
+        "Email": "sudipta15-7593@diu.edu.bd",
+        "ID": "161-15-7593",
+        "LastVisited": "Wed, 22 May 2019 18:45:57 GMT",
+        "Level": "L1",
+        "Name": "Sudipta Saha",
+        "Section": "R1",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(K)",
+            "CSE422(K)",
+            "CSE423(K)",
+            "CSE450(K)",
+            "CSE499(K)"
+        ],
+        "Email": "rayhan15-7615@diu.edu.bd",
+        "ID": "161-15-7615",
+        "LastVisited": "Thu, 23 May 2019 16:08:19 GMT",
+        "Level": "L4",
+        "Name": "Rayhan Hossen",
+        "Section": "K",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(A(OLD))",
+            "CSE422(A(OLD))",
+            "CSE423(A(OLD))",
+            "CSE450(A(OLD))",
+            "CSE499(A(OLD))"
+        ],
+        "Email": "",
+        "ID": "161-15-7624",
+        "LastVisited": "Wed, 22 May 2019 18:43:56 GMT",
+        "Level": "L4",
+        "Name": "Mehadi Hasan Sarkar",
+        "Section": "A(OLD)",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(K)",
+            "CSE422(K)",
+            "CSE423(K)",
+            "CSE450(K)",
+            "CSE499(K)"
+        ],
+        "Email": "Rasel15-7646@diu.edu.bd",
+        "ID": "161-15-7646",
+        "LastVisited": "Wed, 22 May 2019 17:46:01 GMT",
+        "Level": "L4",
+        "Name": "Kamrul Islam",
+        "Section": "K",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(O)",
+            "CSE422(O)",
+            "CSE423(O)",
+            "CSE450(O)",
+            "CSE499(O)"
+        ],
+        "Email": "Mamun15-7657@diu.edu.bd",
+        "ID": "161-15-7657",
+        "LastVisited": "Wed, 22 May 2019 17:17:26 GMT",
+        "Level": "L4",
+        "Name": "Abdullah Al Mamun ",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE421(O)",
+            "CSE422(O)",
+            "CSE423(O)",
+            "CSE450(O)",
+            "CSE499(O)"
+        ],
+        "Email": "sayama15-7661@diu.edu.bd",
+        "ID": "161-15-7661",
+        "LastVisited": "Wed, 22 May 2019 17:28:47 GMT",
+        "Level": "L4",
+        "Name": "Imrana Haque",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE412(A)",
+            "CSE413(A)",
+            "CSE414(A)",
+            "CSE415(A)",
+            "CSE417(A)",
+            "CSE418(A)"
+        ],
+        "Email": "ebrahim15-881@diu.edu.bd",
+        "ID": "161-15-881",
+        "LastVisited": "Wed, 22 May 2019 17:59:36 GMT",
+        "Level": "L4",
+        "Name": "Md.Ebrahim Hossain",
+        "Section": "A",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE412(A)",
+            "CSE413(A)",
+            "CSE414(A)",
+            "CSE415(A)",
+            "CSE417(A)",
+            "CSE418(A)"
+        ],
+        "Email": "",
+        "ID": "162-15-7820",
+        "LastVisited": "Fri, 24 May 2019 06:17:02 GMT",
+        "Level": "L4",
+        "Name": "salowa",
+        "Section": "A",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE331(E)",
+            "CSE332(E)",
+            "CSE333(E)",
+            "CSE334(E)",
+            "ACT301(E)"
+        ],
+        "Email": "abdullah15-7828@diu.edu.bd ",
+        "ID": "162-15-7828",
+        "LastVisited": "Thu, 23 May 2019 08:38:02 GMT",
+        "Level": "L3",
+        "Name": "Md Abdullah An Noor",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE421(A)",
+            "CSE422(A)",
+            "CSE423(A)",
+            "CSE450(A)",
+            "CSE499(A)",
+            "CSE233(E)"
+        ],
+        "Email": "",
+        "ID": "162-15-7923",
+        "LastVisited": "Sun, 16 Jun 2019 06:06:40 GMT",
+        "Level": "L4",
+        "Name": "Muhaiminul Islam Jim",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE412(F)",
+            "CSE413(F)",
+            "CSE414(F)",
+            "CSE415(F)",
+            "CSE417(F)",
+            "CSE418(F)"
+        ],
+        "Email": "",
+        "ID": "162-15-7941",
+        "LastVisited": "Thu, 23 May 2019 13:50:34 GMT",
+        "Level": "L4",
+        "Name": "Rayhan",
+        "Section": "F",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE412(C)",
+            "CSE413(C)",
+            "CSE414(C)",
+            "CSE415(C)",
+            "CSE417(C)",
+            "CSE418(C)"
+        ],
+        "Email": "sakib15-7962@diu.edu.bd ",
+        "ID": "162-15-7962",
+        "LastVisited": "Wed, 12 Jun 2019 07:36:47 GMT",
+        "Level": "L4",
+        "Name": "Sakib",
+        "Section": "C",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE331(A)",
+            "CSE332(A)",
+            "CSE333(A)",
+            "CSE334(A)",
+            "ACT301(A)"
+        ],
+        "Email": "Nazmus15-8403@diu.edu.bd",
+        "ID": "163-15-8403",
+        "LastVisited": "Thu, 23 May 2019 10:33:36 GMT",
+        "Level": "L3",
+        "Name": "Nazmus shakib",
+        "Section": "A",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE331(E)",
+            "CSE332(E)",
+            "CSE333(E)",
+            "CSE334(E)",
+            "ACT301(E)"
+        ],
+        "Email": "Munse15-8535@diu.edu.bd",
+        "ID": "163-15-8535",
+        "LastVisited": "Wed, 12 Jun 2019 10:50:46 GMT",
+        "Level": "L3",
+        "Name": "Md.Shahidujjaman Munse",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE321(A)",
+            "CSE322(A)",
+            "CSE323(A)",
+            "CSE324(A)",
+            "ECO314(A)"
+        ],
+        "Email": "L",
+        "ID": "171-15-0000",
+        "LastVisited": "Sat, 25 May 2019 03:26:56 GMT",
+        "Level": "L3",
+        "Name": "M",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(Q)",
+            "CSE322(Q)",
+            "CSE323(Q)",
+            "CSE324(Q)",
+            "ECO314(Q)"
+        ],
+        "Email": "",
+        "ID": "171-15-8632",
+        "LastVisited": "Wed, 22 May 2019 20:41:59 GMT",
+        "Level": "L3",
+        "Name": "Ali Abrar Al Haque",
+        "Section": "Q",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(B)",
+            "CSE322(B)",
+            "CSE323(B)",
+            "CSE324(B)",
+            "ECO314(B)"
+        ],
+        "Email": "kazi15-8647@diu.edu.bd",
+        "ID": "171-15-8647",
+        "LastVisited": "Sun, 16 Jun 2019 04:14:29 GMT",
+        "Level": "L3",
+        "Name": "Kazi Mehedi",
+        "Section": "B",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(A)",
+            "CSE322(A)",
+            "CSE323(A)",
+            "CSE324(A)",
+            "ECO314(A)"
+        ],
+        "Email": "",
+        "ID": "171-15-8704",
+        "LastVisited": "Thu, 23 May 2019 17:15:10 GMT",
+        "Level": "L3",
+        "Name": "Tayeeba Tasnuva ",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(B)",
+            "CSE322(B)",
+            "CSE323(B)",
+            "CSE324(B)",
+            "ECO314(B)"
+        ],
+        "Email": "Omar15-8709@diu.edu.bd",
+        "ID": "171-15-8709",
+        "LastVisited": "Mon, 17 Jun 2019 07:46:36 GMT",
+        "Level": "L3",
+        "Name": "Md. Omar Faruk",
+        "Section": "B",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE131(D)",
+            "CSE132(D)",
+            "CSE133(D)",
+            "CSE134(D)",
+            "CSE135(D)",
+            "MAT131(D)"
+        ],
+        "Email": "saidul15@diu.edu.bd",
+        "ID": "171-15-8819",
+        "LastVisited": "Mon, 27 May 2019 14:45:42 GMT",
+        "Level": "L1",
+        "Name": "Md Saidul Islam",
+        "Section": "D",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE321(A)",
+            "CSE322(A)",
+            "CSE323(A)",
+            "CSE324(A)",
+            "ECO314(A)"
+        ],
+        "Email": "afia15-8882@diu.edu.bd",
+        "ID": "171-15-8882",
+        "LastVisited": "Sun, 16 Jun 2019 17:51:11 GMT",
+        "Level": "L3",
+        "Name": "Afia Anjum",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(RETAKE 1)",
+            "CSE122(RETAKE 1)",
+            "CSE123(RETAKE 1)",
+            "ENG123(RETAKE 1)",
+            "CSE124(RETAKE 1)",
+            "GED121(RETAKE 1)"
+        ],
+        "Email": "",
+        "ID": "171-15-8910",
+        "LastVisited": "Wed, 22 May 2019 21:03:23 GMT",
+        "Level": "L1",
+        "Name": "MD.Atikul Islam",
+        "Section": "RETAKE 1",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(I)",
+            "CSE322(I)",
+            "CSE323(I)",
+            "CSE324(I)",
+            "ECO314(I)"
+        ],
+        "Email": "sahajul15-8924@diu.edu.bd ",
+        "ID": "171-15-8924",
+        "LastVisited": "Thu, 23 May 2019 02:05:22 GMT",
+        "Level": "L3",
+        "Name": "Sahajul Islam",
+        "Section": "I",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(M)",
+            "CSE322(M)",
+            "CSE323(M)",
+            "CSE324(M)",
+            "ECO314(M)"
+        ],
+        "Email": "afzal15-8939@diu.edu.bd",
+        "ID": "171-15-8939",
+        "LastVisited": "Sat, 15 Jun 2019 18:49:26 GMT",
+        "Level": "L3",
+        "Name": "Afzal Hossain Sagar",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(H)",
+            "CSE322(H)",
+            "CSE323(H)",
+            "CSE324(H)",
+            "ECO314(H)"
+        ],
+        "Email": "Rikta15-9030@diu.edu.bd ",
+        "ID": "171-15-9030",
+        "LastVisited": "Thu, 23 May 2019 13:45:36 GMT",
+        "Level": "L3",
+        "Name": "Rikta Rani Saha ",
+        "Section": "H",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(P)",
+            "CSE322(P)",
+            "CSE323(P)",
+            "CSE324(P)",
+            "ECO314(P)"
+        ],
+        "Email": "salman15-9184@diu.edu.bd",
+        "ID": "171-15-9184",
+        "LastVisited": "Thu, 23 May 2019 13:10:20 GMT",
+        "Level": "L3",
+        "Name": "Md. Salman Mahbub",
+        "Section": "P",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(P)",
+            "CSE322(P)",
+            "CSE323(P)",
+            "CSE324(P)",
+            "ECO314(P)"
+        ],
+        "Email": "shahiduzzaman15-9250@diu.edu.bd ",
+        "ID": "171-15-9250",
+        "LastVisited": "Thu, 23 May 2019 14:18:50 GMT",
+        "Level": "L3",
+        "Name": "Shahiduzzaman Shuvo",
+        "Section": "P",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE311(Q)",
+            "CSE312(Q)",
+            "CSE313(Q)",
+            "CSE314(Q)",
+            "GED321(Q)"
+        ],
+        "Email": "sabbir15-9267@diu.edu.bd ",
+        "ID": "171-15-9267",
+        "LastVisited": "Wed, 22 May 2019 21:50:08 GMT",
+        "Level": "L3",
+        "Name": "Md.Sabbir Alam Pran",
+        "Section": "Q",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT211(R)",
+            "CSE212(R)",
+            "CSE213(R)",
+            "CSE214(R)",
+            "CSE215(R)",
+            "GED201(R)"
+        ],
+        "Email": "runju15-9285@diu.edu.bd",
+        "ID": "171-15-9285",
+        "LastVisited": "Sat, 15 Jun 2019 18:17:38 GMT",
+        "Level": "L2",
+        "Name": "Md.S.M.Runju Raton",
+        "Section": "R",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE321(R)",
+            "CSE322(R)",
+            "CSE323(R)",
+            "CSE324(R)",
+            "ECO314(R)"
+        ],
+        "Email": "Bbbb",
+        "ID": "171-15-9292",
+        "LastVisited": "Wed, 22 May 2019 16:57:32 GMT",
+        "Level": "L3",
+        "Name": "Aaaa",
+        "Section": "R",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(T)",
+            "CSE322(T)",
+            "CSE323(T)",
+            "CSE324(T)",
+            "ECO314(T)"
+        ],
+        "Email": "",
+        "ID": "171-15-9376",
+        "LastVisited": "Fri, 24 May 2019 19:26:33 GMT",
+        "Level": "L3",
+        "Name": "Shakil Ahmed",
+        "Section": "T",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE321(B)",
+            "CSE322(B)",
+            "CSE323(B)",
+            "CSE324(B)",
+            "ECO314(B)"
+        ],
+        "Email": "shashata15-9446@diu.edu.bd ",
+        "ID": "171-15-9446",
+        "LastVisited": "Fri, 24 May 2019 10:21:42 GMT",
+        "Level": "L3",
+        "Name": "Shashata Kumar Mondol ",
+        "Section": "B",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE231(O)",
+            "CSE232(O)",
+            "CSE233(O)",
+            "CSE234(O)",
+            "CSE235(O)"
+        ],
+        "Email": "maruf15-9549@diu.edu.bd",
+        "ID": "171-15-9549",
+        "LastVisited": "Thu, 23 May 2019 07:59:03 GMT",
+        "Level": "L2",
+        "Name": "Md. Maruf Billah",
+        "Section": "O",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE311(G)",
+            "CSE312(G)",
+            "CSE313(G)",
+            "CSE314(G)",
+            "GED321(G)"
+        ],
+        "Email": "saiful15-10064@diu.edu.bd",
+        "ID": "172-15-10064",
+        "LastVisited": "Fri, 14 Jun 2019 17:03:54 GMT",
+        "Level": "L3",
+        "Name": "Md.Saiful Islam",
+        "Section": "G",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE311(G)",
+            "CSE312(G)",
+            "CSE313(G)",
+            "CSE314(G)",
+            "GED321(G)"
+        ],
+        "Email": "sadia15-9645@diu.edu.bd",
+        "ID": "172-15-9655",
+        "LastVisited": "Thu, 13 Jun 2019 18:55:57 GMT",
+        "Level": "L3",
+        "Name": "Sadia",
+        "Section": "G",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE311(G)",
+            "CSE312(G)",
+            "CSE313(G)",
+            "CSE314(G)",
+            "GED321(G)"
+        ],
+        "Email": "fahim15-9753@diu.edu.bd",
+        "ID": "172-15-9753",
+        "LastVisited": "Wed, 22 May 2019 18:43:58 GMT",
+        "Level": "L3",
+        "Name": "M.H.Fahim",
+        "Section": "G",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE112(H)",
+            "MAT111(H)",
+            "ENG113(H)",
+            "PHY113(H)",
+            "PHY114(H)",
+            "GED111(H)"
+        ],
+        "Email": "aminul15-10394@diu.edu.bd",
+        "ID": "173-15-10394",
+        "LastVisited": "Sun, 16 Jun 2019 14:32:44 GMT",
+        "Level": "L1",
+        "Name": "Md. Aminul Islam",
+        "Section": "H",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE231(C)",
+            "CSE232(C)",
+            "CSE233(C)",
+            "CSE234(C)",
+            "CSE235(C)"
+        ],
+        "Email": "mozammel15-10416@diu.edu.bd",
+        "ID": "173-15-10416",
+        "LastVisited": "Sat, 25 May 2019 07:34:23 GMT",
+        "Level": "L2",
+        "Name": "Mozammel Hoshen Chowdhury",
+        "Section": "C",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE231(E)",
+            "CSE232(E)",
+            "CSE233(E)",
+            "CSE234(E)",
+            "CSE235(E)"
+        ],
+        "Email": "shakil15-10489@diu.edu.bd",
+        "ID": "173-15-10489",
+        "LastVisited": "Thu, 23 May 2019 03:55:48 GMT",
+        "Level": "L2",
+        "Name": "Shakil Hossen",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE221(A)",
+            "CSE222(A)",
+            "STA133(A)",
+            "CSE224(A)",
+            "CSE225(A)"
+        ],
+        "Email": "rakibul15-10535@di.edu.bd ",
+        "ID": "181-15-10535",
+        "LastVisited": "Wed, 22 May 2019 17:02:18 GMT",
+        "Level": "L2",
+        "Name": "Rakibul Hasan",
+        "Section": "A",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(J)",
+            "CSE222(J)",
+            "STA133(J)",
+            "CSE224(J)",
+            "CSE225(J)"
+        ],
+        "Email": "mostafizur15-10562@diu.edu.bd",
+        "ID": "181-15-10562",
+        "LastVisited": "Thu, 23 May 2019 06:19:37 GMT",
+        "Level": "L2",
+        "Name": "MD MOSTAFIZUR RAHMAN ",
+        "Section": "J",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(B)",
+            "CSE222(B)",
+            "STA133(B)",
+            "CSE224(B)",
+            "CSE225(B)"
+        ],
+        "Email": "",
+        "ID": "181-15-10620",
+        "LastVisited": "Wed, 22 May 2019 17:25:27 GMT",
+        "Level": "L2",
+        "Name": "Akib",
+        "Section": "B",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(F)",
+            "CSE222(F)",
+            "STA133(F)",
+            "CSE224(F)",
+            "CSE225(F)"
+        ],
+        "Email": "meherin15-10634@diu.edu.bd ",
+        "ID": "181-15-10634",
+        "LastVisited": "Thu, 23 May 2019 06:52:34 GMT",
+        "Level": "L2",
+        "Name": "Meherin Akter",
+        "Section": "F",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(F)",
+            "CSE222(F)",
+            "STA133(F)",
+            "CSE224(F)",
+            "CSE225(F)"
+        ],
+        "Email": "",
+        "ID": "181-15-10713",
+        "LastVisited": "Sun, 26 May 2019 11:31:05 GMT",
+        "Level": "L2",
+        "Name": "Arnob",
+        "Section": "F",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(H)",
+            "CSE222(H)",
+            "STA133(H)",
+            "CSE224(H)",
+            "CSE225(H)"
+        ],
+        "Email": "anika15-10808@diu.edu.bd",
+        "ID": "181-15-10808",
+        "LastVisited": "Thu, 23 May 2019 09:49:16 GMT",
+        "Level": "L2",
+        "Name": "Mst.Anika Momtaj",
+        "Section": "H",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(C)",
+            "CSE222(C)",
+            "STA133(C)",
+            "CSE224(C)",
+            "CSE225(C)"
+        ],
+        "Email": "",
+        "ID": "181-15-10845",
+        "LastVisited": "Wed, 22 May 2019 17:20:18 GMT",
+        "Level": "L2",
+        "Name": "Md Asif Ur Rahman",
+        "Section": "C",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(I)",
+            "CSE222(I)",
+            "STA133(I)",
+            "CSE224(I)",
+            "CSE225(I)"
+        ],
+        "Email": "mostafizur15-11064@diu.edu.bd",
+        "ID": "181-15-11064",
+        "LastVisited": "Wed, 22 May 2019 16:53:37 GMT",
+        "Level": "L2",
+        "Name": "Mostafizur Rahman",
+        "Section": "I",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(O)",
+            "CSE222(O)",
+            "STA133(O)",
+            "CSE224(O)",
+            "CSE225(O)"
+        ],
+        "Email": "rozanee15-11126@diu.edu.bd",
+        "ID": "181-15-11126",
+        "LastVisited": "Wed, 22 May 2019 18:20:55 GMT",
+        "Level": "L2",
+        "Name": "Rozanee Kanta Das",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(O)",
+            "CSE222(O)",
+            "STA133(O)",
+            "CSE224(O)",
+            "CSE225(O)"
+        ],
+        "Email": "hasibur15-11134@di.edu.bd ",
+        "ID": "181-15-11134",
+        "LastVisited": "Wed, 22 May 2019 18:05:11 GMT",
+        "Level": "L2",
+        "Name": "Hasibur Rahman",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(R)",
+            "CSE222(R)",
+            "STA133(R)",
+            "CSE224(R)",
+            "CSE225(R)"
+        ],
+        "Email": "rasel15-11264@diu.edu.bd ",
+        "ID": "181-15-11264",
+        "LastVisited": "Fri, 24 May 2019 18:25:22 GMT",
+        "Level": "L2",
+        "Name": "Md. Rasel Ahmed",
+        "Section": "R",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(M)",
+            "CSE222(M)",
+            "STA133(M)",
+            "CSE224(M)",
+            "CSE225(M)"
+        ],
+        "Email": "mahmudur15-11276@diu.edu.bd",
+        "ID": "181-15-11276",
+        "LastVisited": "Thu, 13 Jun 2019 15:31:57 GMT",
+        "Level": "L2",
+        "Name": "Mahmudur Rahman",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT211(B)",
+            "CSE212(B)",
+            "CSE213(B)",
+            "CSE214(B)",
+            "CSE215(B)",
+            "GED201(B)"
+        ],
+        "Email": "emrul15-11669@diu.edu.bd",
+        "ID": "182-15-11669",
+        "LastVisited": "Tue, 21 May 2019 19:07:36 GMT",
+        "Level": "L2",
+        "Name": "Md. Emrul Hasan Sifat",
+        "Section": "B",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT211(B)",
+            "CSE212(B)",
+            "CSE213(B)",
+            "CSE214(B)",
+            "CSE215(B)",
+            "GED201(B)"
+        ],
+        "Email": "sorwar15-11672@diu.edu",
+        "ID": "182-15-11672",
+        "LastVisited": "Wed, 22 May 2019 16:55:52 GMT",
+        "Level": "L2",
+        "Name": "sorowar hossain",
+        "Section": "B",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT211(G)",
+            "CSE212(G)",
+            "CSE213(G)",
+            "CSE214(G)",
+            "CSE215(G)",
+            "GED201(G)"
+        ],
+        "Email": "saikat15-11745@di. edu.bd ",
+        "ID": "182-15-11745",
+        "LastVisited": "Wed, 22 May 2019 20:59:00 GMT",
+        "Level": "L2",
+        "Name": "Saikat",
+        "Section": "G",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE131(E)",
+            "CSE132(E)",
+            "CSE133(E)",
+            "CSE134(E)",
+            "CSE135(E)",
+            "MAT131(E)"
+        ],
+        "Email": "nazmul15-11805@diu.edu.bd ",
+        "ID": "183-15-11805",
+        "LastVisited": "Wed, 22 May 2019 17:02:34 GMT",
+        "Level": "L1",
+        "Name": "Md. Nazmul hassan",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(B)",
+            "CSE132(B)",
+            "CSE133(B)",
+            "CSE134(B)",
+            "CSE135(B)",
+            "MAT131(B)"
+        ],
+        "Email": "rakibul15-11826@diu.edu.bd",
+        "ID": "183-15-11826",
+        "LastVisited": "Thu, 23 May 2019 15:23:14 GMT",
+        "Level": "L1",
+        "Name": "MD.Rakibul Hasan",
+        "Section": "B",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(E)",
+            "CSE132(E)",
+            "CSE133(E)",
+            "CSE134(E)",
+            "CSE135(E)",
+            "MAT131(E)"
+        ],
+        "Email": "Sanjid15-11888@diu.edu.bd",
+        "ID": "183-15-11888",
+        "LastVisited": "Sat, 15 Jun 2019 05:42:25 GMT",
+        "Level": "L1",
+        "Name": "Sanjid hossain",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(C)",
+            "CSE132(C)",
+            "CSE133(C)",
+            "CSE134(C)",
+            "CSE135(C)",
+            "MAT131(C)"
+        ],
+        "Email": "Nayeem15-11927@diu.edu.bd ",
+        "ID": "183-15-11927",
+        "LastVisited": "Thu, 23 May 2019 05:25:54 GMT",
+        "Level": "L1",
+        "Name": "Md.jannatul Naeem",
+        "Section": "C",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(C)",
+            "CSE132(C)",
+            "CSE133(C)",
+            "CSE134(C)",
+            "CSE135(C)",
+            "MAT131(C)"
+        ],
+        "Email": "sadat15-11930@diu.edu.bd",
+        "ID": "183-15-11930",
+        "LastVisited": "Wed, 22 May 2019 16:49:21 GMT",
+        "Level": "L1",
+        "Name": "K M Sadat Samin",
+        "Section": "C",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(C)",
+            "CSE132(C)",
+            "CSE133(C)",
+            "CSE134(C)",
+            "CSE135(C)",
+            "MAT131(C)"
+        ],
+        "Email": "",
+        "ID": "183-15-11934",
+        "LastVisited": "Wed, 22 May 2019 17:51:23 GMT",
+        "Level": "L1",
+        "Name": "Arijit Mondol Brinto",
+        "Section": "C",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(E)",
+            "CSE132(E)",
+            "CSE133(E)",
+            "CSE134(E)",
+            "CSE135(E)",
+            "MAT131(E)"
+        ],
+        "Email": "iktidar15-11987@diu.edu.bd",
+        "ID": "183-15-11987",
+        "LastVisited": "Fri, 14 Jun 2019 13:25:41 GMT",
+        "Level": "L1",
+        "Name": "Md iktidar islam",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(E)",
+            "CSE132(E)",
+            "CSE133(E)",
+            "CSE134(E)",
+            "CSE135(E)",
+            "MAT131(E)"
+        ],
+        "Email": "mominul15-11992@diu.edu.bd ",
+        "ID": "183-15-11992",
+        "LastVisited": "Sun, 09 Jun 2019 07:29:53 GMT",
+        "Level": "L1",
+        "Name": "Mominul Islam",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "MAT211(E)",
+            "CSE212(E)",
+            "CSE213(E)",
+            "CSE214(E)",
+            "CSE215(E)",
+            "GED201(E)"
+        ],
+        "Email": "tamanna15-12005@diu.edu.bd",
+        "ID": "183-15-12005",
+        "LastVisited": "Wed, 22 May 2019 17:08:32 GMT",
+        "Level": "L2",
+        "Name": "Tamanna Naznin",
+        "Section": "E",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE131(E)",
+            "CSE132(E)",
+            "CSE133(E)",
+            "CSE134(E)",
+            "CSE135(E)",
+            "MAT131(E)"
+        ],
+        "Email": "badhan15-12013@diu.edu.bd",
+        "ID": "183-15-12013",
+        "LastVisited": "Sun, 16 Jun 2019 07:39:37 GMT",
+        "Level": "L1",
+        "Name": "BADHAN SHAHA",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE131(E)",
+            "CSE132(E)",
+            "CSE133(E)",
+            "CSE134(E)",
+            "CSE135(E)",
+            "MAT131(E)"
+        ],
+        "Email": "abdullah15-12026@diu.edu.bd",
+        "ID": "183-15-12026",
+        "LastVisited": "Sun, 16 Jun 2019 14:20:58 GMT",
+        "Level": "L1",
+        "Name": "Abdulah Tanvir",
+        "Section": "E",
+        "Term": "T3"
+    },
+    {
+        "Courses": [
+            "CSE112(F)",
+            "MAT111(F)",
+            "ENG113(F)",
+            "PHY113(F)",
+            "PHY114(F)",
+            "GED111(F)"
+        ],
+        "Email": "",
+        "ID": "191-15-12065",
+        "LastVisited": "Mon, 03 Jun 2019 17:30:19 GMT",
+        "Level": "L1",
+        "Name": "Shahariar masud manna",
+        "Section": "F",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT121(L)",
+            "CSE122(L)",
+            "CSE123(L)",
+            "ENG123(L)",
+            "CSE124(L)",
+            "GED121(L)"
+        ],
+        "Email": "tanjina15-12165@diu.edu.bd",
+        "ID": "191-15-12165",
+        "LastVisited": "Thu, 23 May 2019 09:47:10 GMT",
+        "Level": "L1",
+        "Name": "Tanjina Akter Jame",
+        "Section": "L",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(M)",
+            "CSE122(M)",
+            "CSE123(M)",
+            "ENG123(M)",
+            "CSE124(M)",
+            "GED121(M)"
+        ],
+        "Email": "Rakibul15-12212@diu.edu.bd",
+        "ID": "191-15-12212",
+        "LastVisited": "Sun, 16 Jun 2019 05:36:58 GMT",
+        "Level": "L1",
+        "Name": "Md Rakibul Islam",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE112(EVENING A )",
+            "MAT111(EVENING A )",
+            "ENG113(EVENING A )",
+            "PHY113(EVENING A )",
+            "PHY114(EVENING A )",
+            "GED111(EVENING A )"
+        ],
+        "Email": "mahi15-12265@diu.edu.bd",
+        "ID": "191-15-12265",
+        "LastVisited": "Wed, 22 May 2019 15:59:31 GMT",
+        "Level": "L1",
+        "Name": "Mahi Chowdhory",
+        "Section": "EVENING A ",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT121(C)",
+            "CSE122(C)",
+            "CSE123(C)",
+            "ENG123(C)",
+            "CSE124(C)",
+            "GED121(C)"
+        ],
+        "Email": "Humayun15-12345@diu.edu.bd ",
+        "ID": "191-15-12345",
+        "LastVisited": "Sat, 25 May 2019 05:33:28 GMT",
+        "Level": "L1",
+        "Name": "Md. Humayun Farid",
+        "Section": "C",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(N)",
+            "CSE122(N)",
+            "CSE123(N)",
+            "ENG123(N)",
+            "CSE124(N)",
+            "GED121(N)"
+        ],
+        "Email": "",
+        "ID": "191-15-12352",
+        "LastVisited": "Wed, 12 Jun 2019 04:11:24 GMT",
+        "Level": "L1",
+        "Name": "Pavel khan",
+        "Section": "N",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(Q)",
+            "CSE122(Q)",
+            "CSE123(Q)",
+            "ENG123(Q)",
+            "CSE124(Q)",
+            "GED121(Q)"
+        ],
+        "Email": "shadman15-12355@di. Edu.bd ",
+        "ID": "191-15-12355",
+        "LastVisited": "Sun, 09 Jun 2019 08:59:34 GMT",
+        "Level": "L1",
+        "Name": "Md. Shadman Shoumik Shaon Pk",
+        "Section": "Q",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(M)",
+            "CSE122(M)",
+            "CSE123(M)",
+            "ENG123(M)",
+            "CSE124(M)",
+            "GED121(M)"
+        ],
+        "Email": "masud15-12364@diu.edu.bd",
+        "ID": "191-15-12364",
+        "LastVisited": "Sun, 16 Jun 2019 11:16:17 GMT",
+        "Level": "L1",
+        "Name": "Mohammad Masud Ahmed",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(B)",
+            "CSE122(B)",
+            "CSE123(B)",
+            "ENG123(B)",
+            "CSE124(B)",
+            "GED121(B)"
+        ],
+        "Email": "habibur15-12391@diu.edu.bd",
+        "ID": "191-15-12391",
+        "LastVisited": "Mon, 27 May 2019 05:37:49 GMT",
+        "Level": "L1",
+        "Name": "Md. Habibur Rahman ",
+        "Section": "B",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(M)",
+            "CSE122(M)",
+            "CSE123(M)",
+            "ENG123(M)",
+            "CSE124(M)",
+            "GED121(M)"
+        ],
+        "Email": "fahimul15-12414@diu.edu.bd",
+        "ID": "191-15-12414",
+        "LastVisited": "Thu, 23 May 2019 17:43:50 GMT",
+        "Level": "L1",
+        "Name": "Md.Fahimul Islam",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(M)",
+            "CSE122(M)",
+            "CSE123(M)",
+            "ENG123(M)",
+            "CSE124(M)",
+            "GED121(M)"
+        ],
+        "Email": "alex15-12464@diu.edu.bd",
+        "ID": "191-15-12464",
+        "LastVisited": "Sat, 15 Jun 2019 16:39:33 GMT",
+        "Level": "L1",
+        "Name": "Alex Biswas",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE221(M)",
+            "CSE222(M)",
+            "STA133(M)",
+            "CSE224(M)",
+            "CSE225(M)"
+        ],
+        "Email": "Taqi15-12489@diu.edu.bd ",
+        "ID": "191-15-12489",
+        "LastVisited": "Sun, 16 Jun 2019 05:21:38 GMT",
+        "Level": "L2",
+        "Name": "Md Taqi Yeasir",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(M)",
+            "CSE122(M)",
+            "CSE123(M)",
+            "ENG123(M)",
+            "CSE124(M)",
+            "GED121(M)"
+        ],
+        "Email": "samrina15-12532@diu.edu.bd ",
+        "ID": "191-15-12532",
+        "LastVisited": "Sun, 16 Jun 2019 05:01:29 GMT",
+        "Level": "L1",
+        "Name": "Samrina Sarkar Sammi ",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE112(H)",
+            "MAT111(H)",
+            "ENG113(H)",
+            "PHY113(H)",
+            "PHY114(H)",
+            "GED111(H)"
+        ],
+        "Email": "",
+        "ID": "191-15-12535",
+        "LastVisited": "Thu, 23 May 2019 07:33:09 GMT",
+        "Level": "L1",
+        "Name": "Md abu eusup methu",
+        "Section": "H",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT121(N)",
+            "CSE122(N)",
+            "CSE123(N)",
+            "ENG123(N)",
+            "CSE124(N)",
+            "GED121(N)"
+        ],
+        "Email": "maruf15-12583@diu.edu.bd",
+        "ID": "191-15-12583",
+        "LastVisited": "Tue, 11 Jun 2019 09:58:22 GMT",
+        "Level": "L1",
+        "Name": "Maruf Billah Shakil",
+        "Section": "N",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE112(M)",
+            "MAT111(M)",
+            "ENG113(M)",
+            "PHY113(M)",
+            "PHY114(M)",
+            "GED111(M)"
+        ],
+        "Email": "faysal15-12719@gmail ",
+        "ID": "191-15-12719",
+        "LastVisited": "Sun, 16 Jun 2019 04:50:55 GMT",
+        "Level": "L1",
+        "Name": "Md Faysal Hossain Rahad   ",
+        "Section": "M",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "MAT121(N)",
+            "CSE122(N)",
+            "CSE123(N)",
+            "ENG123(N)",
+            "CSE124(N)",
+            "GED121(N)"
+        ],
+        "Email": "ovijit15-12753@diu.edu.bd",
+        "ID": "191-15-12753",
+        "LastVisited": "Mon, 10 Jun 2019 19:28:02 GMT",
+        "Level": "L1",
+        "Name": "OVIJITSHINHA",
+        "Section": "N",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(N)",
+            "CSE122(N)",
+            "CSE123(N)",
+            "ENG123(N)",
+            "CSE124(N)",
+            "GED121(N)"
+        ],
+        "Email": "nabil15-12798@diu.edu.bd",
+        "ID": "191-15-12798",
+        "LastVisited": "Tue, 21 May 2019 19:07:36 GMT",
+        "Level": "L1",
+        "Name": "MD. Nabil Newaz",
+        "Section": "N",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(O)",
+            "CSE122(O)",
+            "CSE123(O)",
+            "ENG123(O)",
+            "CSE124(O)",
+            "GED121(O)"
+        ],
+        "Email": "Mustaaaakim@gmai.com ",
+        "ID": "191-15-12866",
+        "LastVisited": "Wed, 22 May 2019 17:03:24 GMT",
+        "Level": "L1",
+        "Name": "Mahmudur Rahman  ",
+        "Section": "O",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(N)",
+            "CSE122(N)",
+            "CSE123(N)",
+            "ENG123(N)",
+            "CSE124(N)",
+            "GED121(N)"
+        ],
+        "Email": "Mahabub",
+        "ID": "191-15-12872",
+        "LastVisited": "Tue, 21 May 2019 19:07:36 GMT",
+        "Level": "L1",
+        "Name": "Mahabub-Ul-Alam",
+        "Section": "N",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(R)",
+            "CSE122(R)",
+            "CSE123(R)",
+            "ENG123(R)",
+            "CSE124(R)",
+            "GED121(R)"
+        ],
+        "Email": "",
+        "ID": "191-15-12905",
+        "LastVisited": "Tue, 28 May 2019 17:32:30 GMT",
+        "Level": "L1",
+        "Name": "MD Omar Jilani Jidan",
+        "Section": "R",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(R)",
+            "CSE122(R)",
+            "CSE123(R)",
+            "ENG123(R)",
+            "CSE124(R)",
+            "GED121(R)"
+        ],
+        "Email": "susmoy15-12910@diu.edu.bd",
+        "ID": "191-15-12910",
+        "LastVisited": "Tue, 21 May 2019 19:07:36 GMT",
+        "Level": "L1",
+        "Name": "susmoy Paul ",
+        "Section": "R",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(N)",
+            "CSE122(N)",
+            "CSE123(N)",
+            "ENG123(N)",
+            "CSE124(N)",
+            "GED121(N)"
+        ],
+        "Email": "Kousick15-12912@diu.edu.bd ",
+        "ID": "191-15-12912",
+        "LastVisited": "Wed, 22 May 2019 20:38:49 GMT",
+        "Level": "L1",
+        "Name": "KOUSICK MONDA  ",
+        "Section": "N",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(R)",
+            "CSE122(R)",
+            "CSE123(R)",
+            "ENG123(R)",
+            "CSE124(R)",
+            "GED121(R)"
+        ],
+        "Email": "istiak15-12917@diu.edu.bd  ",
+        "ID": "191-15-12917",
+        "LastVisited": "Fri, 14 Jun 2019 16:28:36 GMT",
+        "Level": "L1",
+        "Name": "Istiak Ahamed",
+        "Section": "R",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(S)",
+            "CSE122(S)",
+            "CSE123(S)",
+            "ENG123(S)",
+            "CSE124(S)",
+            "GED121(S)"
+        ],
+        "Email": "m15-12938@diu.edu.bd",
+        "ID": "191-15-12938",
+        "LastVisited": "Sat, 25 May 2019 13:49:09 GMT",
+        "Level": "L1",
+        "Name": "M Shahriar Ishtiaque",
+        "Section": "S",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(R)",
+            "CSE122(R)",
+            "CSE123(R)",
+            "ENG123(R)",
+            "CSE124(R)",
+            "GED121(R)"
+        ],
+        "Email": "jamal15-12977@diu.edu.bd",
+        "ID": "191-15-12977",
+        "LastVisited": "Sun, 09 Jun 2019 00:14:51 GMT",
+        "Level": "L1",
+        "Name": "Md Jamal Hossan Bhuiyan ",
+        "Section": "R",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(H)",
+            "CSE122(H)",
+            "CSE123(H)",
+            "ENG123(H)",
+            "CSE124(H)",
+            "GED121(H)"
+        ],
+        "Email": "abdurrahmany418@gmai. com ",
+        "ID": "191-15-13025",
+        "LastVisited": "Sat, 25 May 2019 20:57:50 GMT",
+        "Level": "L1",
+        "Name": "Apu",
+        "Section": "H",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(PC-C)",
+            "CSE122(PC-C)",
+            "CSE123(PC-C)",
+            "ENG123(PC-C)",
+            "CSE124(PC-C)",
+            "GED121(PC-C)"
+        ],
+        "Email": "rasrl15-2362@diu.edu.bd",
+        "ID": "191-15-2362",
+        "LastVisited": "Wed, 22 May 2019 16:52:47 GMT",
+        "Level": "L1",
+        "Name": "Rasel Hider Nobin",
+        "Section": "PC-C",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(D)",
+            "CSE122(D)",
+            "CSE123(D)",
+            "ENG123(D)",
+            "CSE124(D)",
+            "GED121(D)"
+        ],
+        "Email": "sazzad15-2503@diu.edu.bd",
+        "ID": "191-15-2503",
+        "LastVisited": "Wed, 22 May 2019 06:00:08 GMT",
+        "Level": "L1",
+        "Name": "shazzad",
+        "Section": "D",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(M)",
+            "CSE122(M)",
+            "CSE123(M)",
+            "ENG123(M)",
+            "CSE124(M)",
+            "GED121(M)"
+        ],
+        "Email": "masud15-12364@diu.edu.bd",
+        "ID": "191-1512364",
+        "LastVisited": "Sun, 16 Jun 2019 07:17:15 GMT",
+        "Level": "L1",
+        "Name": "Mohammad Masud Ahmed",
+        "Section": "M",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "MAT121(L)",
+            "CSE122(L)",
+            "CSE123(L)",
+            "ENG123(L)",
+            "CSE124(L)",
+            "GED121(L)"
+        ],
+        "Email": "",
+        "ID": "1911513025",
+        "LastVisited": "Tue, 11 Jun 2019 01:37:53 GMT",
+        "Level": "L1",
+        "Name": "Apu",
+        "Section": "L",
+        "Term": "T2"
+    },
+    {
+        "Courses": [
+            "CSE112(B)",
+            "MAT111(B)",
+            "ENG113(B)",
+            "PHY113(B)",
+            "PHY114(B)",
+            "GED111(B)"
+        ],
+        "Email": "sajjadshahab99@gmail.com",
+        "ID": "192-35-2889",
+        "LastVisited": "Thu, 23 May 2019 15:46:25 GMT",
+        "Level": "L1",
+        "Name": "Sajjad shahab",
+        "Section": "B",
+        "Term": "T1"
+    },
+    {
+        "Courses": [
+            "CSE112(38)",
+            "MAT111(38)",
+            "ENG113(38)",
+            "PHY113(38)",
+            "PHY114(38)",
+            "GED111(38)"
+        ],
+        "Email": "Minhazdipu@gmail.com ",
+        "ID": "1921513163",
+        "LastVisited": "Thu, 13 Jun 2019 05:51:09 GMT",
+        "Level": "L1",
+        "Name": "Minhazur rahmab",
+        "Section": "38",
+        "Term": "T1"
+    }
+]

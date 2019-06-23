@@ -1,0 +1,1644 @@
+﻿[
+    {
+        "Name": "Prof. Dr. Syed Akhter Hossain",
+        "Initial": "SAH",
+        "EmployeeId": "710000607",
+        "Designation": "Head",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/akhter.html",
+        "Email": "aktarhossain@daffodilvarsity.edu.bd",
+        "Phone": "01817382645"
+    },
+    {
+        "Name": "Professor Dr. Md. Ismail Jabiullah",
+        "Initial": "MIJ",
+        "EmployeeId": "710002260",
+        "Designation": "Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/jabiullah.html",
+        "Email": "drismail.cse@diu.edu.bd",
+        "Phone": "01819299960"
+    },
+    {
+        "Name": "Dr. Sheak Rashed Haider Noori",
+        "Initial": "SRH",
+        "EmployeeId": "710001060",
+        "Designation": "Associate Professor and Associate Head",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rashed-haider-noori.html",
+        "Email": "drnoori@daffodilvarsity.edu.bd",
+        "Phone": "01847140176"
+    },
+    {
+        "Name": "Dr. S. M. Aminul Haque",
+        "EmployeeId": "710001054",
+        "Designation": "Associate Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/aminul.html",
+        "Email": "aminul.cse@daffodilvarsity.edu.bd",
+        "Phone": "01847140129"
+    },
+    {
+        "Name": "Mr. Anisur Rahman",
+        "EmployeeId": "710000275",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/anisur.html",
+        "Email": "anis-diu@daffodilvarsity.edu.bd",
+        "Phone": "01711329196"
+    },
+    {
+        "Name": "Mr. Gazi Zahirul Islam",
+        "Initial": "GZI",
+        "EmployeeId": "710001202",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/gazi.html",
+        "Email": "zahir.cse@daffodilvarsity.edu.bd",
+        "Phone": "01711937820"
+    },
+    {
+        "Name": "Ms. Nazmun Nessa Moon",
+        "Initial": "NNM",
+        "EmployeeId": "710000878",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nazmun-nessa-moon.html",
+        "Email": "moon@daffodilvarsity.edu.bd",
+        "Phone": "01713191187"
+    },
+    {
+        "Name": "Mr. Muhammad Sarawar Jahan Morshed",
+        "EmployeeId": "710001290",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/jahan-morshed.html",
+        "Email": "sarawar.cse@diu.edu.bd",
+        "Phone": "01947179930"
+    },
+    {
+        "Name": "Ms. Fariha Tasmin Jaigirdar",
+        "EmployeeId": "710001300",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/fariha.html",
+        "Email": "fariha.cse@diu.edu.bd",
+        "Phone": "01717121371"
+    },
+    {
+        "Name": "Ms. Naznin Sultana",
+        "EmployeeId": "710001538",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/naznin.html",
+        "Email": "naznin.cse@diu.edu.bd",
+        "Phone": "01911540341"
+    },
+    {
+        "Name": "Mr. Md. Tarek Habib",
+        "Initial": "MTH",
+        "EmployeeId": "710001621",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tarek.html",
+        "Email": "tarek.cse@diu.edu.bd",
+        "Phone": "01709076951"
+    },
+    {
+        "Name": "Md Zahid Hasan",
+        "Initial": "ZH",
+        "EmployeeId": "710001622",
+        "Designation": "Assistant Professor & Associate Head (In-Charge)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/zahid-hasan.html",
+        "Email": "zahid.cse@diu.edu.bd",
+        "Phone": "01672580748"
+    },
+    {
+        "Name": "Mr. Arif Mahmud",
+        "EmployeeId": "710001675",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/arif-mahmud.html",
+        "Email": "arif.cse@diu.edu.bd",
+        "Phone": "01687995727"
+    },
+    {
+        "Name": "Mr. Narayan Ranjan Chakraborty",
+        "Initial": "NRC",
+        "EmployeeId": "710000633",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/narayan.html",
+        "Email": "narayan@daffodilvarsity.edu.bd",
+        "Phone": "01717379897"
+    },
+    {
+        "Name": "Ms. Subhenur Latif",
+        "Initial": "SL",
+        "EmployeeId": "710000632",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/latif.html",
+        "Email": "snlatif@daffodilvarsity.edu.bd",
+        "Phone": "01703600895"
+    },
+    {
+        "Name": "Ms. Rifat Ara Shams",
+        "EmployeeId": "710001345",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rifat.html",
+        "Email": "rifat.cse@diu.edu.bd",
+        "Phone": "01723256560"
+    },
+    {
+        "Name": "Mr. Md. Sadekur Rahman",
+        "Initial": "SR",
+        "EmployeeId": "710001051",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sadek.html",
+        "Email": "sadekur.cse@daffodilvarsity.edu.bd",
+        "Phone": "01676379698"
+    },
+    {
+        "Name": "Dr. Masud Rana Rashel",
+        "EmployeeId": "710002337",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/drmasud.html",
+        "Email": "rana.cse@diu.edu.bd",
+        "Phone": "01712204281"
+    },
+    {
+        "Name": "Mr. Fahad Faisal",
+        "Initial": "FF",
+        "EmployeeId": "710001697",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Fahad.html",
+        "Email": "fahad.cse@diu.edu.bd",
+        "Phone": "01712937997"
+    },
+    {
+        "Name": "Mr. Abdus Sattar",
+        "Initial": "MAS",
+        "EmployeeId": "710002096",
+        "Designation": "Assistant Professor",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sattar_cse.html",
+        "Email": "abdus.cse@diu.edu.bd",
+        "Phone": "01818392800"
+    },
+    {
+        "Name": "Md. Safiqul Islam",
+        "EmployeeId": "710000650",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/safiqul.html",
+        "Email": "safiqul@daffodilvarsity.edu.bd",
+        "Phone": "01749263072"
+    },
+    {
+        "Name": "Mr. Mohammad Nazmul Haque",
+        "EmployeeId": "710000439",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nazmul.html",
+        "Email": "nazmul@daffodilvarsity.edu.bd",
+        "Phone": "01713493112"
+    },
+    {
+        "Name": "Ms. Farah Sharmin",
+        "Initial": "FS",
+        "EmployeeId": "710000864",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/farah.html",
+        "Email": "farah@daffodilvarsity.edu.bd",
+        "Phone": "01715232346"
+    },
+    {
+        "Name": "Mr. Mohammed Arif Mazumder",
+        "EmployeeId": "710000955",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mazumder.html",
+        "Email": "arifmazumder@daffodilvarsity.edu.bd",
+        "Phone": "017839138444"
+    },
+    {
+        "Name": "Mr. Md. Sarwar Morshedul Haque",
+        "EmployeeId": "710000987",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/msarwar.html",
+        "Email": "smhaque@daffodilvarsity.edu.bd",
+        "Phone": "01687929255"
+    },
+    {
+        "Name": "Mr. Md. Mahmudul Hasan",
+        "EmployeeId": "710000749",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mhasan.html",
+        "Email": "mhasan@daffodilvarsity.edu.bd",
+        "Phone": "01723439343"
+    },
+    {
+        "Name": "Mr. Mohammad Jabed Morshed Chowdhury",
+        "EmployeeId": "710000866",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/jabed.html",
+        "Email": "morshed@daffodilvarsity.edu.bd",
+        "Phone": "01712147033"
+    },
+    {
+        "Name": "Ms. Mohsina Kawser",
+        "EmployeeId": "710001350",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mohsina-kawser.html",
+        "Email": "mohsina.cse@diu.edu.bd"
+    },
+    {
+        "Name": "Mr. A.K.M. Zaidi Satter",
+        "EmployeeId": "710000187",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/zaidi.html",
+        "Email": "zsatter@daffodilvarsity.edu.bd",
+        "Phone": "01759960853"
+    },
+    {
+        "Name": "Mr. A. B. M .Moniruzzaman",
+        "EmployeeId": "710001106",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/abmonir.html",
+        "Email": "monir.cse@daffodilvarsity.edu.bd",
+        "Phone": "01755509012"
+    },
+    {
+        "Name": "Moushumi Zaman Bonny",
+        "Initial": "MZB",
+        "EmployeeId": "710001390",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/bonny.html",
+        "Email": "bonny.cse@diu.edu.bd",
+        "Phone": "01923703097"
+    },
+    {
+        "Name": "Mr. Abdullah Al-Mamun",
+        "EmployeeId": "710001698",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Abdullah_cse.html",
+        "Email": "abdullah.cse@diu.edu.bd",
+        "Phone": "01881445828"
+    },
+    {
+        "Name": "Mr. Seraj Al Mahmud Mostafa",
+        "EmployeeId": "710001338",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mostafa.html",
+        "Email": "seraj.mostafa@diu.edu.bd",
+        "Phone": "01847140102"
+    },
+    {
+        "Name": "Ms. Most. Hasna Hena",
+        "Initial": "HH",
+        "EmployeeId": "710001450",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/hena.html",
+        "Email": "hena.cse@diu.edu.bd",
+        "Phone": "01719472885"
+    },
+    {
+        "Name": "Mr. Shah Md Tanvir Siddiquee",
+        "Initial": "SMTS",
+        "EmployeeId": "710001514",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shah-md-tanvir.html",
+        "Email": "tanvir.cse@diu.edu.bd",
+        "Phone": "01712560297"
+    },
+    {
+        "Name": "Mr. Md. Riazur Rahman",
+        "Initial": "RR",
+        "EmployeeId": "710000399",
+        "Designation": "Senior Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/riazur.html",
+        "Email": "riazur_rahman@daffodilvarsity.edu.bd",
+        "Phone": "01982076848"
+    },
+    {
+        "Name": "Mr. Md. Tanvir Rahman",
+        "EmployeeId": "710001428",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tanvir-rahman.html",
+        "Email": "trahman.cse@diu.edu.bd",
+        "Phone": "01834172219"
+    },
+    {
+        "Name": "Mr. Shaon Bhatta Shuvo",
+        "Initial": "SBS",
+        "EmployeeId": "710001517",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shaon.html",
+        "Email": "shaon.cse@diu.edu.bd",
+        "Phone": "01717950030"
+    },
+    {
+        "Name": "Mr. Md. Sazzadur Ahamed",
+        "Initial": "SZ",
+        "EmployeeId": "710001170",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sazzadur.html",
+        "Email": "sazzad.cse@diu.edu.bd",
+        "Phone": "01625983595"
+    },
+    {
+        "Name": "Mr. Raja Tariqul Hasan Tusher",
+        "Initial": "THT",
+        "EmployeeId": "710001287",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tusher.html",
+        "Email": "tusher.cse@diu.edu.bd",
+        "Phone": "01675193182"
+    },
+    {
+        "Name": "Mr. Saiful Islam",
+        "Initial": "SI",
+        "EmployeeId": "710001288",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/saiful-islam.html",
+        "Email": "saiful.cse@diu.edu.bd",
+        "Phone": "01989089279"
+    },
+    {
+        "Name": "Mr. Aniruddha Rakshit",
+        "Initial": "AR",
+        "EmployeeId": "710001625",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rakshit.html",
+        "Email": "aniruddha.cse@diu.edu.bd",
+        "Phone": "01830055234"
+    },
+    {
+        "Name": "Mr. Mohammad Monirul Islam",
+        "Initial": "MM",
+        "EmployeeId": "710000519",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/monirul.html",
+        "Email": "monirul@daffodilvarsity.edu.bd",
+        "Phone": "01811481649"
+    },
+    {
+        "Name": "Ms. Taslima Ferdaus Shuva",
+        "EmployeeId": "710001783",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shuva.html",
+        "Email": "shuva.cse@diu.edu.bd",
+        "Phone": "01817008852"
+    },
+    {
+        "Name": "Mr. Md. Reduanul Haque",
+        "EmployeeId": "710001627",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/reduanul.html",
+        "Email": "reduan.cse@diu.edu.bd",
+        "Phone": "01710571662"
+    },
+    {
+        "Name": "Mr. Ohidujjaman",
+        "EmployeeId": "710001743",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Ohidujjaman.html",
+        "Email": "jaman.cse@diu.edu.bd",
+        "Phone": "01703991743"
+    },
+    {
+        "Name": "Mr. Syed Ashiqur Rahman",
+        "EmployeeId": "710000447",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ashiq.html",
+        "Email": "ashiq797@daffodilvarsity.edu.bd",
+        "Phone": "01717421811"
+    },
+    {
+        "Name": "Mr. Shariful Islam",
+        "EmployeeId": "710000494",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sharif.html",
+        "Email": "shariful_phy@daffodilvarsity.edu.bd",
+        "Phone": "01911711571"
+    },
+    {
+        "Name": "Mr. Naeemul Hassan",
+        "EmployeeId": "710000563",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/naeemul.html",
+        "Email": "naffi@daffodilvarsity.edu.bd"
+    },
+    {
+        "Name": "Ms. Rashida Hasan",
+        "EmployeeId": "710000984",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rashida.html",
+        "Email": "rashida@daffodilvarsity.edu.bd",
+        "Phone": "01912308819"
+    },
+    {
+        "Name": "Ms. Samia Nawshin",
+        "Initial": "SN",
+        "EmployeeId": "710000985",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/samia.html",
+        "Email": "samia@daffodilvarsity.edu.bd",
+        "Phone": "01915638046"
+    },
+    {
+        "Name": "Mr. Sayed Nafiz Haider",
+        "EmployeeId": "710001056",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nafiz.html",
+        "Email": "nafiz.cse@daffodilvarsity.edu.bd",
+        "Phone": "01758632700"
+    },
+    {
+        "Name": "Mr. Mohammad Habibur Rahaman",
+        "EmployeeId": "710001107",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/habibur.html",
+        "Email": "habib.cse@daffodilvarsity.edu.bd",
+        "Phone": "01723710888"
+    },
+    {
+        "Name": "Mr. Kawsar Wazed Nafi",
+        "EmployeeId": "710001118",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/kawsar-wazed-nafi.html",
+        "Email": "nafi.cse@daffodilvarsity.edu.bd"
+    },
+    {
+        "Name": "Mr. Mohammad Tafiqur Rahman",
+        "EmployeeId": "710001152",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tafiqur.html",
+        "Email": "tafiq.cse@daffodilvarsity.edu.bd",
+        "Phone": "01847140063"
+    },
+    {
+        "Name": "Ms. Israt Ferdous",
+        "Initial": "IF",
+        "EmployeeId": "710001205",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/israt-ferdous.html",
+        "Email": "israt.cse@daffodilvarsity.edu.bd",
+        "Phone": "01732-675955"
+    },
+    {
+        "Name": "Ms. Tasmia Tasrin",
+        "Initial": "TT",
+        "EmployeeId": "710001291",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tasmia-tasrin.html",
+        "Email": "tasmia.cse@diu.edu.bd",
+        "Phone": "01631145874"
+    },
+    {
+        "Name": "Mr. Rasif Ajwad",
+        "EmployeeId": "710001315",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rasif-ajwad.html",
+        "Email": "rasif.cse@diu.edu.bd"
+    },
+    {
+        "Name": "Mr. Masud Rabbani",
+        "Initial": "MR",
+        "EmployeeId": "710001316",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/masud-rabbani.html",
+        "Email": "masud.cse@diu.edu.bd",
+        "Phone": "01923-887080"
+    },
+    {
+        "Name": "Mr. Mustakim Al Helal",
+        "EmployeeId": "710001319",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mustakim-al-helal.html",
+        "Email": "mustakimsunny.cse@diu.edu.bd",
+        "Phone": "01670900169"
+    },
+    {
+        "Name": "Mr. Ahmed Al Marouf",
+        "Initial": "AAM",
+        "EmployeeId": "710001320",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ahmed-al-marouf.html",
+        "Email": "marouf.cse@diu.edu.bd; ahmedalmarouf@gmail.com",
+        "Phone": "01911784448"
+    },
+    {
+        "Name": "Ms. Nasrin Akter",
+        "Initial": "NSA",
+        "EmployeeId": "710001169",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nasrin-akter.html",
+        "Email": "nasrin.cse@diu.edu.bd",
+        "Phone": "01725848325"
+    },
+    {
+        "Name": "Ms. Farhana Irin",
+        "Initial": "FI",
+        "EmployeeId": "710001429",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/farhana-irin.html",
+        "Email": "farhana.cse@diu.edu.bd",
+        "Phone": "01672660487"
+    },
+    {
+        "Name": "Ms. Zakia Zaman",
+        "Initial": "ZZ",
+        "EmployeeId": "710001430",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/zakia-zaman.html",
+        "Email": "zakia.cse@diu.edu.bd",
+        "Phone": "01732122175"
+    },
+    {
+        "Name": "Mr. Md. Al Maruf",
+        "Initial": "AAM",
+        "EmployeeId": "710001468",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/almaruf.html",
+        "Email": "maruf.cse@diu.edu.bd",
+        "Phone": "01745357578"
+    },
+    {
+        "Name": "Ms. Amena Khatun",
+        "EmployeeId": "710001512",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/amena.html",
+        "Email": "amena.cse@diu.edu.bd",
+        "Phone": "01744713669"
+    },
+    {
+        "Name": "Ms. Tansin Jahan",
+        "EmployeeId": "710001233",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tansin.html",
+        "Email": "tansin@daffodilvarsity.edu.bd",
+        "Phone": "01681676824"
+    },
+    {
+        "Name": "Mr. Shoeb Mohammad Shahriar",
+        "EmployeeId": "710001516",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shoeb.html",
+        "Email": "shoeb.cse@diu.edu.bd",
+        "Phone": "01917256784"
+    },
+    {
+        "Name": "Ms. Afsara Tasneem Misha",
+        "Initial": "ATM",
+        "EmployeeId": "710001518",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/afsara.html",
+        "Email": "misha.cse@diu.edu.bd",
+        "Phone": "01920905947"
+    },
+    {
+        "Name": "Mr. Md. Ashiqur Rahman",
+        "EmployeeId": "710001519",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ashiqur.html",
+        "Email": "ashiqur.cse@diu.edu.bd",
+        "Phone": "01676522609"
+    },
+    {
+        "Name": "Ms. Moumita Tabassum",
+        "EmployeeId": "710001553",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tabassum.html",
+        "Email": "moumita.cse@diu.edu.bd",
+        "Phone": "01765709011"
+    },
+    {
+        "Name": "Rezwana Sultana",
+        "Initial": "RS",
+        "EmployeeId": "710001449",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rezwana.html",
+        "Email": "sultana.cse@diu.edu.bd",
+        "Phone": "01823716954"
+    },
+    {
+        "Name": "Mr. Nasir Uddin Eisty",
+        "EmployeeId": "710001432",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/eisty.html",
+        "Email": "eisty.cse@diu.edu.bd",
+        "Phone": "01737471100"
+    },
+    {
+        "Name": "Ms. Nadira Anjum Nipa",
+        "EmployeeId": "710001473",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nadira.html",
+        "Email": "nadira.cse@diu.edu.bd",
+        "Phone": "01926054787"
+    },
+    {
+        "Name": "Rubaiya Hafiz",
+        "Initial": "RUH",
+        "EmployeeId": "710001433",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rubaiya.html",
+        "Email": "rubaiya.cse@diu.edu.bd",
+        "Phone": "01914194973"
+    },
+    {
+        "Name": "Ms. Mahbuba Afrin",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/afrin.html",
+        "Email": "afrin.cse@diu.edu.bd"
+    },
+    {
+        "Name": "Ms. Refath Ara Hossain",
+        "Initial": "RAH",
+        "EmployeeId": "710001564",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/refath.html",
+        "Email": "refath.cse@diu.edu.bd",
+        "Phone": "01712147014"
+    },
+    {
+        "Name": "Nusrat Jahan",
+        "Initial": "NJ",
+        "EmployeeId": "710001446",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nusratjahan.html",
+        "Email": "nusratjahan.cse@diu.edu.bd",
+        "Phone": "01716916153"
+    },
+    {
+        "Name": "Mr. Sadat Shahriar",
+        "EmployeeId": "710001623",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sadat.html",
+        "Email": "sadat.cse@diu.edu.bd",
+        "Phone": "01674514252 , 01797074731"
+    },
+    {
+        "Name": "Mr. Md. Nazmul Hoq",
+        "EmployeeId": "710001626",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nazmul-hoq.html",
+        "Email": "salim.cse@diu.edu.bd",
+        "Phone": "01918332093,01680417371"
+    },
+    {
+        "Name": "Ms. Nayeema Sultana",
+        "Initial": "NS",
+        "EmployeeId": "710001628",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nayeema.html",
+        "Email": "nayeema.cse@diu.edu.bd",
+        "Phone": "01723209558"
+    },
+    {
+        "Name": "Ms. Rabeya Akhter",
+        "EmployeeId": "710001630",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rabeya-akhter.html",
+        "Email": "rabeya.cse@diu.edu.bd",
+        "Phone": "01675653680"
+    },
+    {
+        "Name": "Mr. Md. Azizul Hakim",
+        "Initial": "MAH",
+        "EmployeeId": "710001632",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/azizul.html",
+        "Email": "azizul.cse@diu.edu.bd",
+        "Phone": "01945735307"
+    },
+    {
+        "Name": "Ms. Mahbuba Maliha Mourin",
+        "Initial": "MMM",
+        "EmployeeId": "710001665",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mourin.html",
+        "Email": "maliha.cse@diu.edu.bd",
+        "Phone": "01790477525"
+    },
+    {
+        "Name": "Ms. Amatul Bushra Akhi",
+        "EmployeeId": "710001668",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/amatul.html",
+        "Email": "akhi.cse@diu.edu.bd",
+        "Phone": "01676436075"
+    },
+    {
+        "Name": "Mr. Muhammad Muhaiminul Islam",
+        "EmployeeId": "710001701",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Muhaiminul.html",
+        "Email": "muhaiminul.cse@diu.edu.bd",
+        "Phone": "01737098387"
+    },
+    {
+        "Name": "Ms. Tasmin Chowdhury",
+        "EmployeeId": "710001702",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Tasmin_cse.html",
+        "Email": "tasmim.cse@diu.edu.bd"
+    },
+    {
+        "Name": "Ms. Bashira Akter Anima",
+        "EmployeeId": "710001706",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Anima.html",
+        "Email": "bashira.cse@diu.edu.bd",
+        "Phone": "01815930720"
+    },
+    {
+        "Name": "Ms. Tasnim Ahmed",
+        "Initial": "TA",
+        "EmployeeId": "710001707",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Tasnim-Ahmed.html",
+        "Email": "tasnim.cse@diu.edu.bd",
+        "Phone": "01703492004"
+    },
+    {
+        "Name": "Ms. Umme Hafsa Billah",
+        "Initial": "UH",
+        "EmployeeId": "710001708",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Hafsa.html",
+        "Email": "umme.cse@diu.edu.bd",
+        "Phone": "01623227524"
+    },
+    {
+        "Name": "Ms. Fahmida Afrin",
+        "Initial": "FA",
+        "EmployeeId": "710001709",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Fahmida-Afrin.html",
+        "Email": "fahmida.cse@diu.edu.bd",
+        "Phone": "01706068157"
+    },
+    {
+        "Name": "Ms. Tania Khatun",
+        "EmployeeId": "710001710",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Tania-Khatun.html",
+        "Email": "tania.cse@diu.edu.bd",
+        "Phone": "01685069742"
+    },
+    {
+        "Name": "Mr. Naziour Rahaman",
+        "Initial": "NR",
+        "EmployeeId": "710001733",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Naziour.html",
+        "Email": "naziour.cse@diu.edu.bd",
+        "Phone": "01981224688, 01521107045"
+    },
+    {
+        "Name": "Mr. Md. Rayhan Amin",
+        "Initial": "MRA",
+        "EmployeeId": "710001740",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rayhan-amin.html",
+        "Email": "rayhan.cse@diu.edu.bd",
+        "Phone": "01764752244"
+    },
+    {
+        "Name": "Mr. Soumik Das Bibon",
+        "Initial": "SDB",
+        "EmployeeId": "710001777",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/Soumik.html",
+        "Email": "Soumik.cse@diu.edu.bd",
+        "Phone": "01676993067"
+    },
+    {
+        "Name": "Mr. Jesan Ahammed Ovi",
+        "EmployeeId": "710001780",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ovi.html",
+        "Email": "ovi.cse@diu.edu.bd"
+    },
+    {
+        "Name": "Mr. Subroto Nag Pinku",
+        "Initial": "SNP",
+        "EmployeeId": "710001781",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/pinku.html",
+        "Email": "pinku.cse@diu.edu.bd",
+        "Phone": "01714365608"
+    },
+    {
+        "Name": "Mr. C M Khaled Saifullah",
+        "EmployeeId": "710001806",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/CM-khaled.html",
+        "Email": "saifullah.cse@diu.edu.bd",
+        "Phone": "01672410009"
+    },
+    {
+        "Name": "Mr. A. S. M. Farhan Al Haque",
+        "Initial": "ASMFH",
+        "EmployeeId": "710001816",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/asmfarhan.html",
+        "Email": "farhan.cse@diu.edu.bd",
+        "Phone": "01776020334"
+    },
+    {
+        "Name": "Mr. Nafis Neehal",
+        "Initial": "NN",
+        "EmployeeId": "710001888",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/neehal.html",
+        "Email": "nafis.cse@diu.edu.bd",
+        "Phone": "01521220782"
+    },
+    {
+        "Name": "Mr. Md. Swakshar Mahmud",
+        "Initial": "SM",
+        "EmployeeId": "710001890",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/swakshar.html",
+        "Email": "swakshar.cse@diu.edu.bd",
+        "Phone": "01718679813"
+    },
+    {
+        "Name": "Ms. Umama Dewan",
+        "Initial": "UD",
+        "EmployeeId": "710001892",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/umama.html",
+        "Email": "umama.cse@diu.edu.bd",
+        "Phone": "01680653235"
+    },
+    {
+        "Name": "Mr. Md.Al-Amin Hossain",
+        "Initial": "AAH",
+        "EmployeeId": "710001895",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/al-amin.html",
+        "Email": "amin.cse@diu.edu.bd",
+        "Phone": "01914219285"
+    },
+    {
+        "Name": "Mr. Dewan Mamun Raza",
+        "Initial": "DMR",
+        "EmployeeId": "710001896",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/raza.html",
+        "Email": "dewan.cse@diu.edu.bd",
+        "Phone": "01730967205"
+    },
+    {
+        "Name": "Mr. Bulbul Ahammad",
+        "EmployeeId": "710001897",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/bulbul.html",
+        "Email": "bulbul.cse@diu.edu.bd",
+        "Phone": "01791132305"
+    },
+    {
+        "Name": "Ms. Ananta chowdhury",
+        "Initial": "AC",
+        "EmployeeId": "710001920",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ananta.html",
+        "Email": "ananta.cse@diu.edu.bd"
+    },
+    {
+        "Name": "Mr. Ashraful Islam",
+        "Initial": "AI",
+        "EmployeeId": "710001930",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ashraful-cse.html",
+        "Email": "ashraful.cse@diu.edu.bd",
+        "Phone": "01557746625"
+    },
+    {
+        "Name": "Ms. Farzana Akter",
+        "EmployeeId": "710001960",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/farzana-cse.html",
+        "Email": "farzana.cse@diu.edu.bd",
+        "Phone": "01741582031"
+    },
+    {
+        "Name": "Mr. Md. Jueal Mia",
+        "Initial": "MJM",
+        "EmployeeId": "710001961",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/jueal.html",
+        "Email": "jueal.cse@diu.edu.bd",
+        "Phone": "01911142859"
+    },
+    {
+        "Name": "Mr. Dhiman Goswami",
+        "Initial": "DG",
+        "EmployeeId": "710001962",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/dhiman.html",
+        "Email": "dhiman.cse@diu.edu.bd",
+        "Phone": "01940838818"
+    },
+    {
+        "Name": "Ms. Linta Islam",
+        "EmployeeId": "710001963",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/linta.html",
+        "Email": "linta.cse@diu.edu.bd",
+        "Phone": "01670076417"
+    },
+    {
+        "Name": "Ms. Syeda Tanjila Atik",
+        "Initial": "STA",
+        "EmployeeId": "710001964",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tanjila.html",
+        "Email": "Syeda.cse@diu.edu.bd",
+        "Phone": "01988284658"
+    },
+    {
+        "Name": "Ms. Shadaab Kawnain Bashir",
+        "Initial": "SKB",
+        "EmployeeId": "710001965",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/bashir.html",
+        "Email": "shadaab.cse@diu.edu.bd",
+        "Phone": "01754577937"
+    },
+    {
+        "Name": "Ms. Fatema Tuj Johora",
+        "EmployeeId": "710001966",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/johora.html",
+        "Email": "fatema.cse@diu.edu.bd",
+        "Phone": "01761613350"
+    },
+    {
+        "Name": "Mr. Md. Abbas Ali Khan",
+        "Initial": "AAK",
+        "EmployeeId": "710001967",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/abbas.html",
+        "Email": "abbas.cse@diu.edu.bd",
+        "Phone": "01924196829"
+    },
+    {
+        "Name": "Mr. Ahmed Fahmin",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/fahmin.html"
+    },
+    {
+        "Name": "Mr. Eshtiak Ahmed",
+        "Initial": "EA",
+        "EmployeeId": "710002006",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/eshtiak.html",
+        "Email": "eshtiak.cse@diu.edu.bd",
+        "Phone": "01955483532"
+    },
+    {
+        "Name": "Ms. Zerin Nasrin Tumpa",
+        "Initial": "ZNT",
+        "EmployeeId": "710001968",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/zerin.html",
+        "Email": "zerintumpa.cse@diu.edu.bd",
+        "Phone": "01835531409"
+    },
+    {
+        "Name": "Ms. Sejuti Banik",
+        "Initial": "SB",
+        "EmployeeId": "710001969",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sejuti.html",
+        "Email": "sejuti.cse@diu.edu.bd",
+        "Phone": "01952860428"
+    },
+    {
+        "Name": "Mr. Mohammad Jahangir Alam",
+        "Initial": "MJA",
+        "EmployeeId": "710001970",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/jahangir-cse.html",
+        "Email": "jahangir.cse@diu.edu.bd",
+        "Phone": "01741378269\r\n"
+    },
+    {
+        "Name": "Ms. Tasfia Anika Bushra",
+        "EmployeeId": "710001971",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/anika.html",
+        "Email": "anika.cse@diu.edu.bd",
+        "Phone": "01686595548"
+    },
+    {
+        "Name": "Mr. Md. Firoz Hasan",
+        "Initial": "HF",
+        "EmployeeId": "710001985",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/firoz.html",
+        "Email": "firoz.cse@diu.edu.bd",
+        "Phone": "8.8171E+12"
+    },
+    {
+        "Name": "Mr. Imtiaz Karim",
+        "Initial": "IK",
+        "EmployeeId": "710002087",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/imtiaz_cse.html",
+        "Email": "imtiazkarim.cse@diu.edu.bd",
+        "Phone": "01912380894"
+    },
+    {
+        "Name": "Mr. Enamul Karim",
+        "Initial": "EKM",
+        "EmployeeId": "710002089",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/enamul.html",
+        "Email": "enamul.cse@diu.edu.bd",
+        "Phone": "01705565936"
+    },
+    {
+        "Name": "Mr. Md. Aynul Hasan Nahid",
+        "Initial": "AHN",
+        "EmployeeId": "710002090",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/aynul.html",
+        "Email": "aynul.cse@diu.edu.bd",
+        "Phone": "8.8167E+12"
+    },
+    {
+        "Name": "Mr. Md. Mahade Hasan",
+        "Initial": "MMH",
+        "EmployeeId": "710002091",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mahade.html",
+        "Email": "mahade.cse@diu.edu.bd",
+        "Phone": "01671648062\n"
+    },
+    {
+        "Name": "Ms. Annita Tahsin Priyoti",
+        "Initial": "ATP",
+        "EmployeeId": "710002092",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/priyoti.html",
+        "Email": "annita.cse@diu.edu.bd",
+        "Phone": "01521217002\r\n"
+    },
+    {
+        "Name": "Mr. Fakhrul Islam",
+        "Initial": "FI-C",
+        "EmployeeId": "710002093",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/fakhrul_cse.html",
+        "Email": "fakhrul.cse@diu.edu.bd",
+        "Phone": "01820256836"
+    },
+    {
+        "Name": "Ms. Arnisha Akhter",
+        "Initial": "AAR",
+        "EmployeeId": "710002094",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/arnisha.html",
+        "Email": "arnisha.cse@diu.edu.bd",
+        "Phone": "8.8152E+12"
+    },
+    {
+        "Name": "Ms. Farhana Sharmin",
+        "Initial": "FSN",
+        "EmployeeId": "710002095",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/farhana_cse.html",
+        "Email": "farhanasharmin.cse@diu.edu.bd",
+        "Phone": "01624-659300"
+    },
+    {
+        "Name": "Mr. Sheikh Abujar",
+        "Initial": "SAB",
+        "EmployeeId": "710002110",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/abujar.html",
+        "Email": "sheikh.cse@diu.edu.bd",
+        "Phone": "8801673566566"
+    },
+    {
+        "Name": "Mr. Md. Mahfujur Rahman",
+        "EmployeeId": "710002119",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/mahfuj.html",
+        "Email": "mahfujur.cse@diu.edu.bd",
+        "Phone": "8.8183E+12"
+    },
+    {
+        "Name": "Mr. Majidur Rahman",
+        "Initial": "MRN",
+        "EmployeeId": "710002121",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/majidur.html",
+        "Email": "majidur.cse@diu.edu.bd",
+        "Phone": "8.8198E+12"
+    },
+    {
+        "Name": "Ms. Shayla Sharmin",
+        "EmployeeId": "710002116",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shayla-cse.html",
+        "Email": "shayla.cse@diu.edu.bd",
+        "Phone": "01787689999"
+    },
+    {
+        "Name": "Ms. Nishat Sultana",
+        "Initial": "NIS",
+        "EmployeeId": "710002097",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nishat_cse.html",
+        "Email": "nishat.cse@diu.edu.bd",
+        "Phone": "01944634564"
+    },
+    {
+        "Name": "Md. Montasir Bin Shams",
+        "Initial": "MBS",
+        "EmployeeId": "710002098",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/montasir.html",
+        "Email": "montasir.cse@diu.edu.bd",
+        "Phone": "01718268856"
+    },
+    {
+        "Name": "Mr. Md. Dilshadur Rahman",
+        "Initial": "DR",
+        "EmployeeId": "710002099",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/dilshadur.html",
+        "Email": "dilshadur.cse@diu.edu.bd",
+        "Phone": "01521455234"
+    },
+    {
+        "Name": "Ms. Itisha Nowrin",
+        "EmployeeId": "710002100",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/itisha.html",
+        "Email": "itisha.cse@diu.edu.bd",
+        "Phone": "01686758000"
+    },
+    {
+        "Name": "Ms. Afia Anjum",
+        "Initial": "AA-C",
+        "EmployeeId": "710002101",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/afia.html",
+        "Email": "afia.cse@diu.edu.bd",
+        "Phone": "01742099991"
+    },
+    {
+        "Name": "Ms. Warda Ruheen Bristi",
+        "Initial": "WRB",
+        "EmployeeId": "710002102",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ruheen.html",
+        "Email": "ruheen.cse@diu.edu.bd",
+        "Phone": "01675654816"
+    },
+    {
+        "Name": "Ms. Lamia Rukhsara",
+        "Initial": "LR",
+        "EmployeeId": "710002103",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/lamia_cse.html",
+        "Email": "lamia.cse@diu.edu.bd",
+        "Phone": "01819652162"
+    },
+    {
+        "Name": "Mr. Abu Khalid Mubashshir Mahmud",
+        "Initial": "AKMM",
+        "EmployeeId": "710002104",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/khalid.html",
+        "Email": "khalid.cse@diu.edu.bd",
+        "Phone": "01878653709"
+    },
+    {
+        "Name": "Mr. Mohammad Masudur Rahman",
+        "EmployeeId": "710002105",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/masudur.html",
+        "Email": "masudur.cse@diu.edu.bd",
+        "Phone": "01682 721351"
+    },
+    {
+        "Name": "Ms. Antara Mahmud",
+        "Initial": "AM",
+        "EmployeeId": "710002242",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/antara_cse.html",
+        "Email": "antara.cse@diu.edu.bd",
+        "Phone": "01926202136"
+    },
+    {
+        "Name": "Mr. Nur Imtiazul Haque",
+        "Initial": "ILH",
+        "EmployeeId": "710002243",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/nurimtiaz.html",
+        "Email": "imtiazul.cse@diu.edu.bd",
+        "Phone": "01956435624"
+    },
+    {
+        "Name": "Mr. Ruhul Amin Linkon",
+        "EmployeeId": "710002252",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/linkon.html",
+        "Email": "ruhul.cse@diu.edu.bd",
+        "Phone": "01983267385"
+    },
+    {
+        "Name": "Mr. Ismail Hossain",
+        "EmployeeId": "710002253",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/ismail-cse.html"
+    },
+    {
+        "Name": "Mr. Dipon Saha",
+        "EmployeeId": "710002254",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/dipon.html"
+    },
+    {
+        "Name": "Ms. Afsana Khan",
+        "EmployeeId": "710002255",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/afsana-cse.html",
+        "Email": "afsana.cse@diu.edu.bd",
+        "Phone": "01622652274"
+    },
+    {
+        "Name": "Mst. Eshita Khatun",
+        "Initial": "EK",
+        "EmployeeId": "710002256",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/eshita.html",
+        "Email": "eshita.cse@diu.edu.bd",
+        "Phone": "01750307888"
+    },
+    {
+        "Name": "Mr. Saif Mahmud Parvez",
+        "EmployeeId": "710002257",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/saif.html",
+        "Email": "saif.cse@diu.edu.bd",
+        "Phone": "01765455133"
+    },
+    {
+        "Name": "Mr. Shahidullah Kaiser",
+        "Initial": "SHK",
+        "EmployeeId": "710002258",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shahidullah.html",
+        "Email": "shahidullah.cse@diu.edu.bd",
+        "Phone": "01830478671"
+    },
+    {
+        "Name": "Ms. Fariha Tabassum Islam",
+        "EmployeeId": "710002338",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/fariha-cse.html"
+    },
+    {
+        "Name": "Ms. Tapasy Rabeya",
+        "EmployeeId": "710002339",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tapasy.html",
+        "Email": "tapasyrabeya.cse@diu.edu.bd",
+        "Phone": "01997045708"
+    },
+    {
+        "Name": "Mr. Arman Ashkari",
+        "EmployeeId": "710002340",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/arman-cse.html",
+        "Email": "arman.cse@diu.edu.bd",
+        "Phone": "01675017802"
+    },
+    {
+        "Name": "Mr. Tajim Md. Niamat Ullah Akhund",
+        "EmployeeId": "710002341",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/tajim.html",
+        "Email": "tajim.cse@diu.edu.bd",
+        "Phone": "01781076199"
+    },
+    {
+        "Name": "Md. Sabab Zulfiker",
+        "EmployeeId": "710002342",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sabab.html",
+        "Email": "sabab.cse@diu.edu.bd",
+        "Phone": "01716033198"
+    },
+    {
+        "Name": "Mr. S.M. Shahzad Hossain",
+        "EmployeeId": "710002343",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shahzad.html",
+        "Email": "shahzad.cse@diu.edu.bd",
+        "Phone": "01744720143"
+    },
+    {
+        "Name": "Mr. G.m. Rasiqul Islam Rasiq",
+        "EmployeeId": "710002344",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/rasiq.html",
+        "Email": "rasiq.cse@diu.edu.bd",
+        "Phone": "01521216807"
+    },
+    {
+        "Name": "Ms. Zarintasnim Shejuti",
+        "EmployeeId": "710002345",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/shejuti.html",
+        "Email": "zarintasnim.cse@diu.edu.bd",
+        "Phone": "01622672977"
+    },
+    {
+        "Name": "Ms. Israt Jahan",
+        "EmployeeId": "710002346",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/israt-cse.html",
+        "Email": "isratjahan.cse@diu.edu.bd",
+        "Phone": "01794362263"
+    },
+    {
+        "Name": "Md. Akib Zabed Khan",
+        "EmployeeId": "710002347",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/zabed.html",
+        "Email": "akib.cse@diu.edu.bd",
+        "Phone": "01780273859"
+    },
+    {
+        "Name": "Mr. Amit Chakraborty",
+        "Initial": "ACC",
+        "EmployeeId": "710002348",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/amit-cse.html",
+        "Email": "amit.cse@diu.edu.bd",
+        "Phone": "01718384336, 01676567100"
+    },
+    {
+        "Name": "Ms. Sharmin Akter",
+        "EmployeeId": "710002349",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sharmin-cse.html",
+        "Email": "sharminakter.cse@diu.edu.bd",
+        "Phone": "01798625502"
+    },
+    {
+        "Name": "Ms. Hasin Rehana",
+        "EmployeeId": "710002350",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/hasin.html",
+        "Email": "hasin.cse@diu.edu.bd",
+        "Phone": "01787626636"
+    },
+    {
+        "Name": "Mr. Md. Sohag Hossain",
+        "EmployeeId": "710002389",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/sohag.html",
+        "Email": "sohag.cse@diu.edu.bd",
+        "Phone": "01737944478"
+    },
+    {
+        "Name": "Ms. Alabi Mehzabin Anisha",
+        "EmployeeId": "710002380",
+        "Designation": "Lecturer",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/cse/anisha.html",
+        "Phone": "01555021401, 01795364693"
+    },
+    {
+        "Name": "AKM Shahariar Azad Rabby",
+        "Initial": "SAY",
+        "Email": "shahariarrabby@gmail.com",
+        "Phone": "01521488748"
+    },
+    {
+        "Name": "Dr. Bimal Chandra Das",
+        "Initial": "BCD",
+        "Designation": "Assistant Professor"
+    },
+    {
+        "Name": "Dr.Md. Hasanuzzaman",
+        "Initial": "MHZ",
+        "Designation": "Professor, DU",
+        "Email": "drfokhray@daffodilvarsity.edu.bd",
+        "Phone": "01820054456"
+    },
+    {
+        "Name": "Dr. Monzur Morshed",
+        "Initial": "DMM",
+        "Designation": "Professor, DU",
+        "Email": "monjur.morshed@diu.edu.bd",
+        "Phone": "01712046474"
+    },
+    {
+        "Name": "Ms. Masuma Parvin",
+        "Initial": "MPL",
+        "Designation": "Senior Lecturer",
+        "Phone": "01716217371"
+    },
+    {
+        "Name": "Protima Dash",
+        "Initial": "PD",
+        "Designation": "Lecturer",
+        "Phone": "01716788108"
+    },
+    {
+        "Name": "Sanjida Tasnim",
+        "Initial": "ST",
+        "Designation": "Lecturer"
+    },
+    {
+        "Name": "Md. Firoj Hasan",
+        "Initial": "FH",
+        "Designation": "Lecturer",
+        "Email": "firoz.cse@diu.edu.bd",
+        "Phone": "01705726026"
+    },
+    {
+        "Name": "S. M. Mazharul Hoque Chowdhury",
+        "Initial": "MHC"
+    },
+    {
+        "Name": "Saba Fatema",
+        "Initial": "SF",
+        "Designation": "Senior Lecturer",
+        "Phone": "01716 432597"
+    },
+    {
+        "Name": "Dr. Md. Kamrul Hossain",
+        "Initial": "MKH",
+        "Designation": "Assistant Professor",
+        "Email": "kamrul.ged@diu.edu.bd",
+        "Phone": "01915641745"
+    },
+    {
+        "Name": "Md. Imtiaz Hossain",
+        "Initial": "MIH",
+        "Designation": "Lecturer",
+        "Email": "imtiaz.cse@diu.edu.bd",
+        "Phone": "01746802202"
+    },
+    {
+        "Name": "Mostak Ahmad",
+        "Initial": "MKA"
+    },
+    {
+        "Name": "Mr. Feroz Mahmud",
+        "Initial": "FM",
+        "Email": "ferozmahmud@hotmail.com"
+    },
+    {
+        "Name": "Mosammat Arifa Akter",
+        "Initial": "MAA",
+        "Designation": "Senior Lecturer",
+        "Phone": "01914374393"
+    },
+    {
+        "Name": "Mili Das Gupta",
+        "Initial": "MDG",
+        "Designation": "Lecturer",
+        "Phone": "01536199412"
+    },
+    {
+        "Name": "Eng. Mosharraf Hossain Khan",
+        "Initial": "MHK",
+        "Designation": "Senior Lecturer",
+        "Email": "mosharraf.cse@diu.edu.bd",
+        "Phone": "01923240000"
+    },
+    {
+        "Name": "Mr. Shuvo Das",
+        "Initial": "SD",
+        "Designation": "Lecturer",
+        "Email": "shuvodas.cse@diu.edu.bd",
+        "Phone": "01990424784"
+    },
+    {
+        "Name": "Mohammad Salek Parvez",
+        "Initial": "SP",
+        "Designation": "Assistant Professor",
+        "Phone": "01552327706"
+    },
+    {
+        "Name": "Dr. Md. Fokhray Hossain",
+        "Initial": "MFH",
+        "Designation": "Professor, DIU",
+        "Email": "drfokhray@daffodilvarsity.edu.bd",
+        "Phone": "01713493250"
+    },
+    {
+        "Name": "Dr. Md. Jashim Uddin",
+        "Initial": "MJU",
+        "Designation": "Assistant Professor",
+        "Phone": "01772532809"
+    },
+    {
+        "Name": "Syeda Maria Rahman",
+        "Initial": "SMR",
+        "Designation": "Lecturer",
+        "Email": "maria.bba@diu.edu.bd",
+        "Phone": "01681641830"
+    },
+    {
+        "Name": "Mr. S. M. Safayet Ullah",
+        "Initial": "SMS",
+        "Designation": "Lecturer",
+        "Email": "safayet.ns@diu.edu.bd",
+        "Phone": "01717497562"
+    },
+    {
+        "Name": "Tajmary Mahfuz",
+        "Initial": "TM",
+        "Designation": "Assistant Professor",
+        "Email": "tajmary.grd@daffodilvarsity.edu.bd",
+        "Phone": "01937656433"
+    },
+    {
+        "Name": "Mr. Md. Mahmudur Rahman",
+        "Initial": "MMRN",
+        "Designation": "Adjunct Faculty",
+        "Email": "mahmud.cse@diu.edu.bd",
+        "Phone": "01816340614"
+    },
+    {
+        "Name": "Mushfiqur Rahman",
+        "Initial": "MUR",
+        "Email": "mushfiqur.cse@diu.edu.bd",
+        "Phone": "01714218217"
+    },
+    {
+        "Name": "Tanzina Afroz Rimi",
+        "Initial": "TAR",
+        "Email": "tanzina316@gmail.com",
+        "Phone": "01521202624"
+    },
+    {
+        "Name": "Ms. Sunjida Khan",
+        "Initial": "SK",
+        "EmployeeId": "710001508",
+        "Designation": "Lecturer (Senior Scale)",
+        "Webpage": "http://faculty.daffodilvarsity.edu.bd/profile/bba/sunjida.html",
+        "Email": "sunjida.bba@diu.edu.bd",
+        "Phone": "01732071920"
+    },
+    {
+        "Name": "Mir KaosarAhamed",
+        "Initial": "MKA",
+        "EmployeeId": "710001722",
+        "Designation": "Senior Lecturer in Mathematics",
+        "Email": "kaosar.ged@diu.edu.bd",
+        "Phone": "01716332678"
+    },
+    {
+        "Name": "Md. Mehedi Hasan",
+        "Initial": "MH",
+        "EmployeeId": "710001720",
+        "Designation": "Senior Lecturer in Mathematics",
+        "Email": "mehedi.ged@diu.edu.bd",
+        "Phone": "01517037691"
+    },
+    {
+        "Name": "Md. Arifuzzaman",
+        "EmployeeId": "7100001113",
+        "Designation": "Senior Lecturer in Mathematics",
+        "Email": "zaman.ged@daffodilvarsity.edu.bd",
+        "Phone": "01754539795"
+    },
+    {
+        "Name": "Md. Mosfiqur Rahman",
+        "Initial": "MMRM",
+        "EmployeeId": "710001261",
+        "Designation": "Senior Lecturer in Mathematics",
+        "Email": "mosfiqur.ged@diu.edu.bd",
+        "Phone": "01719795316"
+    },
+    {
+        "Name": "Mr. Mohammad Abdul Halim",
+        "Initial": "AH",
+        "EmployeeId": "710001439",
+        "Designation": "Senoir Lecturer in Mathematics",
+        "Email": "halim.ged@diu.edu.bd",
+        "Phone": "01770425705"
+    },
+    {
+        "Name": "Shahrear Khan Rasel",
+        "Initial": "SKR",
+        "EmployeeId": "710001474",
+        "Designation": "Senoir Lecturer in Mathematics",
+        "Email": "shahrear.ged@diu.edu.bd",
+        "Phone": "01919453919"
+    },
+    {
+        "Name": "Mr. Milon",
+        "EmployeeId": "750000119",
+        "Email": "milon.ged@diu.edu.bd"
+    },
+    {
+        "Name": "Mr. Mahfujul Islam",
+        "EmployeeId": "710001978",
+        "Email": "mahfujul.ged@diu.edu.bd"
+    },
+    {
+        "Name": "Mr. Shalauddin",
+        "EmployeeId": "710001263",
+        "Email": "aheadged@daffodilvarsity.edu.bd"
+    }
+]
