@@ -1,5 +1,5 @@
 <template>
-    <div class="EmptyBySlot pb-2">
+    <div class="EmptyBySlot pb-2" v-bind:class="{'light-colors':lightTheme}">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 p-1 pl-2">
@@ -74,39 +74,50 @@ export default {
         return{
 
             /** Booleans */
-
-            /** Objects */
-
-            /** Arrays */
-
-            /** Strings */
+            lightTheme:false
         }
     },
     created(){
-
+        this.FetchTheme();
     },
     methods:{
-
-    },
-    mounted(){
-
-    },
-    computed:{
-
+        FixTheme(x) {
+            this.lightTheme = x;
+            localStorage.setItem("Theme", x);
+        },
+        FetchTheme() {
+            if (localStorage.getItem("Theme") !== undefined) {
+                if (localStorage.getItem("Theme") === "true") {
+                    this.FixTheme(true)}else {this.FixTheme(false)}}
+            else{this.FixTheme(false);}
+        }
     }
 }
 </script>
 <style lang="scss" scoped>
-    .EmptyBySlot{
-        height: 100%;
-        overflow: auto;
-        box-sizing: border-box;
+.EmptyBySlot{
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.list-group-item.active{
+    background-color: #009688;
+    border-color: #009688;
+}
+.list-group-item{
+    background-color: #191919;
+}
+
+.light-colors{
+    .list-group-item{
+        background-color: white;
+        color: #313131
     }
     .list-group-item.active{
+        color: white ;
         background-color: #009688;
         border-color: #009688;
     }
-    .list-group-item{
-        background-color: #191919;
-    }
+}
+
 </style>

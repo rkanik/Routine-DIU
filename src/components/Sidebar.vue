@@ -19,10 +19,9 @@
                 <li v-bind:class="{active:active=='Student'}" @click="onSidebarItemSelected('Student')">{{sidebarListItems[0]}}</li>
                 <li v-bind:class="{active:active=='Teacher'}" @click="onSidebarItemSelected('Teacher')">Teacher's Routine</li>
                 <li v-bind:class="{active:active=='EmptyRoom'}" @click="onSidebarItemSelected('EmptyRoom')">Empty Rooms</li>
-                <li v-bind:class="{active:active=='SeatPlan'}" @click="onSidebarItemSelected('SeatPlan')">Seat Plans</li>
+                <!-- <li v-bind:class="{active:active=='SeatPlan'}" @click="onSidebarItemSelected('SeatPlan')">Seat Plans</li> -->
                 <hr>
                 <li v-bind:class="{active:active=='Settings'}" @click="onSidebarItemSelected('Settings')">Settings</li>
-                <li v-bind:class="{active:active=='About'}" @click="onSidebarItemSelected('About')">About</li>
             </ul>
         </div>
         <div class="box-note text-center">

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" v-bind:class="{'light-colors':lightTheme}">
     <Sidebar/>
     <div class="hwr" v-bind:class="{'bg-li-0':lightTheme}">
       <Header/>
@@ -29,7 +29,7 @@ import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import Student from "../components/Student";
 import Teacher from "../components/Teacher";
-import EmptyRoom from "../components/EmptyRoom";
+import EmptyRoom from "../components/EmptyRoom/EmptyRoom";
 import Settings from "../components/Settings";
 import Loader1 from "../components/subs/Loader1";
 
@@ -40,18 +40,9 @@ export default {
       tabActive: "Student",
       showLoading: true,
       lightTheme: false,
-      deviceIp: ""
     };
   },
-  components: {
-    Sidebar,
-    Header,
-    Student,
-    Teacher,
-    Settings,
-    Loader1,
-    EmptyRoom
-  },
+  components: {Sidebar,Header,Student,Teacher,Settings,Loader1,EmptyRoom},
   created() {
     /** Fetch Theme **/
     this.FetchTheme();
@@ -60,21 +51,11 @@ export default {
     });
 
     /* SWITCHING BEETWEEN SIDEBAR TABS */
-    bus.$on("Student", x => {
-      this.tabActive = x;
-    });
-    bus.$on("Teacher", x => {
-      this.tabActive = x;
-    });
-    bus.$on("EmptyRoom", x => {
-      this.tabActive = x;
-    });
-    bus.$on("Settings", x => {
-      this.tabActive = x;
-    });
-    bus.$on("SigninStudent", x => {
-      this.tabActive = "Student";
-    });
+    bus.$on("Student", x => {this.tabActive = x})
+    bus.$on("Teacher", x => {this.tabActive = x})
+    bus.$on("EmptyRoom", x => {this.tabActive = x})
+    bus.$on("Settings", x => {this.tabActive = x})
+    bus.$on("SigninStudent", x => {this.tabActive = "Student";});
 
     /** SHOWING AND STOPING LOADINGS  */
     bus.$on("stopLoading", () => {
@@ -91,87 +72,33 @@ export default {
       bus.$emit("Teachers", Teachers);
     }, 100);
     this.GetClientInfo();
+
   },
   methods: {
-    GetLocalIP() {
-      return new Promise(function(resolve, reject) {
-        var RTCPeerConnection =
-          window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
-        RTCPeerConnection || reject("Your browser does not support this API");
-        var rtc = new RTCPeerConnection({ iceServers: [] }),
-          addrs = {};
-        function grepSDP(e) {
-          var n = "";
-          return (
-            e.split("\r\n").forEach(function(e) {
-              if (~e.indexOf("a=candidate")) {
-                var r = (t = e.split(" "))[4];
-                "host" === t[7] && (n = r);
-              } else if (~e.indexOf("c=")) {
-                var t;
-                r = (t = e.split(" "))[2];
-                n = r;
-              }
-            }),
-            n
-          );
-        }
-        (addrs["0.0.0.0"] = !1),
-          rtc.createDataChannel("", { reliable: !1 }),
-          (rtc.onicecandidate = function(e) {
-            if (e.candidate) {
-              var n = grepSDP("a=" + e.candidate.candidate);
-              resolve(n);
-            }
-          }),
-          rtc.createOffer(function(e) {
-            rtc.setLocalDescription(e);
-          });
-      });
-    },
     SaveClientInfo(data, ref) {
-      let userInfo = {
-        ip: data.deviceIp,
-        routIp: data.ip,
-        isp: data.isp,
-        latitude: data.latitude,
-        longitude: data.longitude,
-        city: data.city,
-        post_code: data.postal_code,
-        district: data.district,
-        country: data.country_name,
-        user_agent: navigator.userAgent,
-        first_visited: new Date(),
-        last_visited: new Date()
-      };
-      ref.set(userInfo);
+        let userInfo = {
+            ip: data.ip,isp: data.isp,latitude: data.latitude,
+            longitude: data.longitude,city: data.city,
+            post_code: data.postal_code,district: data.district,
+            country: data.country_name,user_agent: navigator.userAgent,
+            first_visited: new Date(),last_visited: new Date()
+        };
+        ref.set(userInfo);
     },
     async GetClientInfo() {
-      let usageId = this.GetDocId();
-      let docRes = await dbRef
-        .collection("UsageHistory")
-        .doc(usageId)
-        .get();
-      if (docRes.exists) {
-        docRes.ref.update({ last_visited: new Date() });
-      } else {
-        let geoRes = await axios.get("https://json.geoiplookup.io/");
-        let data = geoRes.data;
-        if (ipRes) {
-          data.deviceIp = ipRes;
-        } else {
-          data.deviceIp = "";
+        let usageId = this.GetDocId();
+        let docRes = await dbRef.collection("UsageHistory").doc(usageId).get();
+        if (docRes.exists) {docRes.ref.update({ last_visited: new Date()})}
+        else {
+            let geoRes = await axios.get("https://json.geoiplookup.io/");
+            let data = geoRes.data;
+            this.SaveClientInfo(data, docRes.ref);
         }
-        this.SaveClientInfo(data, docRes.ref);
-      }
     },
     GetDocId() {
-      let usageId = "",
-        locId = localStorage.getItem("usageId");
-      if (locId) {
-        usageId = locId;
-      } else {
-        usageId = uniqid();
+      let usageId = "",locId = localStorage.getItem("usageId");
+      if (locId) {usageId = locId;
+      } else {usageId = uniqid();
         localStorage.setItem("usageId", usageId);
       }
       return usageId;
@@ -184,12 +111,8 @@ export default {
       if (localStorage.getItem("Theme") !== undefined) {
         if (localStorage.getItem("Theme") === "true") {
           this.FixTheme(true);
-        } else {
-          this.FixTheme(false);
-        }
-      } else {
-        this.FixTheme(false);
-      }
+        } else {this.FixTheme(false)}
+      } else {this.FixTheme(false);}
     }
   }
 };
@@ -221,9 +144,16 @@ export default {
 .tabActive {
   display: block;
 }
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:#161616}
+::-webkit-scrollbar-thumb{background:#00897b}
+::-webkit-scrollbar-thumb:hover{background:#26a69a}
 
 // Theming //
 .bg-li-0 {
   background-color: #eceff1;
+}
+.light-colors{
+    ::-webkit-scrollbar-track{background:#eceff1}
 }
 </style>

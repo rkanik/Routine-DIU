@@ -5,6 +5,7 @@
 </template>
 
 <style lang='scss'>
+
 #app {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,25 +15,4 @@
 .text-accent{
     color: #009688;
 }
-
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #191919;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #212121;
-}
- 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #313131;
-}
-
 </style>

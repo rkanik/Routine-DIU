@@ -64,8 +64,6 @@ export default {
     created(){
         /** Fetch Theme **/
         this.FetchTheme();
-        //bus.$on('ThemeChanged',x=>{this.FixTheme(x)});
-
         this.fetchViewType();
     },
     methods:{

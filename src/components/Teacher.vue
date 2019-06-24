@@ -1,5 +1,5 @@
 <template>
-    <div id="Teacher">
+    <div class="teacher pt-4">
         <div class="container">
             <div class="input-group">
                 <input type="text" @keyup="OnChangeSearchKey" v-model="searchedKey" class="form-control" placeholder="Teacher's name or initial" aria-describedby="button-addon2">
@@ -10,92 +10,7 @@
             <TeacherSuggs v-if="filteredSugg.length>0" v-bind:suggs="filteredSugg"/>
             <hr>
             <Teachers  v-bind:teachers="teacherInfo" v-if="teacherFound"/>
-
-            <table v-if="viewType=='Table'">
-                <thead>
-                    <tr v-if="Routine.Saturday.length > 0 || Routine.Sunday.length > 0 || Routine.Monday.length > 0 ||
-                        Routine.Tuesday.length > 0 || Routine.Wednesday.length > 0 || Routine.Thursday.length > 0">
-                        <th>Day/Time</th><th>{{Slots[0]}}</th><th>{{Slots[1]}}</th><th>{{Slots[2]}}</th>
-                        <th>{{Slots[3]}}</th><th>{{Slots[4]}}</th><th>{{Slots[5]}}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-if="Routine.Saturday.length > 0">
-                        <th>Saturday</th>
-                        <td v-for="el in Routine.Saturday" v-bind:key="el.Time">
-                            <p>{{el.Course}}</p>
-                            <p>{{el.Room}}</p>
-                        </td>
-                    </tr>
-                    <tr v-if="Routine.Sunday.length > 0">
-                        <th>Sunday</th>
-                        <td v-for="el in Routine.Sunday" v-bind:key="el.Time">
-                            <p>{{el.Course}}</p>
-                            <p>{{el.Room}}</p>
-                        </td>
-                    </tr>
-                    <tr v-if="Routine.Monday.length > 0">
-                        <th>Monday</th>
-                        <td v-for="el in Routine.Monday" v-bind:key="el.Time">
-                            <p>{{el.Course}}</p>
-                            <p>{{el.Room}}</p>
-                        </td>
-                    </tr>
-                    <tr v-if="Routine.Tuesday.length > 0">
-                        <th>Tuesday</th>
-                        <td v-for="el in Routine.Tuesday" v-bind:key="el.Time">
-                            <p>{{el.Course}}</p>
-                            <p>{{el.Room}}</p>
-                        </td>
-                    </tr>
-                    <tr v-if="Routine.Wednesday.length > 0">
-                        <th>Wednesday</th>
-                        <td v-for="el in Routine.Wednesday" v-bind:key="el.Time">
-                            <p>{{el.Course}}</p>
-                            <p>{{el.Room}}</p>
-                        </td>
-                    </tr>
-                    <tr v-if="Routine.Thursday.length > 0">
-                        <th>Thursday</th>
-                        <td v-for="el in Routine.Thursday" v-bind:key="el.Time">
-                            <p>{{el.Course}}</p>
-                            <p>{{el.Room}}</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div v-if="Routine.Labs.length > 0">
-                <div class="card" v-for="el in Routine.Labs" v-bind:key="el.Time">
-                    <div class="card-body row">
-                        <div class="col-md-3">
-                            <label class="text-accent">Course title</label>
-                            <p class="card-title">{{el.Title}}</p>
-                        </div>
-                        <div class="col-md-2">
-                            <label class="text-accent">Day</label>
-                            <p class="card-title">{{el.Day}}</p>
-                        </div>
-                        <div class="col-md-2">
-                            <label class="text-accent">Time</label>
-                            <p class="card-title">{{el.Time}}</p>
-                        </div>
-                        <div class="col-md-2">
-                            <label class="text-accent">Teacher</label>
-                            <p class="card-title">{{el.Teacher}}</p>
-                        </div>
-                        <div class="col-md">
-                            <label class="text-accent">Room</label>
-                            <p class="card-title">{{el.Room}}</p>
-                        </div>
-                        <div class="col-md">
-                            <label class="text-accent">Code</label>
-                            <p class="card-title">{{el.Course}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <TableView v-if="viewType==='Table' && routineLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
         </div>
     </div>
 </template>
@@ -108,6 +23,7 @@ import RoutineSlots from "../json/RoutineSlots.json";
 /** COMPONENTS */
 import Teachers from "./subs/Teachers";
 import TeacherSuggs from "./subs/TeacherSuggs";
+import TableView from "./subs/TableView"
 
 export default {
     name:"Teacher",
@@ -127,10 +43,10 @@ export default {
             suggestions:[],filteredSugg:[],
 
             /** Booleans */
-            teacherFound:false
+            teacherFound:false,routineLoaded:false
         }
     },
-    components:{Teachers,TeacherSuggs},
+    components:{Teachers,TeacherSuggs,TableView},
     created(){
         bus.$on('Routines', x =>{this.Routines=x})
         bus.$on('Courses', x =>{this.courses=x})
@@ -214,6 +130,7 @@ export default {
                 }
                 this.RemoveOffDayFromRoutine(day);
             }
+            this.routineLoaded=true;
         },
         GetCourseTitle( code ){
             let title = '';
@@ -237,72 +154,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    #Teacher{
-        width: 100%;
-        height: 100%;
-        padding-top: 1rem;
-    }
-    .input-group{
-        width: 24rem;
-        margin: 0 auto;
-        .form-control,
-        .btn-outine-secondary{
-            background-color: transparent;
-            border-color: #424242;
-        }
-    }
+.input-group{
+    width: 24rem;
+    margin: 0 auto;
+    .form-control,
     .btn-outline-secondary{
         background-color: transparent;
         border-color: #424242;
     }
-    table{
-    width: 100%;
-    background-color: #191919;
-    margin-bottom: 2rem;
-    border-collapse: collapse;
-    thead{
-        tr{
-            background-color: #006064;
-        }
-        th{
-            padding: 0.4rem 0 0.4rem 1rem;
-            font-size: 1em;
-            font-weight: 500;
-            color: #bdbdbd;
-            border-right: 1px solid #313131;
-        }
-        th:last-child{
-            border-right-color: #006064;
-        }th:first-child{
-            border-left: 1px solid #006064;
-        }
-    }
-    tbody{
-        tr{
-            background-color: #191919;
-            //border: 1px solid #161616;
-        }
-        td,th{
-            padding: 0.6rem 0 0.6rem 1rem;
-            border: 1px solid #202020;
-            p{
-                margin: 0 ;
-                font-weight: 300;
-                font-size: 15px;
-            }
-        }
-    } 
 }
-    .card{
-        background-color: #191919;
-        padding: 0 0.5rem;
-        margin-bottom: 1rem;
-        border: 1px solid #202020;
-        .card-title,label{
-            margin-bottom: 0;
-        }
-        label{
-            font-size: 0.9em;
-        }
-    }
 </style>

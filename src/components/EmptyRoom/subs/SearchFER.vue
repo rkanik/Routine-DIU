@@ -1,5 +1,5 @@
 <template>
-    <div class="SearchFER mt-3 mb-3">
+    <div class="SearchFER pt-3 pb-3 mb-2" v-bind:class="{'light-colors':lightTheme}">
         <div class="container">
             <form class="form">             
                 <div class="row">
@@ -15,7 +15,7 @@
                                 <option>{{days[4]}}</option>
                             </select>
                             <div class="input-group-append">
-                                <button @click="SearchByDay()" class="btn btn-dark" type="button">GO</button>
+                                <button @click="SearchByDay()" class="btn btn-outline-dark" type="button">GO</button>
                             </div>
                         </div>
                     </div>
@@ -31,12 +31,12 @@
                                 <option>{{slots[5]}}</option>
                             </select>
                             <div class="input-group-append">
-                                <button @click="SearchBySlot()" class="btn btn-dark" type="button">GO</button>
+                                <button @click="SearchBySlot()" class="btn btn-outline-dark" type="button">GO</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 pl-1 pr-1">
-                        <button type="button" class="btn btn-dark w-100" @click="SearchByDaySlot()">SEARCH</button>
+                    <div class="col-md-2 pl-1 pr-4">
+                        <button type="button" class="btn btn-outline-dark w-100" @click="SearchByDaySlot()">SEARCH</button>
                     </div>
                 </div>
             </form>
@@ -47,25 +47,19 @@
 <script>
 
 /** IMPORTS */
-import { bus } from "../../main";
-import DayOfWeeks from "../../json/DayOfWeeks.json";
-import RoutineSlots from "../../json/RoutineSlots.json";
-
+import { bus } from "../../../main";
+import DayOfWeeks from "../../../json/DayOfWeeks.json";
+import RoutineSlots from "../../../json/RoutineSlots.json";
 
 /** COMPONENTS */
 
 export default {
     name:'SearchFER',
-    props:{
-
-    },
-    components:{
-        
-    },
     data(){
         return{
 
             /** Booleans */
+            lightTheme:false,
 
             /** Objects */
 
@@ -78,9 +72,8 @@ export default {
             selectedDay:'none'
         }
     },
-    created(){
-
-    },
+    created(){this.FetchTheme();bus.$on("ThemeChanged",x=>{this.FixTheme(x);
+    });},
     methods:{
         SearchByDay(){
             bus.$emit('SearchByDay',this.selectedDay);
@@ -90,20 +83,55 @@ export default {
         },
         SearchByDaySlot(){
             bus.$emit('SearchByDaySlot', [this.selectedDay,this.selectedSlot.split('-')[0]]);
+        },
+        FixTheme(x) {
+            this.lightTheme = x;
+            localStorage.setItem("Theme", x);
+        },
+        FetchTheme() {
+            if (localStorage.getItem("Theme") !== undefined) {
+                if (localStorage.getItem("Theme") === "true") {
+                    this.FixTheme(true)}else {this.FixTheme(false)}}
+            else{this.FixTheme(false);}
         }
-    },
-    mounted(){
-
-    },
-    computed:{
-
     }
 }
 </script>
 <style lang="scss" scoped>
 
-    .form-control{
-        background-color: #00000000;
-        border-color: #32383D;
+.SearchFER {
+    background-color: #191919;
+}
+.form-control{
+    background-color: transparent !important;
+    border-color: #32383D;
+    color: #9e9e9e;
+    option{
+        background-color: #191919;
+        color: #9e9e9e;
     }
+}
+.btn-outline-dark{
+    color: #9e9e9e;
+}
+
+.light-colors{
+    background-color: white;
+    .form-control{
+        border-color: #bdbdbd;
+        color: #424242;
+        option{
+            background-color: white;
+            color: #424242;
+        }
+    }
+    .btn-outline-dark{
+        border-color: #bdbdbd;
+        color: #424242;
+    }
+    .btn-outline-dark:hover{
+        background-color: #e0e0e0;
+        color: #424242;
+    }
+}
 </style>

@@ -1,10 +1,8 @@
 <template>
-    <div class="EmptyRoom">
-
+    <div class="EmptyRoom" v-bind:class="{'light-colors':lightTheme}">
         <SearchFER/>
         <EmptyByDay v-if="emptyByDay.length !== 0" v-bind:emptyRooms="emptyByDay"/>
         <EmptyBySlot v-if="emptyBySlot.length !== 0" v-bind:emptyRooms="emptyBySlot"/>
-
         <div class="container">
             <div v-if="emptyDaySlot.length !== 0">
                 <div class="card float-left mr-2 mb-2" v-for="(r, i) in emptyDaySlot" v-bind:key="i">
@@ -14,20 +12,19 @@
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
 
 /** IMPORTS */
-import db from "../js/firebaseInit";
-import { bus } from "../main";
+import db from "../../js/firebaseInit";
+import { bus } from "../../main";
 
 /** COMPONENTS */
-import SearchFER from "../components/subs/SearchFER";
-import EmptyByDay from "../components/subs/EmptyByDay";
-import EmptyBySlot from "../components/subs/EmptyBySlot";
+import SearchFER from "./subs/SearchFER";
+import EmptyByDay from "./subs/EmptyByDay";
+import EmptyBySlot from "./subs/EmptyBySlot";
 
 export default {
     name:'EmptyRoom',
@@ -39,6 +36,7 @@ export default {
         return{
 
             /** Booleans */
+            lightTheme:false,
 
             /** Objects */
             emptyRooms:{},
@@ -54,33 +52,31 @@ export default {
         }
     },
     created(){
-        bus.$on('Routines',data=>{this.FindEmptyRooms(data)});
-        bus.$on('SearchByDay',day=>{this.SearchByDay(day)});
-        bus.$on('SearchBySlot',slot=>{this.SearchBySlot(slot)});
-        bus.$on('SearchByDaySlot',data=>{this.SearchByDaySlot(data[0],data[1])});
+        this.FetchTheme();
+        bus.$on('Routines',         data    =>  {this.FindEmptyRooms(data)});
+        bus.$on('SearchByDay',      day     =>  {this.SearchByDay(day)});
+        bus.$on('SearchBySlot',     slot    =>  {this.SearchBySlot(slot)});
+        bus.$on('SearchByDaySlot',  data    =>  {this.SearchByDaySlot(data[0],data[1])});
     },
     methods:{
         FindEmptyRooms(Routines){
-            for( const day in Routines ){
-                if( day !== 'Labs' ){
-                    for( const slot in Routines[day]){
-                        Routines[day][slot].forEach( ro => {
-                            if( ro.Room && !ro.Course ){
-                                if( this.emptyRooms[day] ){
-                                    if( this.emptyRooms[day][slot] ){
-                                        this.emptyRooms[day][slot].push(ro);
-                                    }else{
-                                        this.emptyRooms[day][slot] = [ro];
-                                    }
-                                }else{
-                                    this.emptyRooms[day]={};
-                                    this.emptyRooms[day][slot] = [ro];
-                                }
+            for( const day  in Routines ){if( day !== 'Labs' ){
+            for( const slot in Routines[day]){
+                Routines[day][slot].forEach( ro => {
+                    if( ro.Room && !ro.Course ){
+                        if( this.emptyRooms[day] ){
+                            if( this.emptyRooms[day][slot] ){
+                                this.emptyRooms[day][slot].push(ro);
+                            }else{
+                                this.emptyRooms[day][slot] = [ro];
                             }
-                        })
+                        }else{
+                            this.emptyRooms[day]={};
+                            this.emptyRooms[day][slot] = [ro];
+                        }
                     }
-                }
-            }
+                })
+            }}}
         },
         SearchByDaySlot(day, slot){
             this.emptyByDay=[];this.emptyBySlot=[];
@@ -113,18 +109,35 @@ export default {
             }else{
                 this.emptyBySlot = [];
             }
+        },
+        FixTheme(x) {
+            this.lightTheme = x;
+            localStorage.setItem("Theme", x);
+        },
+        FetchTheme() {
+            if (localStorage.getItem("Theme") !== undefined) {
+                if (localStorage.getItem("Theme") === "true") {
+                    this.FixTheme(true)}else {this.FixTheme(false)}}
+            else{this.FixTheme(false);}
         }
-    },
-    mounted(){
-
-    },
-    computed:{
-
     }
 }
 </script>
 <style lang="scss" scoped>
+
+.card{
+    background-color: #202020;
+}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:#161616}
+::-webkit-scrollbar-thumb{background:#00897b}
+::-webkit-scrollbar-thumb:hover{background:#26a69a}
+
+.light-colors{
     .card{
-        background-color: #202020;
+        background-color: white;
+        color: #313131
     }
+}
+
 </style>
