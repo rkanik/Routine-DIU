@@ -2,11 +2,7 @@
   <div id="Student">
     <SignedBox v-if="isSignedIn" v-bind:signedData="signedData"/>
     <Teachers v-bind:teachers="teachers" v-if="comTeachers"/>
-    <form
-      class="se-ro-form"
-      v-if="isSignedIn===false||showRSF"
-      v-bind:class="{'light-colors':lightTheme}"
-    >
+    <form class="se-ro-form" v-if="isSignedIn===false||showRSF" v-bind:class="{'light-colors':lightTheme}" >
       <div class="container">
         <div class="row">
           <div class="col-md-3">
@@ -42,22 +38,16 @@
       </div>
     </form>
     <Overlaps v-if="overlaps.length>0" v-bind:overlaps="overlaps"/>
-    <TableView
-      v-if="viewType==='Table' && routineIsLoaded"
-      v-bind:d="{slots:Slots,Routine:Routine}"
-    />
+    <TableView v-if="viewType==='Table' && routineIsLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
 
     <div class="TabView" v-if="viewType==='Tab'" v-bind:class="{'light-colors':lightTheme}">
       <div class="container">
         <div class="row">
           <div class="col-md-2">
             <ul class="ul-tab" v-if="showClicked">
-              <li
-                class="tab"
-                v-if="Routine[days[6]]"
-                @click="onTabSelected(days[6])"
-                v-bind:class="{active:dayOfWeek===days[6]}"
-              >{{days[6]}}</li>
+
+              <li class="tab" v-if="Routine[days[6]]" @click="onTabSelected(days[6])" v-bind:class="{active:dayOfWeek===days[6]}">{{days[6]}}</li>
+              
               <li
                 class="tab"
                 v-if="Routine[days[0]]"
@@ -142,32 +132,19 @@ import Teachers from "./subs/Teachers";
 
 export default {
   name: "Student",
-  components: {
-    TableView,
-    UpdateInfo,
-    SignedBox,
-    EditCourse,
-    Overlaps,
-    Teachers
-  },
+  components: {TableView,UpdateInfo,SignedBox,EditCourse,Overlaps,Teachers},
   data() {
     return {
-      /** Booleans */
-      lightTheme: false,
-      updateModal: false,
-      showEditCourse: false,
-      showRSF: false,
-      showClicked: false,
-      routineIsLoaded: false,
-      comTeachers: false,
+        /** Booleans */
+        lightTheme:       false,    updateModal:      false,
+        showEditCourse:   false,    showRSF:          false,
+        showClicked:      false,    routineIsLoaded:  false,
+        comTeachers:      false,
 
-      /** Objects */
-      signedData: {},
-      Routines: {},
-      Courses: {},
-      updateData: {},
-      allTeachers: {},
-      Routine: EmptyRoutine,
+        /** Objects */
+        signedData:     {},     Routines:   {},
+        Courses:        {},     updateData: {},
+        allTeachers:    {},     Routine: EmptyRoutine,
 
       /** Strings */
       Level: "NONE",
@@ -190,55 +167,25 @@ export default {
   created() {
     /** Fetch Theme **/
     this.FetchTheme();
-    bus.$on("ThemeChanged", x => {
-      this.FixTheme(x);
-    });
+    bus.$on("ThemeChanged", x => { this.FixTheme(x); });
 
-    bus.$on("Courses", x => {
-      this.Courses = x;
-    });
-    bus.$on("Routines", x => {
-      this.Routines = x;
-      this.fetchSessionData();
-    });
-    bus.$on("Teachers", x => {
-      this.allTeachers = x;
-    });
-    bus.$on("SettingChanged", x => {
-      this.OnSettingChanged(x);
-    });
+    bus.$on("Courses", x => { this.Courses = x; });
+    bus.$on("Routines", x => { this.Routines = x; this.fetchSessionData(); });
+    bus.$on("Teachers", x => { this.allTeachers = x; });
+    bus.$on("SettingChanged", x => { this.OnSettingChanged(x); });
 
     /** Save or Update Info */
-    bus.$on("SigninStudent", id => {
-      this.SigninStudent(id);
-    }); /** FROM HEADER */
-    bus.$on("SaveStudent", () => {
-      this.SaveStudent();
-    }); /** FROM UPDATEINFO */
-    bus.$on("UpdateStudent", () => {
-      this.UpdateStudent();
-    }); /** FROM UPDATEINFO */
-    bus.$on("ClickedUpdate", () => {
-      this.OnClickUpdate();
-    }); /** FROM SIGNED BOX */
-    bus.$on("CloseUpdateModal", () => {
-      this.CloseUpdateModal();
-    }); /** FROM UPDATEINFO */
+    bus.$on("SigninStudent", id => { this.SigninStudent(id); }); /** FROM HEADER */
+    bus.$on("SaveStudent", () => { this.SaveStudent(); }); /** FROM UPDATEINFO */
+    bus.$on("UpdateStudent", () => { this.UpdateStudent(); }); /** FROM UPDATEINFO */
+    bus.$on("ClickedUpdate", () => { this.OnClickUpdate(); }); /** FROM SIGNED BOX */
+    bus.$on("CloseUpdateModal", () => { this.CloseUpdateModal(); }); /** FROM UPDATEINFO */
 
-    bus.$on("loggedOut", () => {
-      this.onLoggedOut();
-    });
-    bus.$on("OnSignedIn", id => {
-      this.OnSignedIn(id);
-    });
+    bus.$on("loggedOut", () => { this.onLoggedOut(); });
+    bus.$on("OnSignedIn", id => { this.OnSignedIn(id); });
 
-    bus.$on("ShowRSF", () => {
-      this.showRSF = true;
-    });
-    bus.$on("HideRSF", () => {
-      this.showRSF = false;
-      this.fetchSessionData();
-    });
+    bus.$on("ShowRSF", () => { this.showRSF = true; });
+    bus.$on("HideRSF", () => { this.showRSF = false; this.fetchSessionData(); });
 
     /** EDIT COURSE MODAL */
     bus.$on("OnClickEditCourse", () => {
@@ -441,17 +388,23 @@ export default {
       bus.$emit("stopLoading");
     },
     fetchSessionData() {
-      if (localStorage.isSignedIn) {
-        this.isSignedIn = true;
-        let data = JSON.parse(localStorage.signedData);
-        this.signedData = data;
-        this.UpdateLastVisited(data.ID);
-        this.setRoutineLevelTermSection(data.Level, data.Term, data.Section);
-        this.onClickGo();
-      } else {
-        this.isSignedIn = false;
-        bus.$emit("stopLoading");
-      }
+        if (localStorage.isSignedIn) {
+            this.isSignedIn = true; let data = JSON.parse(localStorage.signedData);
+            this.signedData = data;this.UpdateLastVisited(data.ID);
+            this.setRoutineLevelTermSection(data.Level, data.Term, data.Section);
+            this.onClickGo(); 
+        } else {
+            this.syncUserState();
+            this.isSignedIn = false;
+            bus.$emit("stopLoading");
+        }
+    },
+    syncUserState(){
+        if( localStorage.usageData ){
+            let d = JSON.parse(localStorage.usageData)
+            this.setRoutineLevelTermSection(d.level,d.term,d.section);
+            this.onClickGo()
+        }
     },
     getViewType() {
       if (localStorage.getItem("ViewType")) {
@@ -469,7 +422,7 @@ export default {
     },
     OnSignedIn(id, doc) {
       doc.ref.update({ LastVisited: new Date() });
-      let d = doc.data();
+      let d = doc.data();localStorage.removeItem('usageData')
       this.fixViewsAndDatas(d);
       bus.$emit("signedData", d);
       this.setSignedSessionData(d);
@@ -495,9 +448,7 @@ export default {
       localStorage.setItem("signedData", JSON.stringify(data));
     },
     SigninStudent(id) {
-      db.collection("Students")
-        .doc(id)
-        .get()
+      db.collection("Students").doc(id).get()
         .then(doc => {
           if (doc.exists) {
             this.OnSignedIn(id, doc);
@@ -507,15 +458,7 @@ export default {
         });
     },
     InitializeSaveModal(id) {
-      this.updateData = {
-        ID: id,
-        btn: "SAVE",
-        Level: "NONE",
-        Term: "NONE",
-        Section: "",
-        Name: "",
-        Email: ""
-      };
+      this.updateData = {ID: id,btn: "SAVE",Level: "NONE",Term: "NONE",Section: "",Name: "",Email: ""};
       this.updateModal = true;
     },
     onTabSelected(x) {
@@ -601,18 +544,8 @@ export default {
       this.routineIsLoaded = true;
     },
     SetRoutineFor_TAB_View(codes) {
-      let oSlots = [
-        "08:30",
-        "10:00",
-        "11:30",
-        "01:00",
-        "02:30",
-        "04:00",
-        "05:30"
-      ];
-      this.showClicked = true;
-      this.getDayOfWeek();
-      this.Routine = {};
+      let oSlots = ["08:30","10:00","11:30","01:00","02:30","04:00","05:30"];
+      this.showClicked = true;this.getDayOfWeek();this.Routine = {};
       for (const day in this.Routines) {
         if (day !== "Labs") {
           for (const slot in this.Routines[day]) {
@@ -663,21 +596,24 @@ export default {
       }
       this.routineIsLoaded = true;
     },
-    onClickGo() {
-      if (
-        this.Level !== "NONE" &&
-        this.Term !== "NONE" &&
-        this.Section !== ""
-      ) {
-        this.overlaps = [];
-        this.getViewType();
-        let codes = this.getCourseCodes();
-        if (this.viewType === "Table") {
-          this.SetRoutineFor_TABLE_View(codes);
-        } else if (this.viewType === "Tab") {
-          this.SetRoutineFor_TAB_View(codes);
+    checkForUsageData(){
+        if( !this.isSignedIn ){
+            let data = {level:this.Level,term:this.Term,section:this.Section}
+            localStorage.setItem('usageData',JSON.stringify(data))
         }
-        bus.$emit("stopLoading");
+    },
+    onClickGo() {
+        if ( this.Level !== "NONE" && this.Term !== "NONE" && this.Section !== "" ) {
+            this.checkForUsageData()
+            this.overlaps = []; this.getViewType();
+            let codes = this.getCourseCodes();
+            if (this.viewType === "Table") {
+                this.SetRoutineFor_TABLE_View(codes);
+            }
+            else if (this.viewType === "Tab") {
+                this.SetRoutineFor_TAB_View(codes);
+            }
+            bus.$emit("stopLoading");
       } else {
         this.ResetRoutine();
       }
