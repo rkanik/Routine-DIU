@@ -2,7 +2,7 @@
     <div class="EditCourse" v-bind:class="{'light-colors':lightTheme}">
         <div class="overlay show"></div>
         <div class="modal">
-            <img class="close" @click="OnClickClose()" src="../../assets/svg/close.svg">
+            <img class="close" @click="OnClickClose()" src="../../../assets/svg/close.svg">
             <div class="content">
                 <div class="text-center">
                     <p class="lead m-0 mt-3">Manage your courses</p>
@@ -29,12 +29,12 @@
                             </div>
                             <div class="col col-md-1">
                                 <div @click="onClickDelete(index)" class="close-box">
-                                    <img src="../../assets/svg/close.svg">
+                                    <img src="../../../assets/svg/close.svg">
                                 </div>
                             </div>
                         </div>
                         <div @click="onClickAddNew()" class="add-new">
-                            <img src="../../assets/svg/add.svg">
+                            <img src="../../../assets/svg/add.svg">
                         </div>
                         <p class="error">{{errorMassage}}</p>
                     </form>
@@ -47,7 +47,7 @@
 
 <script>
 
-import {bus} from "../../main";
+import {bus} from "../../../main";
 
 export default {
     name:'EditCourseModal',
@@ -287,6 +287,21 @@ export default {
     }
     .lead-2{
         color: #313131;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal{
+        max-width: 95%;
+        .form-container{
+            padding: 0 1rem;
+            .col-md-1{
+                max-width: 15%;
+            }
+        }
+        .btn-save{
+            left: 1rem;
+        }
     }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="home" v-bind:class="{'light-colors':lightTheme}">
-    <Sidebar/>
+    <Sidebar class="sidebar"/>
     <div class="hwr" v-bind:class="{'bg-li-0':lightTheme}">
       <Header/>
       <div class="mcontainer">
@@ -25,13 +25,13 @@ import axios from "axios";
 import uniqid from "uniqid";
 
 /* COMPORNENTS */
-import Sidebar from "../components/Sidebar";
-import Header from "../components/Header";
-import Student from "../components/Student";
-import Teacher from "../components/Teacher";
+import Sidebar from "../components/layouts/Sidebar";
+import Header from "../components/layouts/Header";
+import Student from "../components/Student/Student";
+import Teacher from "../components/Teacher/Teacher";
 import EmptyRoom from "../components/EmptyRoom/EmptyRoom";
-import Settings from "../components/Settings";
-import Loader1 from "../components/subs/Loader1";
+import Settings from "../components/Settings/Settings";
+import Loader1 from "../components/Loaders/Loader1";
 
 export default {
   name: "home",
@@ -58,23 +58,29 @@ export default {
     bus.$on("SigninStudent", x => {this.tabActive = "Student";});
 
     /** SHOWING AND STOPING LOADINGS  */
-    bus.$on("stopLoading", () => {
-      this.showLoading = false;
-    });
-    bus.$on("showLoading", () => {
-      this.showLoading = true;
-    });
+    bus.$on("stopLoading", () => {this.showLoading = false;});
+    bus.$on("showLoading", () => {this.showLoading = true;});
 
     /** EMITTING OBJERCT DATAS TO ALL COMPONENTS */
-    setTimeout(() => {
-      bus.$emit("Courses", Courses);
-      bus.$emit("Routines", Routines);
+    setTimeout(() => {bus.$emit("Courses", Courses);bus.$emit("Routines", Routines);
       bus.$emit("Teachers", Teachers);
     }, 100);
+
+    /** Get Client Info */
     this.GetClientInfo();
+
+    /** Check device width and viewType for responsive */
+    this.checkDeviceWidth();
+    
 
   },
   methods: {
+    checkDeviceWidth(){
+        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if( width <= 576 ){
+            localStorage.setItem("ViewType", "Tab");
+        }
+    },
     SaveClientInfo(data, ref) {
         let userInfo = {
             ip: data.ip,isp: data.isp,latitude: data.latitude,
@@ -131,7 +137,7 @@ export default {
   box-sizing: border-box;
 }
 .hwr {
-  background-color: #161616;
+    background-color: #161616;
 }
 .Student,
 .Teacher,
@@ -156,4 +162,18 @@ export default {
 .light-colors{
     ::-webkit-scrollbar-track{background:#eceff1}
 }
+
+@media (max-width: 576px) {
+    .home {
+        display: unset;
+        .mcontainer{
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
 </style>

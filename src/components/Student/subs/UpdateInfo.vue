@@ -5,7 +5,7 @@
             <div v-if="showLoader" class="loader">
                 <Loader1 class="loading"/>
             </div>
-            <img class="close" @click="closeModal()" src="../../assets/svg/close.svg">
+            <img class="close" @click="closeModal()" src="../../../assets/svg/close.svg">
             <div class="content">
                 <div class="text-center">
                     <h5 class="lead mt-3">Update your information</h5>
@@ -13,7 +13,6 @@
                 </div>
                 <hr>
                 <form>
-
                     <div v-if="error" class="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong>Error!</strong> Fill the information correctly.
                         <button type="button" @click="error=false" class="close" data-dismiss="alert" aria-label="Close">
@@ -32,7 +31,7 @@
                     </div>
                     <div class="form-group">
                         <div class="arrow_down">
-                            <img src="../../assets/svg/arrow_down.svg">
+                            <img src="../../../assets/svg/arrow_down.svg">
                         </div>
                         <select class="form-control" v-model="data.Level">
                             <option value="NONE" selected>Select Level</option>
@@ -44,7 +43,7 @@
                     </div>
                     <div class="form-group">
                         <div class="arrow_down">
-                            <img src="../../assets/svg/arrow_down.svg">
+                            <img src="../../../assets/svg/arrow_down.svg">
                         </div>
                         <select class="form-control" v-model="data.Term">
                             <option value="NONE" selected>Select Term</option>
@@ -64,11 +63,11 @@
 </template>
 <script>
 /** IMPORTS */
-import {bus} from "../../main";
-import db from "../../js/firebaseInit";
+import {bus} from "../../../main";
+import db from "../../../js/firebaseInit";
 
 /** COMPONENTS */
-import Loader1 from "../subs/Loader1";
+import Loader1 from "../../Loaders/Loader1";
 
 export default {
     name: "UpdateInfo",
@@ -239,6 +238,15 @@ export default {
     }
     .arrow_down{
         background-color: #eeeeee;
+    }
+}
+
+@media (max-width: 576px) {
+    .mod{
+        max-width: 95%;
+        form{
+            padding: 0 1rem;
+        }
     }
 }
 </style>

@@ -13,7 +13,7 @@
 </template>
 <script>
 /** IMPORTS */
-import  {bus}   from "../../main"
+import  {bus}   from "../../../main"
 
 export default {
     name:'TeacherSuggs',

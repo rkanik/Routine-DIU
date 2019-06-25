@@ -1,5 +1,5 @@
 <template>
-    <div class="teacher pt-4">
+    <div class="teacher pt-4" v-bind:class="{'light-colors':lightTheme}">
         <div class="container">
             <div class="input-group">
                 <input type="text" @keyup="OnChangeSearchKey" v-model="searchedKey" class="form-control" placeholder="Teacher's name or initial" aria-describedby="button-addon2">
@@ -16,14 +16,14 @@
 </template>
 <script>
 /* IMPORTS */
-import { bus } from "../main";
-import RoutineSlots from "../json/RoutineSlots.json";
+import { bus } from "../../main";
+import RoutineSlots from "../../json/RoutineSlots.json";
 //import EmptyRoutine from "../json/EmptyRoutine.json";
 
 /** COMPONENTS */
-import Teachers from "./subs/Teachers";
+import Teachers from "../layouts/Teachers";
 import TeacherSuggs from "./subs/TeacherSuggs";
-import TableView from "./subs/TableView"
+import TableView from "../layouts/TableView"
 
 export default {
     name:"Teacher",
@@ -43,11 +43,14 @@ export default {
             suggestions:[],filteredSugg:[],
 
             /** Booleans */
-            teacherFound:false,routineLoaded:false
+            teacherFound:false,routineLoaded:false,
+            lightTheme:false,
         }
     },
     components:{Teachers,TeacherSuggs,TableView},
     created(){
+        this.FetchTheme();
+        bus.$on('ThemeChanged',x=>this.FixTheme(x))
         bus.$on('Routines', x =>{this.Routines=x})
         bus.$on('Courses', x =>{this.courses=x})
         bus.$on('Teachers', x =>{this.teachers=x;this.GenerateSuggestions()})
@@ -142,6 +145,16 @@ export default {
                 })
             }
             return title;
+        },
+        FixTheme(x){
+            this.lightTheme=x;
+            localStorage.setItem('Theme',x);
+        },
+        FetchTheme(){
+            if(localStorage.getItem('Theme')!==undefined){
+                if(localStorage.getItem('Theme')==='true'){
+                this.FixTheme(true)}else{this.FixTheme(false);}   
+            }else{this.FixTheme(false)}
         }
     },
     computed:{
@@ -160,7 +173,16 @@ export default {
     .form-control,
     .btn-outline-secondary{
         background-color: transparent;
-        border-color: #424242;
+        border-color: #313131;
+        color: #bdbdbd;
+    }
+}
+.light-colors{
+    .form-control,
+    .btn-outline-secondary{
+        background-color: transparent;
+        border-color: #bdbdbd;
+        color: #313131;
     }
 }
 </style>

@@ -3,7 +3,7 @@
     <div id="sidebar" class="bg-grey-9 grey-4" v-bind:class="{'sidebar-collapse':!sidebarExpanded,'light-colors':lightTheme}">
         <div class="sidebar-top">
             <div class="back" @click="CollapseAndExpandSidebar()" v-bind:class="{forward:!sidebarExpanded}">
-                <img src="../assets/svg/arrow_back.svg">
+                <img src="../../assets/svg/arrow_back.svg">
             </div>
             <div class="box-note text-center">
                 <p class="lead">Department of CSE</p>
@@ -16,7 +16,7 @@
         <hr>
         <div class="sd-con">
             <ul v-bind:class="{'ch-bg-bg-2':lightTheme}">
-                <li v-bind:class="{active:active=='Student'}" @click="onSidebarItemSelected('Student')">{{sidebarListItems[0]}}</li>
+                <li v-bind:class="{active:active=='Student'}" @click="onSidebarItemSelected('Student')">Student's Routine</li>
                 <li v-bind:class="{active:active=='Teacher'}" @click="onSidebarItemSelected('Teacher')">Teacher's Routine</li>
                 <li v-bind:class="{active:active=='EmptyRoom'}" @click="onSidebarItemSelected('EmptyRoom')">Empty Rooms</li>
                 <!-- <li v-bind:class="{active:active=='SeatPlan'}" @click="onSidebarItemSelected('SeatPlan')">Seat Plans</li> -->
@@ -33,14 +33,13 @@
 
 <script>
 
-import { bus } from "../main";
+import { bus } from "../../main";
 
 export default {
     name:'Sidebar',
     data(){
         return{
             active:'Student',today:new Date().toDateString(),
-            sidebarListItems:["Student's Routine"],
             sidebarExpanded:true,
             lightTheme:false
         }

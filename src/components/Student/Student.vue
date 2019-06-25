@@ -1,138 +1,54 @@
 <template>
-  <div id="Student">
-    <SignedBox v-if="isSignedIn" v-bind:signedData="signedData"/>
-    <Teachers v-bind:teachers="teachers" v-if="comTeachers"/>
-    <form class="se-ro-form" v-if="isSignedIn===false||showRSF" v-bind:class="{'light-colors':lightTheme}" >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="form-group">
-              <select class="form-control" v-model="Level">
-                <option value="NONE">Select Level</option>
-                <option value="L1">Level - 1</option>
-                <option value="L2">Level - 2</option>
-                <option value="L3">Level - 3</option>
-                <option value="L4">Level - 4</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <select class="form-control" v-model="Term">
-                <option value="NONE">Select Term</option>
-                <option value="T1">Term - 1</option>
-                <option value="T2">Term - 2</option>
-                <option value="T3">Term - 3</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Enter Section" v-model="Section">
-            </div>
-          </div>
-          <div class="col-md-3">
-            <button type="button" class="btn btn-outline-secondary btn-go" @click="onClickGo()">SHOW</button>
-          </div>
-        </div>
-      </div>
-    </form>
-    <Overlaps v-if="overlaps.length>0" v-bind:overlaps="overlaps"/>
-    <TableView v-if="viewType==='Table' && routineIsLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
+    <div id="Student">
 
-    <div class="TabView" v-if="viewType==='Tab'" v-bind:class="{'light-colors':lightTheme}">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <ul class="ul-tab" v-if="showClicked">
+        <!-- this shows students info like name email level term and section -->
+        <SignedBox v-if="isSignedIn" v-bind:signedData="signedData"/>
 
-              <li class="tab" v-if="Routine[days[6]]" @click="onTabSelected(days[6])" v-bind:class="{active:dayOfWeek===days[6]}">{{days[6]}}</li>
-              
-              <li
-                class="tab"
-                v-if="Routine[days[0]]"
-                @click="onTabSelected(days[0])"
-                v-bind:class="{active:dayOfWeek===days[0]}"
-              >{{days[0]}}</li>
-              <li
-                class="tab"
-                v-if="Routine[days[1]]"
-                @click="onTabSelected(days[1])"
-                v-bind:class="{active:dayOfWeek===days[1]}"
-              >{{days[1]}}</li>
-              <li
-                class="tab"
-                v-if="Routine[days[2]]"
-                @click="onTabSelected(days[2])"
-                v-bind:class="{active:dayOfWeek===days[2]}"
-              >{{days[2]}}</li>
-              <li
-                class="tab"
-                v-if="Routine[days[3]]"
-                @click="onTabSelected(days[3])"
-                v-bind:class="{active:dayOfWeek===days[3]}"
-              >{{days[3]}}</li>
-              <li
-                class="tab"
-                v-if="Routine[days[4]]"
-                @click="onTabSelected(days[4])"
-                v-bind:class="{active:dayOfWeek===days[4]}"
-              >{{days[4]}}</li>
-              <li
-                class="tab"
-                v-if="Routine[days[5]]"
-                @click="onTabSelected(days[5])"
-                v-bind:class="{active:dayOfWeek===days[5]}"
-              >{{days[5]}}</li>
-            </ul>
-          </div>
+        <!-- Search form for search routine -->
+        <SearchForm v-if="isSignedIn===false||showRSF" v-bind:d="{level:Level,term:Term,section:Section}"/>
 
-          <div class="col-md-10">
-            <div class="row">
-              <div
-                class="card mr-3 mb-3 col-md-3"
-                v-for="r in Routine[dayOfWeek]"
-                v-bind:key="r.Rime"
-              >
-                <div class="card-body">
-                  <p class="card-text">{{r.Time}}</p>
-                  <hr>
-                  <h4 class="card-title">{{r.Title}}</h4>
-                  <p class="card-text">{{r.Course}}</p>
-                  <p class="card-text">{{r.Teacher}}</p>
-                  <hr>
-                  <p class="card-text">{{r.Room}}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <!-- Component to show teachers of current semester -->
+        <Teachers v-bind:teachers="teachers" v-if="comTeachers"/>
+
+        <!-- Component to diplay overlaps if exist -->
+        <Overlaps v-if="overlaps.length>0" v-bind:overlaps="overlaps"/>
+
+        <!-- Component to diplay routine in Table format-->
+        <TableView v-if="viewType==='Table' && routineIsLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
+        
+        <!-- Component to diplay routine in Tabs/Cards -->
+        <TabView v-if="viewType=='Tab'" v-bind:d="{r:Routine,d:days,dow:dayOfWeek}"/>
+        
+        <!-- Component to signup and update student's info -->
+        <UpdateInfo v-if="updateModal" v-bind:data="updateData"/>
+        
+        <!-- Component to edit student's courses -->
+        <EditCourse v-if="showEditCourse"/>
+
     </div>
-    <UpdateInfo v-if="updateModal" v-bind:data="updateData"/>
-    <EditCourse v-if="showEditCourse"/>
-  </div>
 </template>
 
 <script>
 /** IMPORTS */
-import { bus } from "../main";
-import db from "../js/firebaseInit";
-import days from "../json/DayOfWeeks.json";
-import RoutineSlots from "../json/RoutineSlots.json";
-import EmptyRoutine from "../json/EmptyRoutine.json";
+import  {bus}           from "../../main";
+import  db              from "../../js/firebaseInit";
+import  days            from "../../json/DayOfWeeks.json";
+import  RoutineSlots    from "../../json/RoutineSlots.json";
+import  EmptyRoutine    from "../../json/EmptyRoutine.json";
 
 /** COMPONENTS */
-import TableView from "./subs/TableView";
-import UpdateInfo from "./subs/UpdateInfo";
-import EditCourse from "./subs/EditCourse";
-import SignedBox from "./subs/SignedBox";
-import Overlaps from "./subs/Overlaps";
-import Teachers from "./subs/Teachers";
+import  TableView   from "../layouts/TableView";
+import  TabView     from "../layouts/TabView";
+import  UpdateInfo  from "./subs/UpdateInfo";
+import  EditCourse  from "./subs/EditCourse";
+import  SignedBox   from "./subs/SignedBox";
+import  Overlaps    from "./subs/Overlaps";
+import  Teachers    from "../layouts/Teachers";
+import  SearchForm    from "./subs/SearchForm";
 
 export default {
   name: "Student",
-  components: {TableView,UpdateInfo,SignedBox,EditCourse,Overlaps,Teachers},
+  components: {TableView,TabView,UpdateInfo,SignedBox,EditCourse,Overlaps,Teachers,SearchForm},
   data() {
     return {
         /** Booleans */
@@ -146,28 +62,21 @@ export default {
         Courses:        {},     updateData: {},
         allTeachers:    {},     Routine: EmptyRoutine,
 
-      /** Strings */
-      Level: "NONE",
-      Term: "NONE",
-      Section: "",
-      viewType: "",
-      dayOfWeek: "",
+        /** Strings */
+        Level:      "NONE",     Term:       "NONE",
+        Section:    "",         viewType:   "",
+        dayOfWeek:  "",
 
-      /** Unfefined */
-      isSignedIn: undefined,
+        /** Unfefined */
+        isSignedIn: undefined,
 
-      /** Arrays */
-      overlaps: [],
-      teachers: [],
-      days: days,
-      Slots: RoutineSlots
-      /*slotsRamadan:['09:30-10:25','10:25-11:20','11:20-12:15','12:15-01:10','01:40-02:35','02:35-03:30']*/
+        /** Arrays */
+        overlaps:   [],     teachers:   [],
+        days: days,         Slots: RoutineSlots
+        /*slotsRamadan:['09:30-10:25','10:25-11:20','11:20-12:15','12:15-01:10','01:40-02:35','02:35-03:30']*/
     };
   },
   created() {
-    /** Fetch Theme **/
-    this.FetchTheme();
-    bus.$on("ThemeChanged", x => { this.FixTheme(x); });
 
     bus.$on("Courses", x => { this.Courses = x; });
     bus.$on("Routines", x => { this.Routines = x; this.fetchSessionData(); });
@@ -187,23 +96,17 @@ export default {
     bus.$on("ShowRSF", () => { this.showRSF = true; });
     bus.$on("HideRSF", () => { this.showRSF = false; this.fetchSessionData(); });
 
-    /** EDIT COURSE MODAL */
-    bus.$on("OnClickEditCourse", () => {
-      this.showEditCourse = true;
-    });
-    bus.$on("UpdatedCourses", x => {
-      this.UpdateCourses(x);
-    });
-    bus.$on("CloseEditCourse", () => {
-      this.showEditCourse = false;
-    });
+    bus.$on('SearchFormData', d => {
+        this.setRoutineLevelTermSection(d.level,d.term,d.section.toUpperCase())
+        this.onClickGo()
+    })
 
-    bus.$on("CollapseTeachers", () => {
-      this.comTeachers = false;
-    });
-    bus.$on("ShowTeachers", () => {
-      this.ShowTeachers();
-    });
+    /** EDIT COURSE MODAL */
+    bus.$on("OnClickEditCourse", () => {this.showEditCourse = true;});
+    bus.$on("UpdatedCourses", x => {this.UpdateCourses(x);});
+    bus.$on("CloseEditCourse", () => {this.showEditCourse = false;});
+    bus.$on("CollapseTeachers", () => {this.comTeachers = false;});
+    bus.$on("ShowTeachers", () => {this.ShowTeachers();});
 
     this.getDayOfWeek();
   },
@@ -461,9 +364,6 @@ export default {
       this.updateData = {ID: id,btn: "SAVE",Level: "NONE",Term: "NONE",Section: "",Name: "",Email: ""};
       this.updateModal = true;
     },
-    onTabSelected(x) {
-      this.dayOfWeek = x;
-    },
     getDayOfWeek() {
       let date = new Date();
       this.dayOfWeek = this.days[date.getDay()];
@@ -699,133 +599,7 @@ export default {
         }
       }
       return title;
-    },
-    FixTheme(x) {
-      this.lightTheme = x;
-      localStorage.setItem("Theme", x);
-    },
-    FetchTheme() {
-      if (localStorage.getItem("Theme") !== undefined) {
-        if (localStorage.getItem("Theme") === "true") {
-          this.FixTheme(true);
-        } else {
-          this.FixTheme(false);
-        }
-      } else {
-        this.FixTheme(false);
-      }
     }
   }
 };
 </script>
-<style lang="scss" scoped>
-#Student {
-  width: 100%;
-  height: 100%;
-}
-.form-control {
-  background-color: #161616 !important;
-  border-color: #424242;
-  color: #bdbdbd;
-}
-hr {
-  padding: 0 !important;
-}
-.card {
-  background-color: #202020;
-  padding: 0 0.5rem;
-  border: none;
-  min-width: 14rem;
-  .card-title {
-    font-weight: 400;
-  }
-  hr {
-    margin: 0.5rem 0;
-    border-color: #1a1a1a;
-  }
-}
-.lead {
-  font-size: 1.1em;
-}
-
-.width100 {
-  width: 100%;
-  overflow: hidden;
-}
-.se-ro-form {
-  padding-top: 1rem;
-}
-.btn-go {
-  width: 100%;
-  border-color: #424242;
-  letter-spacing: 2px;
-}
-.TabView {
-  margin-top: 1rem;
-  .ul-tab {
-    //: 1px solid #424242;
-    padding-left: 0;
-    .tab {
-      list-style-type: none;
-      margin-bottom: 0.5rem;
-      padding: 0.34rem 0 0.3rem 1rem;
-      border-radius: 2rem;
-      cursor: pointer;
-      color: #616161;
-      user-select: none;
-    }
-    .active,
-    .tab:hover {
-      background-color: #202020;
-      color: #a0a0a0;
-    }
-  }
-}
-
-// THEMEING //
-.light-colors {
-  .ul-tab {
-    .tab {
-      color: #424242;
-    }
-    .active,
-    .tab:hover {
-      background-color: white;
-      color: #424242;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
-    }
-  }
-  .card {
-    background-color: white;
-    border: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
-    hr {
-      border-color: #e0e0e0;
-    }
-    .card-title {
-      color: #313131;
-    }
-    .card-text {
-      color: #424242;
-    }
-  }
-  .form-control {
-    background-color: white !important;
-    border-color: rgba(0, 0, 0, 0.1);
-    color: #424242;
-  }
-  .btn-outline-secondary {
-    border-color: rgba(0, 0, 0, 0.1);
-    color: #424242;
-  }
-  .btn-outline-secondary:hover {
-    background-color: #009688;
-    color: white;
-  }
-}
-.se-ro-form.light-colors {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border: none;
-}
-</style>

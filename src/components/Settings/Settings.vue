@@ -26,11 +26,11 @@
             <label class="text-accent">View Option</label><br>
             <div class="row">
                 <div class="tab-view col-md-4" v-bind:class="{active:tabActive==='Tab'}">
-                    <img src="../assets/images/tab-view.png" @click="setSelectedViewType('Tab')">
+                    <img src="../../assets/images/tab-view.png" @click="setSelectedViewType('Tab')">
                     <p>CARD VIEW</p>
                 </div>
                 <div class="tab-view col-md-4" v-bind:class="{active:tabActive==='Table'}">
-                    <img src="../assets/images/table-view.png" @click="setSelectedViewType('Table')">
+                    <img src="../../assets/images/table-view.png" @click="setSelectedViewType('Table')">
                     <p>TABLE VIEW</p>
                 </div>
             </div>
@@ -41,7 +41,7 @@
 <script>
 
 /** IMPORTS **/
-import { bus } from "../main";
+import { bus } from "../../main";
 
 export default {
     name:'Settings',

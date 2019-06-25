@@ -29,8 +29,8 @@ import  students from "../../data/json/AllStudents.json";
 
 /* COMPONENTS */
 import  Signin      from "../components/admin/Signin";
-import  Loader      from "../components/subs/Loader1";
-import  Loader2     from "../components/subs/Loader2";
+import  Loader      from "../components/Loaders/Loader1";
+import  Loader2     from "../components/Loaders/Loader2";
 import  Students    from "../components/admin/Students";
 import  Sidebar     from "../components/admin/Sidebar";
 import  Header      from "../components/admin/Header";

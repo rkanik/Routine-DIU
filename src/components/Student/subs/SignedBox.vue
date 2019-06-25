@@ -1,28 +1,30 @@
 <template>
     <div class="signedBox pt-1" v-bind:class="{'light-colors':lightTheme}">
-        <div class="row">
-            <div class="col-md">
-                <div class="col">
-                    <label>Name</label>
-                    <p class="lead">{{signedData.Name}}</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="col">
+                        <label>Name</label>
+                        <p class="lead">{{signedData.Name}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="col">
-                    <label>Email</label>
-                    <p class="lead" v-if="signedData.Email">{{signedData.Email}}</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="col">
+                        <label>Email</label>
+                        <p class="lead" v-if="signedData.Email">{{signedData.Email}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="col">
-                    <label>Semester</label>
-                    <p class="lead"><span>Level: </span>{{signedData.Level}} <span>Term: </span>{{signedData.Term}}</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="col">
+                        <label>Semester</label>
+                        <p class="lead"><span>Level: </span>{{signedData.Level}} <span>Term: </span>{{signedData.Term}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="col">
-                    <label>Section</label>
-                    <p class="lead"><span>Section: </span>{{signedData.Section}}</p>
+                <div class="col-md-3 col-sm-6">
+                    <div class="col">
+                        <label>Section</label>
+                        <p class="lead"><span>Section: </span>{{signedData.Section}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,7 +45,7 @@
 </template>
 <script>
 /** IMPORTS */
-import { bus } from "../../main";
+import { bus } from "../../../main";
 export default {
     name:'SignedBox',
     props:{
@@ -220,5 +222,22 @@ export default {
             color: #009688;
         }
     }
+}
+
+@media (max-width: 576px) {
+    .signedBox{
+        padding-top: 0.8rem !important;
+    }
+    .col-sm-6{
+        max-width: 50%;
+        margin-bottom: 1rem;
+    }
+    .col-sm-6:last-child{
+        padding-right: 0 !important;
+    }
+    .container{
+        padding-left: 0;
+    }
+    
 }
 </style>

@@ -11,7 +11,19 @@
             </div>
             <div v-if="isSignedIn" class="SignedIn"> 
                 <p class="lead">{{signedId}}</p>
+                <div class="menu-toggle" @click="onClickMenuToggler()" v-bind:class="{active:!tabCollapsed}">
+                    <img src="../../assets/svg/menu-toggler.svg" >
+                </div>
                 <button class="btn btn-outline-danger btn-sm" @click="onClickLogout()">Logout</button>
+            </div>
+            <div class="clearfix"></div>
+            <div class="tab-items" v-bind:class="{show:!tabCollapsed}">
+                <ul>
+                    <li v-bind:class="{active:active=='Student'}" @click="onTabItemSelected('Student')">Student's Routine</li>
+                    <li v-bind:class="{active:active=='Teacher'}" @click="onTabItemSelected('Teacher')">Teacher's Routine</li>
+                    <li v-bind:class="{active:active=='EmptyRoom'}" @click="onTabItemSelected('EmptyRoom')">Empty Rooms</li>
+                    <li v-bind:class="{active:active=='Settings'}" @click="onTabItemSelected('Settings')">Settings</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -21,8 +33,8 @@
 <script>
 
 /** IMPORTS */
-import { bus } from "../main";
-import pac from "../../package.json";
+import { bus } from "../../main";
+import pac from "../../../package.json";
 
 export default {
     name:'Header',
@@ -31,7 +43,9 @@ export default {
             signedId:'',inputId:'',
             isSignedIn:false,
             lightTheme:false,
-            version:pac.version
+            tabCollapsed:true,
+            version:pac.version,
+            active:'Student'
         }
     },
     created(){
@@ -47,6 +61,15 @@ export default {
         }
     },
     methods:{
+        onTabItemSelected(x){
+            this.active = x ;
+            bus.$emit(x,x);
+        },
+        onClickMenuToggler(){
+            if( this.tabCollapsed ){
+                this.tabCollapsed=false;
+            }else(this.tabCollapsed=true)
+        },
         onClickSignin(){
             if( this.inputId.trim()!==''){bus.$emit('showLoading');bus.$emit('SigninStudent',this.inputId.trim());}
         },
@@ -72,7 +95,7 @@ export default {
 
 <style lang="scss" scoped>
 #header{
-    height: 4rem;
+    height: 4rem;overflow: hidden;
     background-color: #191919;
     .app-name{
         letter-spacing: 1px;
@@ -80,20 +103,14 @@ export default {
         user-select: none;
         float: left;
     }
-    .beta{
-        font-size: 0.6rem;
-    }
+    .beta{font-size: 0.6rem}
 }
 .SignedIn{
     float: right;
     margin-top: 1rem;
-    .lead{
-        float: left;
-    }
-    .btn{
-        float: right;
-        margin-left: 1rem;
-    }
+    .lead{float: left}
+    .btn{float: right;margin-left: 1rem}
+    .menu-toggle{display: none}
 }
 .input-group{
     float: right;
@@ -136,6 +153,73 @@ export default {
     .form-control{
         border-color: #bdbdbd;
         color: #313131;
+    }
+    .tab-items{
+        ul{
+            li{
+                color: #313131 !important;
+            }
+            li.active,
+            li:hover{
+                background-color: #eeeeee !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    #header{
+        height: auto;padding-bottom: 1rem;
+        .app-name{
+            text-align: center;
+            float: unset;line-height: 1;
+            .beta{display: none}
+        }
+        .SignedIn{
+            float: unset;margin-top: 0;
+            .lead{
+                text-align: center;
+                float: unset;width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            .btn{float: right}
+            .menu-toggle{
+                display: block;float: left;
+                padding: 0.5rem;cursor: pointer;
+                img{
+                    height: 1.1rem;
+                }
+            }
+            .menu-toggle.active{
+                background-color: #f5f5f5;
+            }
+        }
+        .tab-items{
+            height:auto;
+            max-height: 0;
+            transition: max-height 0.4s ease-in-out;
+            ul{
+                margin: 0;
+                padding: 1rem 3rem;
+                li{
+                    text-align: center;
+                    list-style-type: none;
+                    padding: 0.4rem 1rem;
+                    border-radius: 2rem;
+                    color: #9e9e9e;
+                    margin-bottom: 0.2rem;
+                    user-select: none;
+                }
+                li.active,
+                li:hover{
+                    background-color: #212121;
+                }
+            }
+        }
+        .tab-items.show{
+            max-height: 11rem;
+        }
     }
 }
 </style>
