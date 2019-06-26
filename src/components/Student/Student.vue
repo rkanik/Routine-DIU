@@ -14,10 +14,10 @@
         <Overlaps v-if="overlaps.length>0" v-bind:overlaps="overlaps"/>
 
         <!-- Component to diplay routine in Table format-->
-        <TableView v-if="viewType==='Table' && routineIsLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
+        <TableView v-if="viewType==='Table'&&routineLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
         
         <!-- Component to diplay routine in Tabs/Cards -->
-        <TabView v-if="viewType=='Tab'" v-bind:d="{r:Routine,d:days,dow:dayOfWeek}"/>
+        <TabView v-if="viewType=='Tab'&&routineLoaded" v-bind:d="{r:Routine,d:days,dow:dayOfWeek}"/>
         
         <!-- Component to signup and update student's info -->
         <UpdateInfo v-if="updateModal" v-bind:data="updateData"/>
@@ -29,12 +29,11 @@
 </template>
 
 <script>
+
 /** IMPORTS */
 import  {bus}           from "../../main";
 import  db              from "../../js/firebaseInit";
-import  days            from "../../json/DayOfWeeks.json";
 import  RoutineSlots    from "../../json/RoutineSlots.json";
-import  EmptyRoutine    from "../../json/EmptyRoutine.json";
 
 /** COMPONENTS */
 import  TableView   from "../layouts/TableView";
@@ -54,162 +53,73 @@ export default {
         /** Booleans */
         lightTheme:       false,    updateModal:      false,
         showEditCourse:   false,    showRSF:          false,
-        showClicked:      false,    routineIsLoaded:  false,
-        comTeachers:      false,
+        showClicked:      false,    comTeachers:      false,
+        routineLoaded:    false,
 
         /** Objects */
         signedData:     {},     Routines:   {},
         Courses:        {},     updateData: {},
-        allTeachers:    {},     Routine: EmptyRoutine,
+        allTeachers:    {},     Routine: {},
 
         /** Strings */
         Level:      "NONE",     Term:       "NONE",
         Section:    "",         viewType:   "",
-        dayOfWeek:  "",
+        dayOfWeek:  '',
 
         /** Unfefined */
         isSignedIn: undefined,
 
         /** Arrays */
         overlaps:   [],     teachers:   [],
-        days: days,         Slots: RoutineSlots
+        days: [],           Slots: RoutineSlots
         /*slotsRamadan:['09:30-10:25','10:25-11:20','11:20-12:15','12:15-01:10','01:40-02:35','02:35-03:30']*/
     };
   },
-  created() {
+    created() {
+        bus.$on("Courses", x => this.Courses = x)
+        bus.$on("Routines", x => {this.Routines = x;this.fetchSessionData()})
+        bus.$on("Teachers", x => this.allTeachers = x)
+        bus.$on("SettingChanged", x => this.OnSettingChanged(x))
 
-    bus.$on("Courses", x => { this.Courses = x; });
-    bus.$on("Routines", x => { this.Routines = x; this.fetchSessionData(); });
-    bus.$on("Teachers", x => { this.allTeachers = x; });
-    bus.$on("SettingChanged", x => { this.OnSettingChanged(x); });
+        /** Save or Update Info */
+        bus.$on("SigninStudent", id => this.SigninStudent(id))          /** FROM HEADER */
+        bus.$on("SaveStudent", () => this.SaveStudent())                /** FROM UPDATEINFO */
+        bus.$on("UpdateStudent", () => this.UpdateStudent())            /** FROM UPDATEINFO */
+        bus.$on("ClickedUpdate", () => this.OnClickUpdate())             /** FROM SIGNED BOX */
+        bus.$on("CloseUpdateModal", () => this.CloseUpdateModal())       /** FROM UPDATEINFO */
 
-    /** Save or Update Info */
-    bus.$on("SigninStudent", id => { this.SigninStudent(id); }); /** FROM HEADER */
-    bus.$on("SaveStudent", () => { this.SaveStudent(); }); /** FROM UPDATEINFO */
-    bus.$on("UpdateStudent", () => { this.UpdateStudent(); }); /** FROM UPDATEINFO */
-    bus.$on("ClickedUpdate", () => { this.OnClickUpdate(); }); /** FROM SIGNED BOX */
-    bus.$on("CloseUpdateModal", () => { this.CloseUpdateModal(); }); /** FROM UPDATEINFO */
+        bus.$on("loggedOut", () => this.onLoggedOut());
+        bus.$on("OnSignedIn", id => this.OnSignedIn(id));
 
-    bus.$on("loggedOut", () => { this.onLoggedOut(); });
-    bus.$on("OnSignedIn", id => { this.OnSignedIn(id); });
+        bus.$on("ShowRSF", () => this.showRSF = true);
+        bus.$on("HideRSF", () => { this.showRSF = false; this.fetchSessionData()});
 
-    bus.$on("ShowRSF", () => { this.showRSF = true; });
-    bus.$on("HideRSF", () => { this.showRSF = false; this.fetchSessionData(); });
+        bus.$on('SearchFormData', d => this.onSearchFormData(d));
+            
+        /** EDIT COURSE MODAL */
+        bus.$on("OnClickEditCourse", () => this.showEditCourse = true);
+        bus.$on("UpdatedCourses", x => this.UpdateCourses(x));
+        bus.$on("CloseEditCourse", () => this.showEditCourse = false);
+        bus.$on("CollapseTeachers", () => this.comTeachers = false);
+        bus.$on("ShowTeachers", () => this.ShowTeachers());
 
-    bus.$on('SearchFormData', d => {
-        this.setRoutineLevelTermSection(d.level,d.term,d.section.toUpperCase())
-        this.onClickGo()
-    })
-
-    /** EDIT COURSE MODAL */
-    bus.$on("OnClickEditCourse", () => {this.showEditCourse = true;});
-    bus.$on("UpdatedCourses", x => {this.UpdateCourses(x);});
-    bus.$on("CloseEditCourse", () => {this.showEditCourse = false;});
-    bus.$on("CollapseTeachers", () => {this.comTeachers = false;});
-    bus.$on("ShowTeachers", () => {this.ShowTeachers();});
-
-    this.getDayOfWeek();
-  },
-  methods: {
-    UpdateCourses(courses) {
-      let match = 0;
-      courses.forEach(course => {
-        if (this.signedData.Courses.includes(course)) {
-          match++;
-        }
-      });
-      if (
-        courses.length !== this.signedData.Courses ||
-        match !== courses.length
-      ) {
-        this.signedData.Courses = courses;
-        this.setSignedSessionData(this.signedData);
-        this.onClickGo();
-        db.collection("Students")
-          .doc(this.signedData.ID)
-          .get()
-          .then(doc => doc.ref.update({ Courses: courses }));
-      }
-      this.showEditCourse = false;
     },
-    IsLevelTermChanged() {
-      let s = this.signedData,
-        u = this.updateData,
-        changed = false;
-      if (s.Term !== u.Term || s.Level !== u.Level) {
-        changed = true;
-      }
-      return changed;
-    },
-    IsUpdateValueChanged() {
-      let changed = false;
-      for (const key in this.updateData) {
-        if (this.updateData[key] !== this.signedData[key]) {
-          changed = true;
-        }
-      }
-      return changed;
-    },
-    FinishUpdateStudent() {
-      for (const key in this.updateData) {
-        this.signedData[key] = this.updateData[key];
-      }
-      this.setSignedSessionData(this.signedData);
-      this.setRoutineLevelTermSection(
-        this.signedData.Level,
-        this.signedData.Term,
-        this.signedData.Section
-      );
-      this.onClickGo();
-      this.updateModal = false;
-
-      this.updateData.LastVisited = new Date();
-      db.collection("Students")
-        .doc(this.updateData.ID)
-        .get()
-        .then(doc => {
-          if (doc.data().CreatedAt) {
-            this.updateData.CreatedAt = doc.data().CreatedAt;
-          } else {
-            this.updateData.CreatedAt = new Date().toUTCString();
-          }
-          doc.ref.update(this.updateData);
-        });
-    },
-    async UpdateStudent() {
-      delete this.updateData.btn;
-      if (this.IsUpdateValueChanged()) {
-        this.updateData.Section = this.updateData.Section.toUpperCase();
-        if (this.IsLevelTermChanged()) {
-          this.updateData.Courses = this.Courses[
-            this.updateData.Level + this.updateData.Term
-          ].map(x => {
-            return x.Code + "(" + this.updateData.Section + ")";
-          });
-        } else if (this.signedData.Section !== this.updateData.Section) {
-          let curCourses = this.Courses[
-            this.updateData.Level + this.updateData.Term
-          ].map(x => {
-            return x.Code + "(" + this.updateData.Section + ")";
-          });
-          let prevRegCourses = this.Courses[
-            this.signedData.Level + this.signedData.Term
-          ].map(x => {
-            return x.Code + "(" + this.signedData.Section + ")";
-          });
-          let prevCourses = this.signedData.Courses;
-          prevCourses.forEach(course => {
-            if (!prevRegCourses.includes(course)) {
-              curCourses.push(course);
+    methods: {
+        async onSearchFormData(d){
+            this.setRoutineLevelTermSection(d.level,d.term,d.section.toUpperCase());
+            this.onClickGo()
+            if(!this.isSignedIn){
+                let usageId = localStorage.usageId;
+                let res = await db.collection('UsageHistory').doc(usageId).get()
+                if(res.data().searchedRoutine)res.ref.update({searchedRoutine:d})
             }
-          });
-          this.updateData.Courses = curCourses;
-        }
-        this.FinishUpdateStudent();
-      } else {
-        this.updateModal = false;
-      }
-    },
+            
+        },
+    UpdateCourses(courses){let match=0;courses.forEach(s=>{this.signedData.Courses.includes(s)&&match++}),courses.length===this.signedData.Courses&&match===courses.length||(this.signedData.Courses=courses,this.setSignedSessionData(this.signedData),this.onClickGo(),db.collection("Students").doc(this.signedData.ID).get().then(s=>s.ref.update({Courses:courses}))),this.showEditCourse=!1},
+    IsLevelTermChanged(){let s=this.signedData,u=this.updateData,changed=false;if(s.Term!==u.Term||s.Level!==u.Level){changed=true}return changed},
+    IsUpdateValueChanged(){let changed=!1;for(const a in this.updateData)this.updateData[a]!==this.signedData[a]&&(changed=!0);return changed},
+    FinishUpdateStudent(){for(const t in this.updateData)this.signedData[t]=this.updateData[t];this.setSignedSessionData(this.signedData),this.setRoutineLevelTermSection(this.signedData.Level,this.signedData.Term,this.signedData.Section),this.onClickGo(),this.updateModal=!1,this.updateData.LastVisited=new Date,db.collection("Students").doc(this.updateData.ID).get().then(t=>{t.data().CreatedAt?this.updateData.CreatedAt=t.data().CreatedAt:this.updateData.CreatedAt=(new Date).toUTCString(),t.ref.update(this.updateData)});},
+    async UpdateStudent() {if(delete this.updateData.btn,this.IsUpdateValueChanged()){if(this.updateData.Section=this.updateData.Section.toUpperCase(),this.IsLevelTermChanged())this.updateData.Courses=this.Courses[this.updateData.Level+this.updateData.Term].map(t=>t.Code+"("+this.updateData.Section+")");else if(this.signedData.Section!==this.updateData.Section){let t=this.Courses[this.updateData.Level+this.updateData.Term].map(t=>t.Code+"("+this.updateData.Section+")"),e=this.Courses[this.signedData.Level+this.signedData.Term].map(t=>t.Code+"("+this.signedData.Section+")");this.signedData.Courses.forEach(a=>{e.includes(a)||t.push(a)}),this.updateData.Courses=t}this.FinishUpdateStudent()}else this.updateModal=!1},
     async SaveStudent() {
       this.updateData.Section = this.updateData.Section.toUpperCase();
       this.updateData.Courses = this.Courses[
@@ -275,16 +185,14 @@ export default {
       this.updateModal = true;
     },
     onLoggedOut() {
-      bus.$emit("showLoading");
-      this.isSignedIn = false;
-      this.signedData = {};
-      this.updateData = {};
-      localStorage.removeItem("isSignedIn");
-      localStorage.removeItem("signedData");
-      this.routineIsLoaded = false;
-      this.ResetLevelTermAndSection();
-      this.overlaps = [];
-      this.ResetRoutine();
+        bus.$emit("showLoading");
+        this.isSignedIn = false;
+        this.signedData = {};this.updateData = {};
+        localStorage.removeItem("isSignedIn");
+        localStorage.removeItem("signedData");
+        this.ResetLevelTermAndSection();
+        this.overlaps = [];this.Routine={}
+        this.routineLoaded=false
     },
     ResetLevelTermAndSection() {
       (this.Level = "NONE"), (this.Term = "NONE"), (this.Section = "");
@@ -365,25 +273,7 @@ export default {
       this.updateModal = true;
     },
     getDayOfWeek() {
-      let date = new Date();
-      this.dayOfWeek = this.days[date.getDay()];
-    },
-    ResetRoutine() {
-      if (this.viewType === "Table") {
-        this.Routine = {
-          Saturday: [{}, {}, {}, {}, {}, {}],
-          Sunday: [{}, {}, {}, {}, {}, {}],
-          Monday: [{}, {}, {}, {}, {}, {}],
-          Tuesday: [{}, {}, {}, {}, {}, {}],
-          Wednesday: [{}, {}, {}, {}, {}, {}],
-          Thursday: [{}, {}, {}, {}, {}, {}],
-          Friday: [],
-          Labs: []
-        };
-      } else {
-        this.Routine = {};
-      }
-      this.routineIsLoaded = false;
+        return this.getDaysOfWeek()[new Date().getDay()]
     },
     getCourseCodes() {
       if (!this.isSignedIn || this.showRSF) {
@@ -406,8 +296,8 @@ export default {
       });
     },
     SetRoutineFor_TABLE_View(codes) {
-      let oSlots = ["08:30", "10:00", "11:30", "01:00", "02:30", "04:00"];
-      this.ResetRoutine();
+      let oSlots = this.getShortSlots();
+      this.Routine = this.getEmptyRoutine();
       for (const day in this.Routines) {
         if (day !== "Labs") {
           for (const slot in this.Routines[day]) {
@@ -441,11 +331,11 @@ export default {
         }
         this.RemoveOffDayFromRoutine(day);
       }
-      this.routineIsLoaded = true;
     },
     SetRoutineFor_TAB_View(codes) {
-      let oSlots = ["08:30","10:00","11:30","01:00","02:30","04:00","05:30"];
-      this.showClicked = true;this.getDayOfWeek();this.Routine = {};
+      let oSlots = this.getShortSlots();
+      this.showClicked = true;this.Routine = {}
+      this.dayOfWeek =  this.getDayOfWeek();this.days = this.getDaysOfWeek()
       for (const day in this.Routines) {
         if (day !== "Labs") {
           for (const slot in this.Routines[day]) {
@@ -494,7 +384,6 @@ export default {
           ];
         }
       }
-      this.routineIsLoaded = true;
     },
     checkForUsageData(){
         if( !this.isSignedIn ){
@@ -513,9 +402,10 @@ export default {
             else if (this.viewType === "Tab") {
                 this.SetRoutineFor_TAB_View(codes);
             }
+            this.routineLoaded=true
             bus.$emit("stopLoading");
       } else {
-        this.ResetRoutine();
+        this.Routine = this.getEmptyRoutine;
       }
     },
     FixRamadanTime(day) {
@@ -572,7 +462,6 @@ export default {
       let i = 0;
       while (i < 6) {
         if (day !== "Labs" && day !== "Friday") {
-          //console.log(day);
           this.Routine[day].forEach((e, index) => {
             if (e.Time !== this.Slots[index]) {
               this.Routine[day].splice(index, 0, { Time: this.Slots[index] });
@@ -582,24 +471,10 @@ export default {
         i++;
       }
     },
-    getCourseTitle(code) {
-      let title = "";
-      this.Courses[this.Level + this.Term].forEach(el => {
-        if (code === el.Code) {
-          title = el.Title;
-        }
-      });
-      if (title === "") {
-        for (const key in this.Courses) {
-          this.Courses[key].forEach(el => {
-            if (code === el.Code) {
-              title = el.Title;
-            }
-          });
-        }
-      }
-      return title;
-    }
+    getCourseTitle(e){let s="";if(this.Courses[this.Level+this.Term].forEach(t=>{e===t.Code&&(s=t.Title)}),""===s)for(const t in this.Courses)this.Courses[t].forEach(t=>{e===t.Code&&(s=t.Title)});return s},
+    getEmptyRoutine(){return{Saturday:[{},{},{},{},{},{}],Sunday:[{},{},{},{},{},{}],Monday:[{},{},{},{},{},{}],Tuesday:[{},{},{},{},{},{}],Wednesday:[{},{},{},{},{},{}],Thursday:[{},{},{},{},{},{}],Friday:[],Labs:[]}},
+    getDaysOfWeek(){return["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},
+    getShortSlots(){return ["08:30","10:00","11:30","01:00","02:30","04:00","05:30"]},
   }
-};
+}
 </script>

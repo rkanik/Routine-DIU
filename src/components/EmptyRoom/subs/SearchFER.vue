@@ -48,7 +48,6 @@
 
 /** IMPORTS */
 import { bus } from "../../../main";
-import DayOfWeeks from "../../../json/DayOfWeeks.json";
 import RoutineSlots from "../../../json/RoutineSlots.json";
 
 /** COMPONENTS */
@@ -64,7 +63,7 @@ export default {
             /** Objects */
 
             /** Arrays */
-            days:DayOfWeeks,
+            days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
             slots:RoutineSlots,
 
             /** Strings */

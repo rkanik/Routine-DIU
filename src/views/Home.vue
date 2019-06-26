@@ -44,11 +44,10 @@ export default {
   },
   components: {Sidebar,Header,Student,Teacher,Settings,Loader1,EmptyRoom},
   created() {
+
     /** Fetch Theme **/
     this.FetchTheme();
-    bus.$on("ThemeChanged", x => {
-      this.FixTheme(x);
-    });
+    bus.$on("ThemeChanged", x => this.FixTheme(x))
 
     /* SWITCHING BEETWEEN SIDEBAR TABS */
     bus.$on("Student", x => {this.tabActive = x})
@@ -77,9 +76,7 @@ export default {
   methods: {
     checkDeviceWidth(){
         let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-        if( width <= 576 ){
-            localStorage.setItem("ViewType", "Tab");
-        }
+        if(width<=576){localStorage.setItem("ViewType","Tab")}
     },
     SaveClientInfo(data, ref) {
         let userInfo = {

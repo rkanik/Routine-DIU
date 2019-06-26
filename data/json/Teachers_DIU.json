@@ -1640,5 +1640,9 @@
         "Name": "Mr. Shalauddin",
         "EmployeeId": "710001263",
         "Email": "aheadged@daffodilvarsity.edu.bd"
+    },
+    {
+        "Name": "Ms. Mala Mitra",
+        "Initial": "MM"
     }
 ]

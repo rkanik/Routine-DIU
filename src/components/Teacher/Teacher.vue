@@ -10,7 +10,13 @@
             <TeacherSuggs v-if="filteredSugg.length>0" v-bind:suggs="filteredSugg"/>
             <hr>
             <Teachers  v-bind:teachers="teacherInfo" v-if="teacherFound"/>
-            <TableView v-if="viewType==='Table' && routineLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
+
+            <!-- Component to diplay routine in Table format-->
+            <TableView v-if="viewType==='Table'&&routineLoaded" v-bind:d="{slots:Slots,Routine:Routine}" />
+            
+            <!-- Component to diplay routine in Tabs/Cards -->
+            <TabView v-if="viewType=='Tab'&&routineLoaded" v-bind:d="{r:Routine,d:daysOfWeek,dow:today}"/>
+
         </div>
     </div>
 </template>
@@ -18,12 +24,12 @@
 /* IMPORTS */
 import { bus } from "../../main";
 import RoutineSlots from "../../json/RoutineSlots.json";
-//import EmptyRoutine from "../json/EmptyRoutine.json";
 
 /** COMPONENTS */
 import Teachers from "../layouts/Teachers";
 import TeacherSuggs from "./subs/TeacherSuggs";
 import TableView from "../layouts/TableView"
+import TabView from "../layouts/TabView"
 
 export default {
     name:"Teacher",
@@ -31,23 +37,25 @@ export default {
         return{
 
             /** Strings */
-            searchedKey:'',viewType:'Table',
+            searchedKey:'',     viewType:'Table',
+            today:"",
 
             /** Objects */
             Routines:{},courses:{},
-            Routine:{Saturday:[],Sunday:[],Monday:[],Tuesday:[],Wednesday:[],Thursday:[],Labs:[]},
+            Routine:{},
             Slots:RoutineSlots,
             
             /** Arrays */
             teachers:[], teacherInfo:[],
             suggestions:[],filteredSugg:[],
+            daysOfWeek:[],
 
             /** Booleans */
             teacherFound:false,routineLoaded:false,
             lightTheme:false,
         }
     },
-    components:{Teachers,TeacherSuggs,TableView},
+    components:{Teachers,TeacherSuggs,TableView,TabView},
     created(){
         this.FetchTheme();
         bus.$on('ThemeChanged',x=>this.FixTheme(x))
@@ -58,6 +66,7 @@ export default {
         bus.$on('SearchedKey',key=>{this.InitTeacherRoutine(key)})
     },
     methods:{
+        getViewType(){let viewType='';localStorage.ViewType?viewType=localStorage.getItem('ViewType'):viewType='';return viewType;},
         InitTeacherRoutine(key){
             this.filteredSugg=[];this.searchedKey=key
             this.teachers.forEach( teacher => {
@@ -89,6 +98,9 @@ export default {
                 }
             })
         },
+        getDaysOfWeek(){return["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]},
+        getDayOfWeek(){return this.getDaysOfWeek()[new Date().getDay()]},
+        getEmptyRoutine(){return {"Saturday":[{},{},{},{},{},{}],"Sunday":[{},{},{},{},{},{}],"Monday":[{},{},{},{},{},{}],"Tuesday":[{},{},{},{},{},{}],"Wednesday":[{},{},{},{},{},{}],"Thursday":[{},{},{},{},{},{}],"Friday":[{},{},{},{},{},{}],"Labs":[]}},
         ResetRoutine(){
             this.Routine = {
                 "Saturday": [{},{},{},{},{},{}],
@@ -110,10 +122,40 @@ export default {
                 }
             })
         },
-        onClickGo(key){
-            let oSlots = ["08:30","10:00","11:30","01:00","02:30","04:00"];
-            this.ResetRoutine();
-            this.GetTeacherInfo(key);
+        getShortSlots(){return ["08:30","10:00","11:30","01:00","02:30","04:00","05:30"]},
+        async SetRoutineFor_TAB_View(key){
+            this.daysOfWeek=this.getDaysOfWeek();this.today=this.getDayOfWeek();this.Routine={};
+            for(let day in this.Routines){if(day!=='Labs'){
+                for(let slot in this.Routines[day]){
+                    this.Routines[day][slot].forEach(routine=>{
+                        if(routine.Teacher===key.toUpperCase()){
+                            let slots = this.getShortSlots(),slotIndex =  slots.indexOf(slot)
+                            routine.Time=slots[slotIndex]+'-'+slots[slotIndex+1]
+                            routine.Title=this.getCourseTitle(routine.Course.split('(')[0])
+                            this.Routine[day]?this.Routine[day].push(routine):this.Routine[day]=[routine];
+                        }
+                    })
+                }}
+                else{
+                    this.Routines.Labs.forEach(routine=>{
+                        if(routine.Teacher===key){
+                            routine.Time=''
+                            this.Routine[routine.Day]?this.Routine[routine.Day].push(routine):this.Routine[routine.Day]=[routine];
+                        }
+                    })
+                }
+                if( day===this.today && !this.Routine[day]) {
+                    this.Routine[day] = [{
+                        Title: "Teacher don't have any class today",
+                        Time: "It's holiday!",
+                        Room: "Enjoy your day"
+                    }]
+                }
+            }
+            this.routineLoaded=true;
+        },
+        SetRoutineFor_TABLE_View(key){
+            let oSlots = this.getShortSlots();this.Routine = this.getEmptyRoutine();
             for( let day in this.Routines ){if( day !== 'Labs' ){
                 for( let slot in this.Routines[day]){
                     this.Routines[day][slot].forEach( routine => {
@@ -124,18 +166,28 @@ export default {
                     })
                 }
             }else{
-                    this.Routines.Labs.forEach( rout => {
-                        if( rout.Teacher === key.toUpperCase() ){
-                            rout.Title = this.GetCourseTitle(rout.Course.split('(')[0]);
-                            this.Routine.Labs.push(rout);
-                        }
-                    })
-                }
-                this.RemoveOffDayFromRoutine(day);
+                this.Routines.Labs.forEach( rout => {
+                    if( rout.Teacher === key.toUpperCase() ){
+                        rout.Title = this.getCourseTitle(rout.Course.split('(')[0]);
+                        this.Routine.Labs.push(rout);
+                    }
+                })}
+                this.RemoveOffDayFromRoutine(day)
             }
-            this.routineLoaded=true;
         },
-        GetCourseTitle( code ){
+        onClickGo(key){
+            bus.$emit("showLoading");this.GetTeacherInfo(key)
+            this.viewType=this.getViewType();
+            if (this.viewType === "Table") {
+                this.SetRoutineFor_TABLE_View(key);
+            }
+            else if (this.viewType === "Tab") {
+                this.SetRoutineFor_TAB_View(key);
+            }
+            this.routineLoaded=true
+            bus.$emit("stopLoading");
+        },
+        getCourseTitle( code ){
             let title = '';
             for( let levelTerm in this.courses ){
                 this.courses[levelTerm].forEach( course => {

@@ -3,6 +3,9 @@
     <div id="header" class="text-left" v-bind:class="{'light-colors':lightTheme}">
         <div class="container">
             <h4 class="pt-3 app-name">Routine Manager CSE <span class="beta orng-5">BETA{{version}}</span></h4>
+            <div class="menu-toggle" @click="onClickMenuToggler()" v-bind:class="{active:!tabCollapsed}">
+                <img src="../../assets/svg/menu-toggler.svg" >
+            </div>
             <div class="input-group" v-if="!isSignedIn">
                 <input type="text" v-model="inputId" class="form-control" placeholder="Student ID" aria-describedby="button-addon2">
                 <div class="input-group-append">
@@ -11,9 +14,6 @@
             </div>
             <div v-if="isSignedIn" class="SignedIn"> 
                 <p class="lead">{{signedId}}</p>
-                <div class="menu-toggle" @click="onClickMenuToggler()" v-bind:class="{active:!tabCollapsed}">
-                    <img src="../../assets/svg/menu-toggler.svg" >
-                </div>
                 <button class="btn btn-outline-danger btn-sm" @click="onClickLogout()">Logout</button>
             </div>
             <div class="clearfix"></div>
@@ -104,13 +104,16 @@ export default {
         float: left;
     }
     .beta{font-size: 0.6rem}
+    .tab-items{
+        display: none;
+    }
+    .menu-toggle{display: none}
 }
 .SignedIn{
     float: right;
     margin-top: 1rem;
     .lead{float: left}
     .btn{float: right;margin-left: 1rem}
-    .menu-toggle{display: none}
 }
 .input-group{
     float: right;
@@ -154,6 +157,9 @@ export default {
         border-color: #bdbdbd;
         color: #313131;
     }
+    .menu-toggle.active{
+        background-color: #f5f5f5;
+    }
     .tab-items{
         ul{
             li{
@@ -173,7 +179,7 @@ export default {
         height: auto;padding-bottom: 1rem;
         .app-name{
             text-align: center;
-            float: unset;line-height: 1;
+            float: unset;line-height: 1.5;
             .beta{display: none}
         }
         .SignedIn{
@@ -184,19 +190,23 @@ export default {
                 margin-bottom: 0.5rem;
             }
             .btn{float: right}
-            .menu-toggle{
-                display: block;float: left;
-                padding: 0.5rem;cursor: pointer;
-                img{
-                    height: 1.1rem;
-                }
-            }
-            .menu-toggle.active{
-                background-color: #f5f5f5;
+        }
+        .menu-toggle{
+            display: block;float: left;
+            padding: 0.5rem;cursor: pointer;
+            img{
+                height: 1.1rem;
             }
         }
+        .menu-toggle.active{
+            background-color: #212121;
+        }
+        .input-group{
+            float: right;
+            margin-top: 0.5rem;
+        }
         .tab-items{
-            height:auto;
+            height:auto;display: block;
             max-height: 0;
             transition: max-height 0.4s ease-in-out;
             ul{

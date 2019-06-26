@@ -5,27 +5,13 @@
 </template>
 
 <style lang='scss'>
-
 #app {
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #9e9e9e;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #9e9e9e;
 }
 .text-accent{
     color: #009688;
-}
-
-@media (min-width: 576px) {
-    
-}
-@media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
-
-}
-@media (min-width: 1200px) {
-
 }
 </style>

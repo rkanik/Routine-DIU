@@ -17,13 +17,13 @@
                     <div class="row">
                         <div class="card mr-3 mb-3 col-md-3" v-for="r in d.r[dayOfWeek]" v-bind:key="r.Rime">
                             <div class="card-body">
-                            <p class="card-text">{{r.Time}}</p>
-                            <hr>
-                            <h4 class="card-title">{{r.Title}}</h4>
-                            <p class="card-text">{{r.Course}}</p>
-                            <p class="card-text">{{r.Teacher}}</p>
-                            <hr>
-                            <p class="card-text">{{r.Room}}</p>
+                                <p class="card-text">{{r.Time}}</p>
+                                <hr>
+                                <h4 class="card-title">{{r.Title}}</h4>
+                                <p class="card-text">{{r.Course}}</p>
+                                <p class="card-text">{{r.Teacher}}</p>
+                                <hr>
+                                <p class="card-text">{{r.Room}}</p>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
 <script>
 
 /** IMPORTS */
-import {bus} from "../../main"
+import {bus} from "../../main";
 
 export default {
     name:'TabView',
@@ -50,12 +50,12 @@ export default {
             lightTheme:false,
 
             /** Strings */
-            dayOfWeek:this.d.dow
+            dayOfWeek:this.d.dow,
         }
     },
     created(){
         this.FetchTheme();
-        bus.$on("ThemeChanged", x => { this.FixTheme(x)})
+        bus.$on("ThemeChanged", x => this.FixTheme(x))
     },
     methods:{
         onTabSelected(day){
@@ -75,42 +75,42 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .tab-view{
-        margin-top: 1rem;
-        .ul-tab {
-            padding-left: 0;
-            .tab {
-                list-style-type: none;
-                margin-bottom: 0.5rem;
-                padding: 0.34rem 0 0.3rem 1rem;
-                border-radius: 2rem;
-                cursor: pointer;
-                color: #616161;
-                user-select: none;
-            }
-            .active,
-            .tab:hover {
-                background-color: #202020;
-                color: #a0a0a0;
-            }
+.tab-view{
+    margin-top: 1rem;
+    .ul-tab {
+        padding-left: 0;
+        .tab {
+            list-style-type: none;
+            margin-bottom: 0.5rem;
+            padding: 0.34rem 0 0.3rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            color: #616161;
+            user-select: none;
         }
-        .card {
+        .active,
+        .tab:hover {
             background-color: #202020;
-            padding: 0 0.5rem;
-            border: none;
-            min-width: 14rem;
-            .card-title {
-                font-weight: 400;
-            }
-            hr {
-                margin: 0.5rem 0;
-                border-color: #1a1a1a;
-            }
+            color: #a0a0a0;
         }
     }
+    .card {
+        background-color: #202020;
+        border: none;padding: 0;
+        min-width: 14rem;
+        padding: 0 0.5rem;
+        .card-title {
+            font-weight: 400;
+        }
+        hr {
+            margin: 0.5rem 0;
+            border-color: #1a1a1a;
+        }
+    }
+}
     .light-colors{
         .ul-tab {
-            background-color: white !important;
+            
             .tab {
                 color: #313131 !important;
             }
@@ -167,6 +167,11 @@ export default {
         }
         .card:last-child{
             margin-bottom: 0 !important;
+        }
+    }
+    .light-colors{
+        .ul-tab{
+            background-color: white !important;
         }
     }
 }
