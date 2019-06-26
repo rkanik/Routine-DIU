@@ -18,7 +18,7 @@
 <script>
 
 /** IMPORTS */
-import db from "../../js/firebaseInit";
+import db from "../../firebase/firebaseInit";
 import { bus } from "../../main";
 
 /** COMPONENTS */

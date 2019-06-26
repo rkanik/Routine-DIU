@@ -64,7 +64,7 @@
 <script>
 /** IMPORTS */
 import {bus} from "../../../main";
-import db from "../../../js/firebaseInit";
+import db from "../../../firebase/firebaseInit";
 
 /** COMPONENTS */
 import Loader1 from "../../Loaders/Loader1";

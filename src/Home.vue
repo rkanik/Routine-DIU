@@ -1,5 +1,5 @@
 <template>
-  <div class="home" v-bind:class="{'light-colors':lightTheme}">
+  <div id="home" v-bind:class="{'light-colors':lightTheme}">
     <Sidebar class="sidebar"/>
     <div class="hwr" v-bind:class="{'bg-li-0':lightTheme}">
       <Header/>
@@ -16,22 +16,22 @@
 
 <script>
 /* IMPORTS */
-import { bus } from "../main";
-import dbRef from "../js/firebaseInit";
-import Routines from "../../data/json/Summer19_Day_V3.json";
-import Courses from "../../data/json/Courses.json";
-import Teachers from "../../data/json/Teachers_DIU.json";
+import { bus } from "./main";
+import dbRef from "./firebase/firebaseInit";
+import Routines from "../data/json/Summer19_Day_V3.json";
+import Courses from "../data/json/Courses.json";
+import Teachers from "../data/json/Teachers_DIU.json";
 import axios from "axios";
 import uniqid from "uniqid";
 
 /* COMPORNENTS */
-import Sidebar from "../components/layouts/Sidebar";
-import Header from "../components/layouts/Header";
-import Student from "../components/Student/Student";
-import Teacher from "../components/Teacher/Teacher";
-import EmptyRoom from "../components/EmptyRoom/EmptyRoom";
-import Settings from "../components/Settings/Settings";
-import Loader1 from "../components/Loaders/Loader1";
+import Sidebar from "./components/layouts/Sidebar";
+import Header from "./components/layouts/Header";
+import Student from "./components/Student/Student";
+import Teacher from "./components/Teacher/Teacher";
+import EmptyRoom from "./components/EmptyRoom/EmptyRoom";
+import Settings from "./components/Settings/Settings";
+import Loader1 from "./components/Loaders/Loader1";
 
 export default {
   name: "home",
@@ -122,16 +122,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home {
-  display: grid;
-  grid-template-columns: min-content auto;
+
+#home {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #9e9e9e;
+    display: grid;
+    grid-template-columns: min-content auto;
 }
 .mcontainer {
-  height: calc(100vh - 4rem);
-  position: relative;
-  overflow: auto;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
+    height: calc(100vh - 4rem);
+    position: relative;
+    overflow: auto;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
 }
 .hwr {
     background-color: #161616;

@@ -32,7 +32,7 @@
 
 /** IMPORTS */
 import  {bus}           from "../../main";
-import  db              from "../../js/firebaseInit";
+import  db              from "../../firebase/firebaseInit";
 import  RoutineSlots    from "../../json/RoutineSlots.json";
 
 /** COMPONENTS */

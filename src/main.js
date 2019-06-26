@@ -1,19 +1,18 @@
-/** IMPORTS */
-import  Vue     from 'vue'
-import  App     from './App.vue'
-import  router  from './router'
+/** Importing of vue */
+import Vue from 'vue'
 
-import  'bootstrap/dist/css/bootstrap.css'
-import  'bootstrap-vue/dist/bootstrap-vue.css';
+/** Importing base component */
+import Home from './Home.vue'
 
+/** Importing stylesheets */
+import 'bootstrap/dist/css/bootstrap.css'
+import './assets/css/acolors.min.css'
+
+/** Production tips */
 Vue.config.productionTip = false
 
-import BootstrapVue from 'bootstrap-vue'
-Vue.use(BootstrapVue)
-
+/** System bus to pass event between components */
 export const bus = new Vue();
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+/** Vue Instance */
+new Vue({render: h => h(Home)}).$mount('#app')
