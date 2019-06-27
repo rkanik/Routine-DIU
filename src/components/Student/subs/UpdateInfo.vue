@@ -144,7 +144,7 @@ export default {
 .overlay {
     position: fixed;top: 0;left: 0;
     display: none;height: 100%;width: 100%;
-    z-index: 10;background-color: rgb(0, 0, 0, 0.65);
+    z-index: 10;background-color: rgba(0, 0, 0, 0.65);
 }
 .show {
     display: block;
@@ -218,7 +218,7 @@ export default {
 
 .light-colors{
     .overlay{
-        background-color: rgb(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.75);
     }
     .mod{
         background-color: white;

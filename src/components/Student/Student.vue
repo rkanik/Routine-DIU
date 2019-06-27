@@ -121,21 +121,26 @@ export default {
     FinishUpdateStudent(){for(const t in this.updateData)this.signedData[t]=this.updateData[t];this.setSignedSessionData(this.signedData),this.setRoutineLevelTermSection(this.signedData.Level,this.signedData.Term,this.signedData.Section),this.onClickGo(),this.updateModal=!1,this.updateData.LastVisited=new Date,db.collection("Students").doc(this.updateData.ID).get().then(t=>{t.data().CreatedAt?this.updateData.CreatedAt=t.data().CreatedAt:this.updateData.CreatedAt=(new Date).toUTCString(),t.ref.update(this.updateData)});},
     async UpdateStudent() {if(delete this.updateData.btn,this.IsUpdateValueChanged()){if(this.updateData.Section=this.updateData.Section.toUpperCase(),this.IsLevelTermChanged())this.updateData.Courses=this.Courses[this.updateData.Level+this.updateData.Term].map(t=>t.Code+"("+this.updateData.Section+")");else if(this.signedData.Section!==this.updateData.Section){let t=this.Courses[this.updateData.Level+this.updateData.Term].map(t=>t.Code+"("+this.updateData.Section+")"),e=this.Courses[this.signedData.Level+this.signedData.Term].map(t=>t.Code+"("+this.signedData.Section+")");this.signedData.Courses.forEach(a=>{e.includes(a)||t.push(a)}),this.updateData.Courses=t}this.FinishUpdateStudent()}else this.updateModal=!1},
     async SaveStudent() {
-      this.updateData.Section = this.updateData.Section.toUpperCase();
-      this.updateData.Courses = this.Courses[
-        this.updateData.Level + this.updateData.Term
-      ].map(x => {
-        return x.Code + "(" + this.updateData.Section + ")";
-      });
-      this.updateData.LastVisited = this.updateData.CreatedAt = new Date();
-      delete this.updateData.btn;
-      await db
-        .collection("Students")
-        .doc(this.updateData.ID)
-        .set(this.updateData);
-      this.SigninStudent(this.updateData.ID);
-      this.updateModal = false;
-      this.updateData = {};
+        this.updateData.Section = this.updateData.Section.toUpperCase();
+        this.updateData.Courses = this.Courses[this.updateData.Level + this.updateData.Term].map(x => {
+            return x.Code + "(" + this.updateData.Section + ")";
+        });
+        let now = new Date();
+        this.updateData.LastVisited = this.updateData.CreatedAt = now;
+        delete this.updateData.btn;
+        await db.collection("Students").doc(this.updateData.ID).set(this.updateData);
+
+        /** Saving data for aStudents */
+        let res = await db.collection('aStudents').doc('_2019').get();
+        let aData = res.data()
+        console.log('aData=> ',aData);
+        aData[this.updateData.ID] = {createdAt:now,lastVisited:now}
+        res.ref.update(aData);
+        console.log('saved');
+
+        this.SigninStudent(this.updateData.ID);
+        this.updateModal = false;
+        this.updateData = {};
     },
     GetTeacherInitials() {
       let teacherInitials = [];
@@ -226,22 +231,26 @@ export default {
       }
     },
     UpdateLastVisited(id) {
-      db.collection("Students")
-        .doc(id)
-        .get()
-        .then(doc => doc.ref.update({ LastVisited: new Date() }));
+        db.collection("Students").doc(id).get().then(doc => doc.ref.update({ LastVisited: new Date()}));
+        db.collection('aStudents').doc('_2019').get().then( res => {
+            let data = res.data();for(let _id in data){
+                if( _id === id ) data[_id].lastVisited = new Date()
+                res.ref.update(data);
+            }
+        })
     },
     OnSignedIn(id, doc) {
-      doc.ref.update({ LastVisited: new Date() });
-      let d = doc.data();localStorage.removeItem('usageData')
-      this.fixViewsAndDatas(d);
-      bus.$emit("signedData", d);
-      this.setSignedSessionData(d);
-      this.setRoutineLevelTermSection(d.Level, d.Term, d.Section);
-      this.onClickGo();
-      this.updateModal = false;
-      bus.$emit("stopLoading");
-      this.updateData = {};
+        //doc.ref.update({ LastVisited: new Date()});
+        this.UpdateLastVisited(id);
+        let d = doc.data();localStorage.removeItem('usageData')
+        this.fixViewsAndDatas(d);
+        bus.$emit("signedData", d);
+        this.setSignedSessionData(d);
+        this.setRoutineLevelTermSection(d.Level, d.Term, d.Section);
+        this.onClickGo();
+        this.updateModal = false;
+        bus.$emit("stopLoading");
+        this.updateData = {};
     },
     fixViewsAndDatas(data) {
       this.signedData = data;

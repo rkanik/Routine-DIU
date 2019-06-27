@@ -123,35 +123,39 @@ export default {
 
 <style lang="scss" scoped>
 
-#home {
+#home{
+    // Default font //
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
     color: #9e9e9e;
     display: grid;
     grid-template-columns: min-content auto;
+
+    .hwr {
+        background-color: #161616;
+        .mcontainer {
+            height: calc(100vh - 4rem);
+            position: relative;
+            overflow: auto;
+            padding-bottom: 2rem;
+            box-sizing: border-box;
+            .Student,
+            .Teacher,
+            .EmptyRoom {
+                display: none;
+            }
+            .EmptyRoom {
+                height: 90%;
+            }
+            .tabActive {
+                display: block;
+            }
+        }
+    }
 }
-.mcontainer {
-    height: calc(100vh - 4rem);
-    position: relative;
-    overflow: auto;
-    padding-bottom: 2rem;
-    box-sizing: border-box;
-}
-.hwr {
-    background-color: #161616;
-}
-.Student,
-.Teacher,
-.EmptyRoom {
-  display: none;
-}
-.EmptyRoom {
-  height: 90%;
-}
-.tabActive {
-  display: block;
-}
+
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:#161616}
 ::-webkit-scrollbar-thumb{background:#00897b}
@@ -166,7 +170,7 @@ export default {
 }
 
 @media (max-width: 576px) {
-    .home {
+    #home {
         display: unset;
         .mcontainer{
             width: 100%;
@@ -177,5 +181,4 @@ export default {
         display: none;
     }
 }
-
 </style>

@@ -130,7 +130,7 @@ export default {
 .overlay{
     position: fixed;top: 0;left: 0;
     display: block;height: 100%;
-    width: 100%;z-index: 10;background-color: rgb(0, 0, 0, 0.65);
+    width: 100%;z-index: 10;background-color: rgba(0, 0, 0, 0.65);
 }
 .lead{font-size:1.5em}
 .lead-2{font-weight:400}
@@ -232,7 +232,7 @@ export default {
 
 .light-colors{
     .overlay{
-        background-color: rgb(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .modal{
         background-color: white;
