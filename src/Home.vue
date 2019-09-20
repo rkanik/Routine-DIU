@@ -18,7 +18,7 @@
 /* IMPORTS */
 import { bus } from "./main";
 import dbRef from "./firebase/firebaseInit";
-import Routines from "../data/json/Summer19_Day_V3.json";
+import Routines from "../data/json/routines/Fall2019/V2.json";
 import Courses from "../data/json/Courses.json";
 import Teachers from "../data/json/Teachers_DIU.json";
 import axios from "axios";
@@ -54,7 +54,7 @@ export default {
     bus.$on("Teacher", x => {this.tabActive = x})
     bus.$on("EmptyRoom", x => {this.tabActive = x})
     bus.$on("Settings", x => {this.tabActive = x})
-    bus.$on("SigninStudent", x => {this.tabActive = "Student";});
+    bus.$on("SigninStudent", () => {this.tabActive = "Student";});
 
     /** SHOWING AND STOPING LOADINGS  */
     bus.$on("stopLoading", () => {this.showLoading = false;});
@@ -167,6 +167,9 @@ export default {
 }
 .light-colors{
     ::-webkit-scrollbar-track{background:#eceff1}
+    .hwr {
+        background-color: white !important;
+        }
 }
 
 @media (max-width: 576px) {

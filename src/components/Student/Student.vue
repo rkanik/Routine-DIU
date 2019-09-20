@@ -113,7 +113,6 @@ export default {
                 let res = await db.collection('UsageHistory').doc(usageId).get()
                 if(res.data().searchedRoutine)res.ref.update({searchedRoutine:d})
             }
-            
         },
     UpdateCourses(courses){let match=0;courses.forEach(s=>{this.signedData.Courses.includes(s)&&match++}),courses.length===this.signedData.Courses&&match===courses.length||(this.signedData.Courses=courses,this.setSignedSessionData(this.signedData),this.onClickGo(),db.collection("Students").doc(this.signedData.ID).get().then(s=>s.ref.update({Courses:courses}))),this.showEditCourse=!1},
     IsLevelTermChanged(){let s=this.signedData,u=this.updateData,changed=false;if(s.Term!==u.Term||s.Level!==u.Level){changed=true}return changed},

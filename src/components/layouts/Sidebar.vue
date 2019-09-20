@@ -8,7 +8,7 @@
             <div class="box-note text-center">
                 <p class="lead">Department of CSE</p>
                 <p class="lead">Daffodil International University</p>
-                <p>Semester: <strong>Summer 2019</strong></p>
+                <p>Semester: <strong>Fall 2019</strong></p>
                 <p>Campus: <strong>MAIN</strong></p>
                 <p>Program: <strong>DAY</strong></p>
             </div>
@@ -25,7 +25,9 @@
             </ul>
         </div>
         <div class="box-note text-center">
-            <p class="lead">Routine Version: <strong>V3</strong></p>
+            <p class="lead mb-4">Routine Version: <strong class="text-warning">V2</strong></p>
+            <!-- <p class="lead text-danger">Update your semester to see new routines</p> -->
+            <p class="lead text-warning">If there is any wrong routine please <a href="https://www.facebook.com/RK.Anik.773" target="_blank">contact me</a></p>
         </div>
     </div>
     <!-- sidebar end-->
